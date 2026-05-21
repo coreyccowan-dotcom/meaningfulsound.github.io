@@ -1,8 +1,8 @@
 # Privacy Policy — PedalEditor
 
-**Developer:** Corey Cowan / Meaningful Sound  
-**Contact:** meaningfulsound@gmail.com  
-**Last updated:** April 20, 2026
+**Developer:** Meaningful Sound  
+**Contact:** meaningfulsound (at) gmail.com  
+**Last updated:** May 21, 2026
 
 ## No Data Collected
 
@@ -14,6 +14,12 @@ The app has no account system, no analytics, no advertising, and no third-party 
 PedalEditor requests access to your local network solely to enable MIDI communication 
 between your iPhone or iPad and a Mac on the same Wi-Fi network. No data leaves your 
 local network. No internet connection is required or used by the app.
+
+## iCloud Sync
+
+PedalEditor offers optional iCloud sync of your preset library. This data is stored 
+exclusively in your personal iCloud account, encrypted end-to-end by Apple. Meaningful 
+Sound has no access to your synced content.
 
 ## No Third Parties
 
@@ -30,4 +36,4 @@ If this policy changes in a future version of the app, this page will be updated
 ## Contact
 
 Questions about this privacy policy can be directed to:  
-**meaningfulsound@gmail.com**
+**meaningfulsound (at) gmail.com**

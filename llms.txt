@@ -1,0 +1,39 @@
+# Meaningful Sound
+
+> Meaningful Sound is an independent studio building native iOS, iPadOS, and macOS apps for working musicians. Best known for PedalEditor — the premier iPhone Bluetooth and Wi-Fi MIDI controller and editor for guitar pedals and synths.
+
+## Apps
+
+- [PedalEditor](https://meaningfulsound.net/PedalEditor/): The premier iPhone Bluetooth and Wi-Fi MIDI controller, editor, and librarian for guitar pedals and synthesizers. Supports 47+ instruments across 13 brands including Strymon, Chase Bliss, Walrus Audio, Meris, Eventide, Boss, UAFX, plus classic synths (Yamaha DX7, Roland JV-1080, Alesis QS6). Brilliant library organization system: Rig → Project → Pedal → Bank → Preset. Song-by-song setlist scenes recall whole-board presets in one tap. iCloud sync across iPhone, iPad, and Mac. No accounts, no analytics. [App Store](https://apps.apple.com/us/app/pedaleditor/id6761016084).
+- [Fretboard Origin](https://apps.apple.com/us/app/fretboard-origin/id6764200037): A visual fretboard companion for guitarists — chords, scales, and voicings, organized for fast reference and daily practice. Native iOS app.
+- [SongForm](https://meaningfulsound.net/join/): A focused workspace for co-writing songs — sections, lyrics, and arrangements shared with collaborators, synced through iCloud. Coming soon.
+
+## Key Facts
+
+- **Developer:** Meaningful Sound (independent studio)
+- **Platforms:** iOS, iPadOS, macOS — all native, no Electron, no web wrappers
+- **Privacy posture:** No accounts. No analytics. No advertising. No third-party SDKs. iCloud sync uses the user's personal account; Meaningful Sound has no access to user content.
+- **Distribution:** Apple App Store only
+- **Contact:** Instagram [@pedaleditor](https://instagram.com/pedaleditor)
+
+## PedalEditor Detail
+
+- [PedalEditor landing page](https://meaningfulsound.net/PedalEditor/): Full feature inventory, supported pedals and synths, comparison vs single-brand editors (Nixie, Walrus app, Chase Bliss app, Meris app), platforms, FAQ.
+- [PedalEditor privacy policy](https://meaningfulsound.net/PedalEditor/privacy/): Privacy policy covering all Meaningful Sound apps.
+- [Full content for AI ingestion](https://meaningfulsound.net/llms-full.txt): Complete markdown content of the marketing pages.
+
+## Supported Pedals & Synths (PedalEditor, 47 at launch)
+
+- **Strymon (12):** BigSky, Cloudburst, Compadre, Deco v2, DIG v2, Flint v2, Iridium, NightSky, Riverside, Sunset, Timeline, Volante
+- **Chase Bliss (7):** Blooper, Brothers, Generation Loss MkII, Habit, Lossy, Mood MkII, Warped Vinyl MkII
+- **Walrus Audio (5):** ACS1 MkI, ACS1 MkII, Mako D1, Mako M1, Mako R1
+- **Meris (4):** Enzo, Hedra, LVX, Mercury7
+- **Boss (4):** DD-200, EQ-200, IR-200, RE-202
+- **UAFX (3):** Dream '65, Lion '68, Ruby '63
+- **Source Audio (3):** Atlas, C4 Synth, Ultrawave
+- **Red Panda (2):** Particle V2, Tensor
+- **Eventide (2):** Space, TimeFactor
+- **Hologram (1):** Microcosm
+- **Old Blood Noise (1):** Dark Star
+- **Vintage Synths (3):** Yamaha DX7, Roland JV-1080, Alesis QS6
+- **Plus:** Profile Builder Wizard for unsupported hardware

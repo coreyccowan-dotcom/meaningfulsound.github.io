@@ -1,0 +1,21 @@
+{
+  "name": "Meaningful Sound",
+  "short_name": "Meaningful Sound",
+  "description": "Native iOS and Mac apps for working musicians. PedalEditor, Fretboard Origin, and SongForm.",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "display": "browser",
+  "start_url": "/"
+}
