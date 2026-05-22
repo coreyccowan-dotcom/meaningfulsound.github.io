@@ -121,8 +121,10 @@ Fretboard Origin is a native iPhone and iPad fretboard visualizer, chord and sca
 ### Key Numbers
 
 - **34** stringed instruments
-- **288** chord voicings across 43 chord qualities
-- **14** scale types
+- **4,896** chord voicings — 288 unique voicing patterns × 17 enharmonic keys
+- **43** chord qualities
+- **17** enharmonic keys (with context-aware spelling: Eb vs. D#, F# vs. Gb)
+- **14** scale types — each available in all 17 keys
 - **13** arpeggio types
 - **8** built-in tuning presets plus custom tuning builder
 - **5** practice modes
@@ -139,8 +141,8 @@ Fretboard Origin is a native iPhone and iPad fretboard visualizer, chord and sca
 
 ### Core Features
 
-- **Visualize any scale.** 14 scale types in any key, mapped across the fretboard. Switch between CAGED, Berklee, Bruno, and Grimoire/Gallier teaching systems without losing your place.
-- **288 chord voicings.** 43 chord qualities across all instruments and categories. Context-aware enharmonic spelling — Eb shows up as Eb, not D#.
+- **Visualize any scale.** 14 scale types in any of 17 keys, mapped across the fretboard. Switch between CAGED, Berklee, Bruno, and Grimoire/Gallier teaching systems without losing your place.
+- **4,896 chord voicings.** 288 unique voicing patterns × 17 enharmonic keys, across 43 chord qualities and every supported instrument. Context-aware enharmonic spelling — Eb shows up as Eb, not D#.
 - **Pattern builder.** Tap frets to define custom voicings; walk them through the scale with degree-kernel enumeration. Sequential recording, MIDI import, and degree-aware mapping help you discover voicings you'd never find by accident.
 - **Strobe tuner.** Real-time YIN pitch detection with harmonic analysis tracked across four harmonics. Cent-level deviation display, accurate down to roughly 30Hz.
 - **Tanpura drone.** Indian classical drone with root, fifth, and octave voices plus adjustable detuning — for raga practice and Just Intonation work.
@@ -154,8 +156,8 @@ Fretboard Origin is a native iPhone and iPad fretboard visualizer, chord and sca
 
 ### Scales, Chords & Arpeggios
 
-- **14 scale types:** Major, Natural Minor, Harmonic Minor, Melodic Minor, Major Pentatonic, Minor Pentatonic, Blues, Chromatic, Whole-Tone, Phrygian Dominant, Lydian Dominant, Hungarian Minor, Bebop Dominant.
-- **43 chord qualities:** Triads, suspended, sixths, sevenths, ninths, elevenths, thirteenths, altered dominants, augmented-sixth chords.
+- **14 scale types** in **17 enharmonic keys**: Major, Natural Minor, Harmonic Minor, Melodic Minor, Major Pentatonic, Minor Pentatonic, Blues, Chromatic, Whole-Tone, Phrygian Dominant, Lydian Dominant, Hungarian Minor, Bebop Dominant.
+- **43 chord qualities × 17 keys = 4,896 chord voicings:** Triads, suspended, sixths, sevenths, ninths, elevenths, thirteenths, altered dominants, augmented-sixth chords. Enharmonic spelling preserved (Eb vs. D#, F# vs. Gb).
 - **13 arpeggio types** mapped to the fretboard with the same degree-aware system as scales.
 
 ### Privacy & Data
