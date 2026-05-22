@@ -108,18 +108,146 @@ PedalEditor does not collect, store, transmit, or share personal information. No
 
 ## App: Fretboard Origin
 
-**URL:** https://apps.apple.com/us/app/fretboard-origin/id6764200037
+**Tagline:** A fretboard companion for every stringed instrument you play.
 
-A visual fretboard companion for guitarists — chords, scales, and voicings, organized for fast reference and daily practice. Native iOS app.
+**URL:** https://meaningfulsound.net/FretboardOrigin/
+**App Store:** https://apps.apple.com/us/app/fretboard-origin/id6764200037
+**Platforms:** iPhone, iPad (native; SwiftUI)
+
+### What It Is
+
+Fretboard Origin is a native iPhone and iPad fretboard visualizer, chord and scale library, ear-training studio, and strobe tuner — built for 34+ stringed instruments from American, Asian, European, Latin, and Middle Eastern/African traditions. Whether you play guitar, bass, mandolin, sitar, oud, or charango, the fretboard adapts to your tuning, your tradition, and your practice.
+
+### Key Numbers
+
+- **34** stringed instruments
+- **288** chord voicings across 43 chord qualities
+- **14** scale types
+- **13** arpeggio types
+- **8** built-in tuning presets plus custom tuning builder
+- **5** practice modes
+- **4** teaching systems (CAGED, Berklee, Bruno, Grimoire/Gallier)
+
+### Supported Instruments by Region
+
+- **American & Western:** Guitar, 7-string guitar, baritone guitar, bass (4/5/6-string), banjo, mandolin, dulcimer, dobro, violin, pedal steel
+- **Asian:** Sitar, shamisen, pipa, koto
+- **European:** Bouzouki, balalaika, lute, cittern
+- **Latin:** Guitarrón, vihuela, cuatro, tres, requinto, charango
+- **Middle Eastern & African:** Oud, saz, kora, ngoni
+- **Ukulele variants:** Concert, tenor, and more
+
+### Core Features
+
+- **Visualize any scale.** 14 scale types in any key, mapped across the fretboard. Switch between CAGED, Berklee, Bruno, and Grimoire/Gallier teaching systems without losing your place.
+- **288 chord voicings.** 43 chord qualities across all instruments and categories. Context-aware enharmonic spelling — Eb shows up as Eb, not D#.
+- **Pattern builder.** Tap frets to define custom voicings; walk them through the scale with degree-kernel enumeration. Sequential recording, MIDI import, and degree-aware mapping help you discover voicings you'd never find by accident.
+- **Strobe tuner.** Real-time YIN pitch detection with harmonic analysis tracked across four harmonics. Cent-level deviation display, accurate down to roughly 30Hz.
+- **Tanpura drone.** Indian classical drone with root, fifth, and octave voices plus adjustable detuning — for raga practice and Just Intonation work.
+- **Ear training.** Chord training in four progressive stages (triads through seventh chords), interval and chord identification, dyad training, with score tracking and accuracy analytics.
+- **Alternate tunings.** Eight built-in tuning presets (Standard, Drop D, DADGAD, Open G, Open D, Drop C, Half Step Down, Whole Step Down) plus a custom tuning builder for any instrument.
+- **Modal & parallel mode analysis.** Classical degree naming and triad-quality analysis for every scale position.
+- **Wurlitzer-style synth.** Audition voicings without picking up an instrument.
+- **Metronome.** With pattern sequencing.
+- **Print staging.** Export patterns for offline practice material.
+- **5 visual themes.** Landscape and portrait layouts.
+
+### Scales, Chords & Arpeggios
+
+- **14 scale types:** Major, Natural Minor, Harmonic Minor, Melodic Minor, Major Pentatonic, Minor Pentatonic, Blues, Chromatic, Whole-Tone, Phrygian Dominant, Lydian Dominant, Hungarian Minor, Bebop Dominant.
+- **43 chord qualities:** Triads, suspended, sixths, sevenths, ninths, elevenths, thirteenths, altered dominants, augmented-sixth chords.
+- **13 arpeggio types** mapped to the fretboard with the same degree-aware system as scales.
+
+### Privacy & Data
+
+Fretboard Origin does not collect, store, transmit, or share personal information. No accounts. No analytics. No advertising. No third-party SDKs. Microphone permission (for the tuner) processes audio only on device — nothing is recorded or transmitted.
+
+### FAQ Summary
+
+- **What is Fretboard Origin?** A native iPhone and iPad fretboard visualizer, chord/scale library, ear-training tool, and strobe tuner for 34+ stringed instruments from around the world.
+- **Which instruments are supported?** 34 instruments across five regional traditions (full list above), plus ukulele variants.
+- **What practice tools does it include?** Chord training (four stages), ear training, dyad training, and practice sessions with score tracking.
+- **Does it support alternate tunings?** Eight presets plus a custom tuning builder for any instrument.
+- **Is the tuner accurate enough for serious work?** YIN pitch detection with harmonic analysis across four harmonics, strobe-style display, cent-level deviation down to ~30Hz.
+- **Why a Tanpura drone?** Because the app supports Indian classical instruments and the tradition relies on a continuous tonic drone. The Tanpura includes root, fifth, and octave voices with adjustable detuning.
+- **Does it collect data?** No. Microphone audio for the tuner never leaves the device.
 
 ---
 
 ## App: SongForm
 
-**Status:** Coming Soon
-**URL:** https://meaningfulsound.net/join/
+**Status:** Coming Soon · In active development
+**Tagline:** A songwriter's workspace for sections, lyrics, layers, and co-writes.
 
-A focused workspace for co-writing songs — sections, lyrics, and arrangements shared with collaborators, synced through iCloud.
+**URL:** https://meaningfulsound.net/SongForm/
+**Platforms:** iPhone, iPad (native; SwiftUI; macOS planned)
+
+### What It Is
+
+SongForm is a native iPhone and iPad workspace built around how songs are actually written — not how DAWs want you to write them. Build a song as a sequence of sections (verse, pre-chorus, chorus, bridge), layer recordings and chord performances per section, edit lyrics with Nashville-style formatting, and co-write with collaborators using a fragment-based contribution model that preserves who wrote what.
+
+### Key Numbers
+
+- **7** section types (Intro, Verse, Pre-Chorus, Chorus, Bridge, Interlude, Outro)
+- **3** layer types per section (audio recordings, chord performances, step patterns)
+- **9** track tags (Vocal, Backing Vocal, Instrumental, Pads, Drums, Bass, Guitar, Keys, Scratch)
+- **20+** scales for theory-aware chord work
+- **4** factory borrowed-chord presets plus custom collections
+
+### Core Features
+
+**Songs as Structure**
+- Every song is a sequence of sections — first-class objects, not buried in a timeline ruler. Reorder, rename, trim, recolor.
+- Each section carries its own measure count, pickup detection, and trim boundaries.
+
+**Layers, Tracks & Recording**
+- Each section can hold any number of layers. A layer is an audio recording, a chord performance, or a step pattern.
+- Audio captures to WAV or M4A AAC at 44.1kHz with input gain control, a live waveform, peak/average metering, and a count-in.
+- Each recording is tagged with a track type so you can mute the scratch vocal while keeping the bass.
+- Gapless arrangement engine (AVAudioEngine) plays the full song back through a per-layer mixer: volume, pan, mute, solo per layer; section-level mix controls; live timer sync.
+
+**Lyrics & Theory**
+- Lyric editor with section-specific text and Nashville-style indent formatting for chorus and bridge.
+- Lead sheet with melody-line charting and a chord grid above the words.
+- Chord events — record chord shapes against a backing track and capture them as performed.
+- Borrowed-chord library: four factory presets plus custom collections; modal strip shows scale context.
+- 20+ scales (major, minor, modes, pentatonic, blues, and more) with degree and interval calculations.
+- Step sequencer and pads with note mapping, arpeggiator config, filter types.
+- Thesaurus for in-context word suggestion during lyric writing.
+- BPM-sync'd durations, beat grid visualization, metronome with count-in.
+
+**Co-Writing with Fragments**
+- Every lyric line, audio clip, or melodic idea is an atomic, attributed unit with a status (draft, contributed, accepted, dismissed) and a provenance trail.
+- **Lead-as-gatekeeper model:** Writers submit drafts. The session lead reviews pending contributions and accepts them into the master or dismisses them back to the pool. Leadership can transfer between collaborators at any time, with a full audit trail.
+- Per-fragment revision history: who changed what, when, with notes.
+- Multiple proposed arrangements; one formal/approved arrangement per session.
+- Split percentages: contributor-level royalty attribution baked into the document.
+- Share-link invites: token-based URLs via meaningfulsound.net with a 14-day expiry and revoke control.
+- CloudKit sync: master song lives in the lead's shared zone; contributors sync their working copies through their own private zones.
+
+**The .songform Document**
+- Songs are `.songform` packages — flat-directory bundles containing a `song.json` definition plus an audio subfolder.
+- Portable: copy through Files.app, AirDrop to a bandmate, attach to email.
+- Server-free: a song belongs to you and lives wherever you put it. CloudKit sync is opt-in glue, not a requirement.
+- No proprietary cloud format, no platform lock-in. If SongForm disappeared tomorrow, every `.songform` file is still a readable JSON document next to a folder of WAVs.
+
+**Platform & Layout**
+- **iPhone:** Compact layout with lyrics and tools side by side. Portrait and landscape supported.
+- **iPad:** Three-panel layout — section list and lyric editor on the left, chord sequencer and thesaurus in the center, fragment bank and filters on the right.
+
+### Privacy & Data
+
+No accounts beyond your existing iCloud. No analytics. No advertising. No third-party SDKs. Sync uses your personal iCloud, encrypted end-to-end by Apple. Local songs never leave the device unless you choose to share them.
+
+### FAQ Summary
+
+- **What is SongForm?** A native iPhone and iPad workspace for songwriters with sections, layers, lyrics, audio recording, theory-aware chord tools, and fragment-based co-writing.
+- **How does co-writing work?** Every contribution is an atomic, attributed fragment. The session lead reviews and accepts/dismisses; leadership can transfer with full audit trail.
+- **Why lead-as-gatekeeper instead of live simultaneous editing?** Songwriting isn't a Google Doc. Fork-and-merge with explicit acceptance preserves intent and credit better than chaotic real-time editing.
+- **What is a .songform file?** A flat-directory bundle with the song's JSON definition and an audio subfolder. Portable through Files.app and AirDrop.
+- **What can I record?** Per-section audio in WAV or M4A AAC at 44.1kHz with input gain, live waveform, peak/average metering, and count-in.
+- **Is it out yet?** Core songwriting workflow is wired and working. CloudKit-backed real-time collaboration is in development for the public launch.
+- **Does it collect data?** No accounts beyond iCloud, no analytics, no advertising, no third-party SDKs.
 
 ---
 

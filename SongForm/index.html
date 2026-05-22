@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SongForm &mdash; A Songwriter's Workspace for Co-Writing, Sections, Lyrics &amp; Demos | Meaningful Sound</title>
+    <meta name="description" content="SongForm is a native iPhone and iPad workspace for songwriters. Section-based arrangement, lyric editor, chord charts, multi-layer audio recording, fragment-based co-writing with a lead-as-gatekeeper model, and CloudKit sync. Coming soon.">
+    <meta name="keywords" content="SongForm, songwriting app, songwriter app, co-writing app, song collaboration, lyric editor, section editor, song arrangement app, fragment songwriting, songwriter workspace, music collaboration iOS, iPad songwriting, CloudKit songwriting, song demo app, Meaningful Sound">
+    <meta name="author" content="Meaningful Sound">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <meta name="theme-color" content="#000000">
+    <link rel="canonical" href="https://meaningfulsound.net/SongForm/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="product">
+    <meta property="og:site_name" content="Meaningful Sound">
+    <meta property="og:title" content="SongForm &mdash; A Songwriter's Workspace for Co-Writing, Sections, Lyrics &amp; Demos">
+    <meta property="og:description" content="Native iPhone and iPad workspace for songwriters. Sections, lyrics, audio layers, and fragment-based co-writing. Coming soon.">
+    <meta property="og:url" content="https://meaningfulsound.net/SongForm/">
+    <meta property="og:image" content="https://meaningfulsound.net/SongForm/images/og-songform.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SongForm &mdash; A Songwriter's Workspace">
+    <meta name="twitter:description" content="Sections, lyrics, audio layers, and fragment-based co-writing. Native iOS. Coming soon.">
+    <meta name="twitter:image" content="https://meaningfulsound.net/SongForm/images/og-songform.png">
+
+    <!-- Structured Data: SoftwareApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "SongForm",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "Songwriting & Music Collaboration",
+      "operatingSystem": "iOS 17, iPadOS 17",
+      "description": "A native iPhone and iPad workspace for songwriters. Build songs as a sequence of sections (verse, pre-chorus, chorus, bridge, intro, interlude, outro), layer audio recordings, chord performances, and step patterns per section, and co-write with collaborators using a fragment-based contribution model with a lead-as-gatekeeper approval flow.",
+      "url": "https://meaningfulsound.net/SongForm/",
+      "image": "https://meaningfulsound.net/SongForm/images/og-songform.png",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Meaningful Sound",
+        "url": "https://meaningfulsound.net/"
+      },
+      "featureList": [
+        "Section-based song structure (verse, pre-chorus, chorus, bridge, intro, interlude, outro)",
+        "Per-section audio recording with input gain, live waveform, and metering",
+        "Three layer types: audio recordings, chord performances, and step patterns",
+        "Nine track tags: vocal, backing vocal, instrumental, pads, drums, bass, guitar, keys, scratch",
+        "Lyric editor with Nashville-style chorus/bridge formatting",
+        "Lead sheet and chord chart support with borrowed-chord library",
+        "20+ scales with modal strip for theory-aware composition",
+        "Gapless arrangement playback with per-layer mixer (volume, pan, mute, solo)",
+        "Fragment-based co-writing: atomic lyric, audio, and melodic ideas with attribution",
+        "Lead-as-gatekeeper approval model with revision history",
+        "Share-link invites for collaborators with 14-day expiry",
+        "CloudKit sync (in development)",
+        ".songform package format — portable, server-free",
+        "Songwriter agreement and split-percentage tracking",
+        "No accounts beyond your iCloud, no analytics, no tracking"
+      ]
+    }
+    </script>
+
+    <!-- Structured Data: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Meaningful Sound", "item": "https://meaningfulsound.net/" },
+        { "@type": "ListItem", "position": 2, "name": "SongForm", "item": "https://meaningfulsound.net/SongForm/" }
+      ]
+    }
+    </script>
+
+    <!-- Structured Data: FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is SongForm?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SongForm is a native iPhone and iPad workspace for songwriters. It treats a song as a sequence of sections (verse, pre-chorus, chorus, bridge, intro, interlude, outro) and lets you layer audio recordings, chord performances, and step patterns per section. Lyric editing, lead sheets, theory-aware chord tools, and fragment-based co-writing are all built in."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does co-writing work in SongForm?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SongForm uses a fragment model. Every contribution — a lyric line, an audio clip, a melodic idea — is an atomic, attributed fragment. The session lead reviews pending fragments and accepts them into the master, dismisses them back to the pool, or transfers leadership to another writer. Every change has revision history with author and timestamp."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why lead-as-gatekeeper instead of live simultaneous editing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Songwriting isn't a Google Doc. Decisions about what stays and what doesn't belong to the song's lead writer (or whoever the team agrees should hold that role at the moment). Fork-and-merge with explicit acceptance preserves intent and credit. Leadership can transfer at any time, with an audit trail of who held it when."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a .songform file?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A .songform document is a flat-directory bundle containing the song's JSON definition and an audio subfolder for recordings. It is portable: copy it through Files.app, send it to a collaborator, or back it up. CloudKit sync layers on top for live collaboration, but the document itself is server-free and works offline."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What types of audio can I record?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SongForm records WAV or M4A AAC at 44.1kHz per section, with input gain control, live waveform display, peak and average metering, and count-in. Recordings tag as one of nine track types: vocal, backing vocal, instrumental, pads, drums, bass, guitar, keys, or scratch. A gapless arrangement engine plays the song back through a per-layer mixer with volume, pan, mute, and solo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is SongForm available now?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SongForm is in active development. The core songwriting workflow — sections, layers, lyrics, audio recording, fragment authoring, and local document persistence — is wired and working. CloudKit-backed real-time collaboration is in progress for the public launch."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does SongForm collect data?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. There are no accounts beyond your existing iCloud account, no analytics, no advertising, and no third-party SDKs. Sync uses your personal iCloud, encrypted end-to-end by Apple. Songs stored locally never leave the device unless you choose to share them."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --fg: #1a1a1a;
+            --fg-soft: #444;
+            --muted: #888;
+            --line: #ececec;
+            --line-soft: #f3f3f3;
+            --bg: #ffffff;
+            --bg-soft: #fafafa;
+            --bg-card: #f7f7f7;
+            --accent: #000000;
+        }
+        * { box-sizing: border-box; }
+        html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+        .wrap { max-width: 880px; margin: 0 auto; padding: 56px 24px 80px; }
+
+        .brand-header { font-size: 0.85em; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: var(--muted); margin-bottom: 12px; }
+        h1 { font-size: 3em; margin: 0 0 12px 0; letter-spacing: -1.5px; line-height: 1.05; }
+        .tagline { font-size: 1.35em; color: var(--fg-soft); margin: 0 0 28px 0; font-weight: 300; }
+        .lede { font-size: 1.08em; color: var(--fg-soft); margin: 0 0 28px 0; }
+
+        h2 {
+            font-weight: 700; text-transform: uppercase; font-size: 0.82em; letter-spacing: 1.5px;
+            color: var(--accent); margin: 64px 0 18px; padding-bottom: 8px; border-bottom: 1px solid var(--line);
+        }
+
+        p { margin: 0 0 16px; }
+
+        .btn {
+            display: inline-block; background: var(--accent); color: #fff; padding: 14px 32px;
+            text-decoration: none; border-radius: 8px; font-weight: 600; margin-top: 8px;
+            transition: background .15s ease;
+        }
+        .btn:hover { background: #333; }
+        .btn.secondary {
+            background: transparent; color: var(--accent); border: 1px solid var(--accent);
+            margin-left: 8px;
+        }
+        .btn.secondary:hover { background: var(--accent); color: #fff; }
+        .btn.muted {
+            background: #e0e0e0; color: #666; cursor: default; pointer-events: none;
+        }
+
+        .feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; }
+        .feature { padding: 22px; background: var(--bg-card); border-radius: 10px; border: 1px solid var(--line); }
+        .feature strong { display: block; margin-bottom: 6px; font-size: 1.02em; }
+        .feature p { margin: 0; color: var(--fg-soft); font-size: 0.96em; }
+
+        .feature-list { margin: 16px 0; padding: 0; list-style: none; }
+        .feature-list li { padding: 14px 0; border-bottom: 1px solid var(--line-soft); color: var(--fg-soft); }
+        .feature-list li:last-child { border-bottom: none; }
+        .feature-list li strong { color: var(--fg); display: inline; margin-right: 6px; }
+
+        .pill-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 20px 0; }
+        .pill-row .item { padding: 14px 16px; background: var(--bg-soft); border: 1px solid var(--line); border-radius: 8px; font-size: 0.95em; }
+        .pill-row .item strong { display: block; font-size: 0.78em; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin-bottom: 4px; font-weight: 700; }
+
+        .stat-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 24px 0; padding: 24px; background: var(--bg-soft); border-radius: 10px; border: 1px solid var(--line); }
+        .stat { text-align: center; }
+        .stat .num { display: block; font-size: 1.8em; font-weight: 700; letter-spacing: -1px; color: var(--accent); }
+        .stat .lbl { display: block; font-size: 0.78em; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin-top: 4px; }
+
+        figure { margin: 24px 0; }
+        figure img { width: 100%; display: block; border-radius: 10px; border: 1px solid var(--line); }
+        figure figcaption { margin-top: 8px; font-size: 0.88em; color: var(--muted); text-align: center; }
+        .screenshot {
+            display: flex; align-items: center; justify-content: center; text-align: center;
+            background: linear-gradient(135deg, #f5f5f7 0%, #ebebef 100%);
+            border: 1px dashed #cfcfd6; border-radius: 10px;
+            min-height: 280px; padding: 40px 24px; color: #888;
+            font-size: 0.9em; font-weight: 500;
+        }
+        .screenshot.tall { min-height: 380px; }
+        .screenshot .label { display: block; font-size: 0.72em; text-transform: uppercase; letter-spacing: 1.5px; color: #aaa; margin-bottom: 8px; font-weight: 700; }
+
+        .callout { margin: 28px 0; padding: 24px 28px; background: var(--bg-soft); border-left: 3px solid var(--accent); border-radius: 4px; }
+        .callout p { margin: 0; color: var(--fg); font-size: 1.02em; }
+
+        .status-banner {
+            display: inline-block; padding: 6px 14px; border-radius: 999px;
+            background: #fff5d6; border: 1px solid #f0d77a;
+            font-size: 0.82em; font-weight: 600; color: #6b5400;
+            letter-spacing: 0.3px; margin-bottom: 18px;
+        }
+
+        details { padding: 14px 0; border-bottom: 1px solid var(--line-soft); }
+        details summary { cursor: pointer; font-weight: 600; color: var(--fg); font-size: 1.02em; padding: 4px 0; list-style: none; }
+        details summary::-webkit-details-marker { display: none; }
+        details summary::before { content: "+ "; color: var(--muted); font-weight: 400; }
+        details[open] summary::before { content: "− "; }
+        details p { margin: 10px 0 4px; color: var(--fg-soft); }
+        details:last-of-type { border-bottom: none; }
+
+        footer { margin-top: 80px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 0.9em; color: var(--muted); display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+        footer a { color: var(--muted); text-decoration: none; border-bottom: 1px solid transparent; }
+        footer a:hover { border-bottom: 1px solid var(--muted); color: var(--fg); }
+        footer .spacer { flex: 1; }
+
+        @media (max-width: 640px) {
+            .wrap { padding: 40px 18px 60px; }
+            h1 { font-size: 2.2em; }
+            .tagline { font-size: 1.15em; }
+            .feature-grid { grid-template-columns: 1fr; }
+            .pill-row { grid-template-columns: 1fr 1fr; }
+            .stat-row { grid-template-columns: 1fr 1fr; padding: 18px; }
+            .btn.secondary { margin-left: 0; margin-top: 8px; }
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="brand-header">Meaningful Sound</div>
+    <h1>SongForm</h1>
+    <p class="tagline">A songwriter's workspace for sections, lyrics, layers, and co-writes.</p>
+
+    <p class="lede">SongForm is a native iPhone and iPad workspace built around how songs are actually written &mdash; not how DAWs want you to write them. Build a song as a sequence of sections (verse, pre-chorus, chorus, bridge), layer recordings and chord performances per section, edit lyrics with Nashville-style formatting, and co-write with collaborators using a fragment-based contribution model that preserves who wrote what.</p>
+
+    <span class="status-banner">Coming Soon &middot; In Active Development</span>
+
+    <a href="https://instagram.com/pedaleditor" class="btn" target="_blank" rel="noopener">Follow for Launch Updates</a>
+
+    <figure>
+        <div class="screenshot tall">
+            <div>
+                <span class="label">Hero Screenshot</span>
+                iPad three-panel layout: section list + lyric editor + chord sequencer/filter panel<br>
+                <code style="background:#fff;padding:2px 6px;border-radius:4px;font-size:0.85em;">images/hero-ipad.png</code>
+            </div>
+        </div>
+    </figure>
+
+    <div class="stat-row">
+        <div class="stat"><span class="num">7</span><span class="lbl">Section Types</span></div>
+        <div class="stat"><span class="num">3</span><span class="lbl">Layer Types</span></div>
+        <div class="stat"><span class="num">9</span><span class="lbl">Track Tags</span></div>
+        <div class="stat"><span class="num">20+</span><span class="lbl">Scales</span></div>
+    </div>
+
+    <h2>Songs as Structure</h2>
+
+    <p>Every song is a sequence of sections. SongForm treats them as first-class objects &mdash; reorder, rename, trim, and recolor &mdash; instead of burying them in a timeline ruler. Each section carries its own measure count, pickup detection, and trim boundaries.</p>
+
+    <div class="pill-row">
+        <div class="item"><strong>Intro</strong>Opening section &mdash; lead-in to the song</div>
+        <div class="item"><strong>Verse</strong>Story / narrative section</div>
+        <div class="item"><strong>Pre-Chorus</strong>Tension-building bridge to the chorus</div>
+        <div class="item"><strong>Chorus</strong>Main hook / refrain</div>
+        <div class="item"><strong>Bridge</strong>Contrasting middle section</div>
+        <div class="item"><strong>Interlude</strong>Instrumental breather</div>
+        <div class="item"><strong>Outro</strong>Closing section</div>
+    </div>
+
+    <h2>Layers, Tracks &amp; Recording</h2>
+
+    <p>Each section can hold any number of layers. A layer is either an audio recording, a chord performance, or a step pattern. Audio captures to WAV or M4A AAC at 44.1kHz with input gain control, a live waveform, peak/average metering, and a count-in. Each recording is tagged with a track type so you can mute the scratch vocal while keeping the bass.</p>
+
+    <div class="pill-row">
+        <div class="item"><strong>Layer Type</strong>Audio recordings</div>
+        <div class="item"><strong>Layer Type</strong>Chord performances</div>
+        <div class="item"><strong>Layer Type</strong>Step patterns</div>
+        <div class="item"><strong>Track Tag</strong>Vocal</div>
+        <div class="item"><strong>Track Tag</strong>Backing Vocal</div>
+        <div class="item"><strong>Track Tag</strong>Instrumental</div>
+        <div class="item"><strong>Track Tag</strong>Pads</div>
+        <div class="item"><strong>Track Tag</strong>Drums</div>
+        <div class="item"><strong>Track Tag</strong>Bass</div>
+        <div class="item"><strong>Track Tag</strong>Guitar</div>
+        <div class="item"><strong>Track Tag</strong>Keys</div>
+        <div class="item"><strong>Track Tag</strong>Scratch</div>
+    </div>
+
+    <p>A gapless arrangement engine (built on AVAudioEngine) plays the full song back through a per-layer mixer: volume, pan, mute, and solo per layer; section-level mix controls; live timer sync.</p>
+
+    <h2>Lyrics &amp; Theory</h2>
+
+    <ul class="feature-list">
+        <li><strong>Lyric editor.</strong> Section-specific text with Nashville-style indent formatting for chorus and bridge.</li>
+        <li><strong>Lead sheet.</strong> Melody-line charting with a chord grid above the words.</li>
+        <li><strong>Chord events.</strong> Record chord shapes against a backing track and capture them as performed.</li>
+        <li><strong>Borrowed-chord library.</strong> Four factory presets plus custom collections; modal strip shows scale context.</li>
+        <li><strong>20+ scales.</strong> Major, minor, modes, pentatonic, blues, and more &mdash; with degree and interval calculations.</li>
+        <li><strong>Sequencer &amp; pads.</strong> Step patterns with note mapping, arpeggiator config, filter types.</li>
+        <li><strong>Thesaurus.</strong> In-context word suggestion for lyric writing.</li>
+        <li><strong>Tempo &amp; key.</strong> BPM-sync'd durations, beat grid visualization, and a metronome with count-in.</li>
+    </ul>
+
+    <figure>
+        <div class="screenshot">
+            <div>
+                <span class="label">Screenshot</span>
+                Lyric editor with sections sidebar and chord grid<br>
+                <code style="background:#fff;padding:2px 6px;border-radius:4px;font-size:0.85em;">images/lyrics.png</code>
+            </div>
+        </div>
+    </figure>
+
+    <h2>Co-Writing with Fragments</h2>
+
+    <p>SongForm doesn't try to be Google Docs for songs. Songs aren't documents &mdash; they're decisions. SongForm uses a <strong>fragment model</strong>: every lyric line, audio clip, or melodic idea is an atomic, attributed unit with a status (draft, contributed, accepted, dismissed) and a provenance trail.</p>
+
+    <div class="callout">
+        <p><strong>Lead-as-gatekeeper.</strong> Writers submit drafts. The session lead reviews pending contributions and accepts them into the master or dismisses them back to the pool. Leadership can transfer between collaborators at any time, with a full audit trail of who held it when.</p>
+    </div>
+
+    <ul class="feature-list">
+        <li><strong>Atomic fragments.</strong> Lyric, audio, or melodic &mdash; every idea is tracked, timestamped, and attributed.</li>
+        <li><strong>Revision history.</strong> Per-fragment edit log: who changed what, when, with notes.</li>
+        <li><strong>Arrangement proposals.</strong> Multiple proposed arrangements; one formal/approved arrangement per session.</li>
+        <li><strong>Split percentages.</strong> Contributor-level royalty attribution baked into the document.</li>
+        <li><strong>Share-link invites.</strong> Token-based URLs via meaningfulsound.net with a 14-day expiry and revoke control.</li>
+        <li><strong>CloudKit sync.</strong> Master song lives in the lead's shared zone; contributors sync their working copies through their own private zones. (Sync engine is in active development.)</li>
+    </ul>
+
+    <h2>The .songform Document</h2>
+
+    <p>Songs in SongForm are <code>.songform</code> packages &mdash; flat-directory bundles containing a <code>song.json</code> definition plus an audio subfolder. Portable: copy through Files.app, AirDrop to a bandmate, attach to email, back up however you back things up. Server-free: a song belongs to you and lives wherever you put it. CloudKit syncing is opt-in glue, not a requirement.</p>
+
+    <div class="callout">
+        <p><strong>Your songs belong to you.</strong> No proprietary cloud format, no platform lock-in. If SongForm disappeared tomorrow, every <code>.songform</code> file on your device is still a readable JSON document next to a folder of WAVs.</p>
+    </div>
+
+    <h2>Platform &amp; Layout</h2>
+
+    <div class="feature-grid">
+        <div class="feature">
+            <strong>iPhone</strong>
+            <p>Compact layout with lyrics and tools side by side. Portrait and landscape supported. Full songwriting workflow on the device in your pocket.</p>
+        </div>
+        <div class="feature">
+            <strong>iPad</strong>
+            <p>Three-panel layout: section list and lyric editor on the left, chord sequencer and thesaurus in the center, fragment bank and filters on the right. The big-screen home for serious co-writing.</p>
+        </div>
+    </div>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq">
+        <details>
+            <summary>What is SongForm?</summary>
+            <p>A native iPhone and iPad workspace for songwriters. Sections, layers, lyrics, audio recording, theory-aware chord tools, and fragment-based co-writing.</p>
+        </details>
+        <details>
+            <summary>How does co-writing work?</summary>
+            <p>Every contribution &mdash; a lyric line, an audio clip, a melodic idea &mdash; is an atomic, attributed fragment. The session lead reviews pending fragments and accepts them into the master or dismisses them back to the pool. Leadership can transfer between collaborators at any time, with a full audit trail.</p>
+        </details>
+        <details>
+            <summary>Why lead-as-gatekeeper instead of live simultaneous editing?</summary>
+            <p>Songwriting isn't a Google Doc. Decisions about what stays and what doesn't belong to whoever the team agrees should hold the lead at the moment. Fork-and-merge with explicit acceptance preserves intent and credit better than chaotic real-time editing.</p>
+        </details>
+        <details>
+            <summary>What is a .songform file?</summary>
+            <p>A flat-directory bundle containing the song's JSON definition and an audio subfolder for recordings. Portable through Files.app and AirDrop. Server-free by design; CloudKit sync layers on top for live collaboration.</p>
+        </details>
+        <details>
+            <summary>What can I record?</summary>
+            <p>Per-section audio in WAV or M4A AAC at 44.1kHz, with input gain, live waveform, peak/average metering, and count-in. Recordings tag as vocal, backing vocal, instrumental, pads, drums, bass, guitar, keys, or scratch.</p>
+        </details>
+        <details>
+            <summary>Is SongForm out yet?</summary>
+            <p>Not yet. The core songwriting workflow (sections, layers, lyrics, audio recording, fragment authoring, local document persistence) is wired and working. CloudKit-backed real-time collaboration is in development for the public launch.</p>
+        </details>
+        <details>
+            <summary>Does SongForm collect data?</summary>
+            <p>No. No accounts beyond your existing iCloud, no analytics, no advertising, no third-party SDKs. Sync uses your personal iCloud, encrypted end-to-end by Apple. Local songs never leave the device unless you choose to share them.</p>
+        </details>
+    </div>
+
+    <h2>Privacy by Default</h2>
+
+    <p>No accounts beyond your iCloud. No analytics. No advertising. No third-party SDKs. Your songs and recordings live in your iCloud account, encrypted by Apple. <a href="/PedalEditor/privacy/">Read the full privacy policy &rarr;</a></p>
+
+    <h2>Get Notified</h2>
+
+    <p>SongForm is in active development. Follow on Instagram for launch updates and behind-the-scenes from the build.</p>
+
+    <a href="https://instagram.com/pedaleditor" class="btn" target="_blank" rel="noopener">Follow on Instagram</a>
+
+    <footer>
+        <a href="/">Meaningful Sound</a>
+        <a href="/PedalEditor/privacy/">Privacy Policy</a>
+        <a href="https://instagram.com/pedaleditor" target="_blank" rel="noopener">Instagram</a>
+        <span class="spacer"></span>
+        <span>&copy; 2026 Meaningful Sound</span>
+    </footer>
+
+</div>
+</body>
+</html>
