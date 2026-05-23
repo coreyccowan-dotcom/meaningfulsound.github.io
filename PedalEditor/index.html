@@ -55,11 +55,12 @@
       "installUrl": "https://apps.apple.com/us/app/pedaleditor/id6761016084",
       "image": "https://meaningfulsound.net/PedalEditor/images/og-pedaleditor.png",
       "screenshot": [
-        "https://meaningfulsound.net/PedalEditor/images/hero-ipad.png",
-        "https://meaningfulsound.net/PedalEditor/images/editor.png",
-        "https://meaningfulsound.net/PedalEditor/images/setlist.png",
-        "https://meaningfulsound.net/PedalEditor/images/performance-mode.png",
-        "https://meaningfulsound.net/PedalEditor/images/mac-iphone-remote.png"
+        "https://meaningfulsound.net/PedalEditor/images/iphone-03.webp",
+        "https://meaningfulsound.net/PedalEditor/images/iphone-04.webp",
+        "https://meaningfulsound.net/PedalEditor/images/iphone-02.webp",
+        "https://meaningfulsound.net/PedalEditor/images/iphone-06.webp",
+        "https://meaningfulsound.net/PedalEditor/images/iphone-05.webp",
+        "https://meaningfulsound.net/PedalEditor/images/iphone-01.webp"
       ],
       "offers": {
         "@type": "Offer",
@@ -264,18 +265,24 @@
         .stat .num { display: block; font-size: 1.8em; font-weight: 700; letter-spacing: -1px; color: var(--accent); }
         .stat .lbl { display: block; font-size: 0.78em; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin-top: 4px; }
 
-        figure { margin: 24px 0; }
-        figure img { width: 100%; display: block; border-radius: 10px; border: 1px solid var(--line); }
-        figure figcaption { margin-top: 8px; font-size: 0.88em; color: var(--muted); text-align: center; }
-        .screenshot {
-            display: flex; align-items: center; justify-content: center; text-align: center;
-            background: linear-gradient(135deg, #f5f5f7 0%, #ebebef 100%);
-            border: 1px dashed #cfcfd6; border-radius: 10px;
-            min-height: 280px; padding: 40px 24px; color: #888;
-            font-size: 0.9em; font-weight: 500;
+        figure { margin: 32px 0; }
+        figure figcaption { margin-top: 12px; font-size: 0.88em; color: var(--muted); text-align: center; }
+        .phone {
+            display: block; margin: 0 auto; width: 100%; max-width: 300px;
+            border-radius: 36px; border: 1px solid var(--line);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.08);
         }
-        .screenshot.tall { min-height: 380px; }
-        .screenshot .label { display: block; font-size: 0.72em; text-transform: uppercase; letter-spacing: 1.5px; color: #aaa; margin-bottom: 8px; font-weight: 700; }
+        .phone-row {
+            display: grid; grid-template-columns: repeat(3, 1fr);
+            gap: 20px; margin: 36px 0; align-items: start;
+        }
+        .phone-row .phone { max-width: 100%; }
+        .phone-pair {
+            display: grid; grid-template-columns: repeat(2, 1fr);
+            gap: 24px; margin: 32px 0; align-items: start;
+            max-width: 560px; margin-left: auto; margin-right: auto;
+        }
+        .phone-pair .phone { max-width: 100%; }
 
         .callout {
             margin: 28px 0; padding: 24px 28px; background: var(--bg-soft);
@@ -308,6 +315,8 @@
             .brand-grid { grid-template-columns: 1fr 1fr; }
             .stat-row { grid-template-columns: 1fr 1fr; padding: 18px; }
             .btn.secondary { margin-left: 0; margin-top: 8px; }
+            .phone-row { grid-template-columns: 1fr; gap: 28px; max-width: 280px; margin-left: auto; margin-right: auto; }
+            .phone-pair { grid-template-columns: 1fr; gap: 28px; max-width: 280px; }
         }
     </style>
 </head>
@@ -324,13 +333,10 @@
     <a href="#features" class="btn secondary">See What It Does</a>
 
     <figure>
-        <div class="screenshot tall">
-            <div>
-                <span class="label">Hero Screenshot</span>
-                iPad in landscape showing a full preset editor open<br>
-                (suggested: BigSky or LVX with knobs/algorithm selector visible)<br>
-                <code style="background:#fff;padding:2px 6px;border-radius:4px;font-size:0.85em;">images/hero-ipad.png</code>
-            </div>
+        <div class="phone-row">
+            <img class="phone" src="images/iphone-03.webp" alt="PedalEditor BigSky preset editor on iPhone showing effect category controls and the preset library sheet" width="660" height="1434" loading="eager">
+            <img class="phone" src="images/iphone-04.webp" alt="PedalEditor Setlists list on iPhone" width="660" height="1434" loading="lazy">
+            <img class="phone" src="images/iphone-02.webp" alt="A PedalEditor setlist on iPhone with the Perform button visible" width="660" height="1434" loading="lazy">
         </div>
     </figure>
 
@@ -384,13 +390,7 @@
     </ul>
 
     <figure>
-        <div class="screenshot">
-            <div>
-                <span class="label">Screenshot</span>
-                Preset editor view showing knobs, algorithm selector, and a complex pedal layout<br>
-                <code style="background:#fff;padding:2px 6px;border-radius:4px;font-size:0.85em;">images/editor.png</code>
-            </div>
-        </div>
+        <img class="phone" src="images/iphone-06.webp" alt="PedalEditor BigSky editor on iPhone with the preset action menu open" width="660" height="1434" loading="lazy">
         <figcaption>The editor reshapes to match each algorithm. No two pedals feel the same &mdash; because they aren't.</figcaption>
     </figure>
 
@@ -407,28 +407,24 @@
     </ul>
 
     <figure>
-        <div class="screenshot">
-            <div>
-                <span class="label">Screenshot</span>
-                Setlist with songs listed and the per-song multi-pedal scene visible<br>
-                <code style="background:#fff;padding:2px 6px;border-radius:4px;font-size:0.85em;">images/setlist.png</code>
-            </div>
+        <div class="phone-pair">
+            <img class="phone" src="images/iphone-04.webp" alt="PedalEditor Setlists list on iPhone showing multiple saved setlists" width="660" height="1434" loading="lazy">
+            <img class="phone" src="images/iphone-02.webp" alt="A PedalEditor setlist on iPhone with songs and the Perform button" width="660" height="1434" loading="lazy">
         </div>
-    </figure>
-
-    <figure>
-        <div class="screenshot">
-            <div>
-                <span class="label">Screenshot</span>
-                Performance Mode &mdash; full-screen, stage view<br>
-                <code style="background:#fff;padding:2px 6px;border-radius:4px;font-size:0.85em;">images/performance-mode.png</code>
-            </div>
-        </div>
+        <figcaption>Build a setlist, tap Perform &mdash; the whole board snaps to each song's scene.</figcaption>
     </figure>
 
     <h2>The Rig System</h2>
 
     <p>Define your physical board once &mdash; which pedals, which MIDI channels, how they're wired &mdash; and PedalEditor remembers. Run multiple boards? Define multiple rigs and switch between them. The app gates editing on rig confirmation, so you never accidentally fire MIDI at the wrong setup. Projects sit beneath rigs to separate sounds by band, venue, or purpose without duplicating the hardware definition.</p>
+
+    <figure>
+        <div class="phone-pair">
+            <img class="phone" src="images/iphone-05.webp" alt="PedalEditor Select Your Rig screen on iPhone" width="660" height="1434" loading="lazy">
+            <img class="phone" src="images/iphone-01.webp" alt="PedalEditor Songs library on iPhone" width="660" height="1434" loading="lazy">
+        </div>
+        <figcaption>Pick a rig, then organize sounds as songs &mdash; the library system everything else hangs from.</figcaption>
+    </figure>
 
     <div class="callout">
         <p><strong>The app is the source of truth.</strong> Your preset library lives in PedalEditor &mdash; on your devices, synced through iCloud. The pedal is a render target. Edit offline, deploy on stage, never lose a sound to a firmware update or a hardware swap.</p>
@@ -444,16 +440,6 @@
         <li><strong>iPhone &harr; Mac bridge.</strong> Run the editor on your Mac connected to your rig; control it wirelessly from your iPhone in your pocket on stage.</li>
         <li><strong>MIDI Monitor.</strong> Real-time IN/OUT log with decoded message descriptions and hex for debugging.</li>
     </ul>
-
-    <figure>
-        <div class="screenshot">
-            <div>
-                <span class="label">Screenshot</span>
-                Mac running PedalEditor with iPhone showing the same session as a wireless remote<br>
-                <code style="background:#fff;padding:2px 6px;border-radius:4px;font-size:0.85em;">images/mac-iphone-remote.png</code>
-            </div>
-        </div>
-    </figure>
 
     <h2>Supported Pedals &amp; Synths</h2>
 
