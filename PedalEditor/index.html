@@ -113,7 +113,7 @@
           "name": "What is PedalEditor?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "PedalEditor is a native iOS, iPadOS, and macOS app that edits and organizes presets for MIDI-enabled guitar effects pedals. It supports 47+ pedals across 13 brands including Strymon, Chase Bliss, Walrus Audio, Meris, Eventide, Boss, and UAFX, and adds setlist-based scene recall, iCloud library sync, and wireless MIDI from iPhone."
+            "text": "PedalEditor is a native iOS, iPadOS, and macOS app that edits and organizes presets for MIDI-enabled guitar effects pedals. It ships with 47 prebuilt profiles across 14 brands including Strymon, Chase Bliss, Walrus Audio, Meris, Eventide, Boss, and UAFX, plus a built-in MIDI Library of 500+ more devices that the Profile Builder pre-fills in one tap. It adds setlist-based scene recall, iCloud library sync, and wireless MIDI from iPhone."
           }
         },
         {
@@ -121,7 +121,7 @@
           "name": "Which pedals does PedalEditor support?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "47 pedals at launch across 13 brands: Strymon (BigSky, Cloudburst, Compadre, Deco v2, DIG v2, Flint v2, Iridium, NightSky, Riverside, Sunset, Timeline, Volante), Chase Bliss (Blooper, Brothers, Generation Loss MkII, Habit, Lossy, Mood MkII, Warped Vinyl MkII), Walrus Audio (ACS1 MkI/MkII, Mako D1/M1/R1), Meris (Enzo, Hedra, LVX, Mercury7), Boss (DD-200, EQ-200, IR-200, RE-202), UAFX (Dream '65, Lion '68, Ruby '63), Source Audio (Atlas, C4 Synth, Ultrawave), Red Panda (Particle V2, Tensor), Eventide (Space, TimeFactor), Hologram (Microcosm), Old Blood Noise (Dark Star), and vintage synths (DX7, JV-1080, QS6). Users can build profiles for unsupported pedals with the Profile Builder Wizard."
+            "text": "Coverage comes in two tiers. Tier 1 is 47 prebuilt profiles across 14 brands &mdash; Strymon (BigSky, Cloudburst, Compadre, Deco v2, DIG v2, Flint v2, Iridium, NightSky, Riverside, Sunset, Timeline, Volante), Chase Bliss (Blooper, Brothers, Generation Loss MkII, Habit, Lossy, Mood MkII, Warped Vinyl MkII), Walrus Audio (ACS1 MkI/MkII, Mako D1/M1/R1), Meris (Enzo, Hedra, LVX, Mercury7), Boss (DD-200, EQ-200, IR-200, RE-202), UAFX (Dream '65, Lion '68, Ruby '63), Source Audio (Atlas, C4 Synth, Ultrawave), Red Panda (Particle V2, Tensor), Eventide (Space, TimeFactor), Hologram (Microcosm), Old Blood Noise (Dark Star), and vintage synths (DX7, JV-1080, QS6). Tier 2 is a built-in MIDI Library of 500+ more devices across 100+ brands &mdash; the Profile Builder pre-fills the CC list, parameter names, and ranges in one tap, leaving you to finish hardware slots and save method. The full supported-pedals list appears on the PedalEditor page."
           }
         },
         {
@@ -177,7 +177,7 @@
           "name": "What if my pedal isn't on the supported list?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Use the Profile Builder Wizard. Paste the MIDI implementation chart from the pedal's manual and the app walks you through organizing CCs into algorithms and parameters. You can also import community-built profile files without waiting for an app update."
+            "text": "First check the built-in MIDI Library &mdash; 500+ devices across 100+ brands have their CC charts pre-imported, so the Profile Builder fills in parameter names and ranges in one tap. If it isn't covered, use the Profile Builder Wizard: paste the MIDI implementation chart from the pedal's manual and the app walks you through organizing CCs into algorithms and parameters. You can also import community-built profile files without waiting for an app update."
           }
         }
       ]
@@ -256,6 +256,15 @@
         .brand-cell strong { display: block; font-size: 0.78em; text-transform: uppercase;
             letter-spacing: 1px; color: var(--muted); margin-bottom: 4px; font-weight: 700; }
 
+        .library-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 16px 0; }
+        .library-grid .brand-cell { padding: 10px 12px; font-size: 0.85em; line-height: 1.5; }
+        .library-grid .brand-cell strong { font-size: 0.72em; margin-bottom: 3px; }
+        h3.tier-title {
+            font-size: 0.92em; text-transform: uppercase; letter-spacing: 1.5px;
+            color: var(--fg); margin: 28px 0 4px; font-weight: 700;
+        }
+        .tier-title-note { font-size: 0.88em; color: var(--muted); margin: 0 0 12px; }
+
         .stat-row {
             display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;
             margin: 24px 0; padding: 24px; background: var(--bg-soft);
@@ -313,6 +322,7 @@
             .tagline { font-size: 1.15em; }
             .feature-grid { grid-template-columns: 1fr; }
             .brand-grid { grid-template-columns: 1fr 1fr; }
+            .library-grid { grid-template-columns: 1fr; }
             .stat-row { grid-template-columns: 1fr 1fr; padding: 18px; }
             .btn.secondary { margin-left: 0; margin-top: 8px; }
             .phone-row { grid-template-columns: 1fr; gap: 28px; max-width: 280px; margin-left: auto; margin-right: auto; }
@@ -443,7 +453,10 @@
 
     <h2>Supported Pedals &amp; Synths</h2>
 
-    <p>47 instruments supported at launch across 13 brands &mdash; effects pedals from Strymon, Chase Bliss, Walrus Audio, Meris, Eventide, Boss, UAFX, and more, plus classic hardware synths. Every parameter, every algorithm, every CC mapped from the manufacturer's official MIDI implementation.</p>
+    <p>PedalEditor ships with two layers of coverage: <strong>47 prebuilt profiles</strong> &mdash; full visual editors with algorithm switching, dual-channel support, and category routing &mdash; plus a built-in <strong>MIDI Library</strong> of 500+ more devices that the Profile Builder pre-fills in one tap. Between the two, almost any MIDI-enabled pedal or synth on the market is one step away from being playable in your rig.</p>
+
+    <h3 class="tier-title">Prebuilt Profiles</h3>
+    <p class="tier-title-note">47 fully-built editors across 14 brands. Every parameter, every algorithm, every CC mapped from the manufacturer's official MIDI implementation.</p>
 
     <div class="brand-grid">
         <div class="brand-cell"><strong>Strymon</strong>BigSky, Cloudburst, Compadre, Deco v2, DIG v2, Flint v2, Iridium, NightSky, Riverside, Sunset, Timeline, Volante</div>
@@ -460,7 +473,136 @@
         <div class="brand-cell"><strong>Vintage Synths</strong>Yamaha DX7, Roland JV-1080, Alesis QS6</div>
     </div>
 
-    <p>Pedal not on the list? Use the <strong>Profile Builder Wizard</strong> &mdash; paste the MIDI implementation chart from the manual and PedalEditor walks you through organizing CCs, algorithms, and parameters. Or import a community-built profile as a single file.</p>
+    <h3 class="tier-title">MIDI Library</h3>
+    <p class="tier-title-note">500+ more devices across 100+ brands &mdash; legendary synths, drum machines, multi-effects, modelers, and boutique pedals. Pick one in the Profile Builder and the CC list, parameter names, ranges, and categories pre-fill instantly. You finish hardware slots and save method, then ship.</p>
+
+    <div class="brand-grid library-grid">
+        <div class="brand-cell"><strong>3 Degrees Audio</strong>Hue Stereo Multi Effect Pedal</div>
+        <div class="brand-cell"><strong>Access</strong>Virus TI</div>
+        <div class="brand-cell"><strong>AdrenaLinn</strong>III</div>
+        <div class="brand-cell"><strong>Aerospace Audio</strong>Atmosphere v2, Atmosphere v3</div>
+        <div class="brand-cell"><strong>Alexander</strong>Colour Theory, Defender Neo, F.13 Neo, Fever Pitch, Marshmallow, Now We Are Ghosts, Oblivion Vintage Delay, Quadrant, Quadrant Audio Mirror, Radical Delay DX, Rewind, Sky 5000, Space Race, Super Neo-Matic, Super Radical Delay, Superball, Syntax Error, Wavelength</div>
+        <div class="brand-cell"><strong>Arturia</strong>MatrixBrute, MicroFreak, MiniFreak</div>
+        <div class="brand-cell"><strong>Ashdown</strong>Lb 30 2.N</div>
+        <div class="brand-cell"><strong>Atomic</strong>Amplifire, Amplifire 12, Amplifire 3, Amplifire 6</div>
+        <div class="brand-cell"><strong>Avid</strong>Eleven Rack</div>
+        <div class="brand-cell"><strong>Beetronics</strong>Seabee Harmochorus</div>
+        <div class="brand-cell"><strong>Behringer</strong>BM-15M MURF Box, Deepmind 12, Deepmind 12D, Deepmind 6, Pro 800, Vintager AC112, X-Air</div>
+        <div class="brand-cell"><strong>Blackstar Amplification</strong>Amped 1, Amped 3, Silverline Deluxe, Silverline Deluxe Head, Silverline Stereo Deluxe</div>
+        <div class="brand-cell"><strong>BluGuitar</strong>Amp1 (Mercury &amp; Iridium Edition)</div>
+        <div class="brand-cell"><strong>Bondi Effects</strong>Art Van Delay</div>
+        <div class="brand-cell"><strong>Boss</strong>DD-500, DM-101, GT1000 Core, Katana, Katana Artist, Katana Head, MD-500, OD-200, RC-10R, RE-202, RV-500, Slicer SL-2</div>
+        <div class="brand-cell"><strong>Chaos Audio</strong>Stratus</div>
+        <div class="brand-cell"><strong>Chase Bliss Audio</strong>Ayahuasca, Bliss Factory, Blooper, Brothers, Brothers AM, Clean, Condor, CXM 1978, Dark World, Generation Loss MKI, Generation Loss MKII, Gravitas, Habit, Lossy, Lost + Found, Mood, Mood MkII, Onward, Preamp MkII, Reverse Mode C, Spectre, Thermae, Tonal Recall, Warped Vinyl HiFi, Wombtone, Wombtone MKII</div>
+        <div class="brand-cell"><strong>Colortone Pedals</strong>VibroVerb, ZeroSum</div>
+        <div class="brand-cell"><strong>Cornerstone Music Gear</strong>Nucleo</div>
+        <div class="brand-cell"><strong>Darkglass Electronics</strong>Anagram, Microtubes Infinity</div>
+        <div class="brand-cell"><strong>Dave Smith Instruments</strong>Evolver</div>
+        <div class="brand-cell"><strong>Decibel Eleven</strong>Loop Expander</div>
+        <div class="brand-cell"><strong>DigiTech</strong>Bass Whammy, Whammy, Whammy DT</div>
+        <div class="brand-cell"><strong>Dimehead</strong>NAM</div>
+        <div class="brand-cell"><strong>Disaster Area</strong>DPC Micro, DPC-8EZ Gen2, Micro Clock Gen4, NNB Expanse Bridge</div>
+        <div class="brand-cell"><strong>Dr. Scientist</strong>Dusk, The Atmosphere</div>
+        <div class="brand-cell"><strong>Dreadbox</strong>Medusa, Typhon</div>
+        <div class="brand-cell"><strong>Electro-Harmonix</strong>1440 Stereo Looper, 45000, 8-Step Program, 95000, HOG2, ModRex, POG3</div>
+        <div class="brand-cell"><strong>Electronic Audio Experiments</strong>Sending v2, Sending v2 (Firmware 2.0)</div>
+        <div class="brand-cell"><strong>Elektron</strong>Analog Drive, Analog Four MKII, Analog Heat MKII, Analog Rytm MKII, Digitakt, Digitone, Digitone Keys, Model:Cycles, Model:Samples, Octatrack MKII</div>
+        <div class="brand-cell"><strong>EM Custom</strong>AMI Universal Dual TRS</div>
+        <div class="brand-cell"><strong>Empress</strong>Echo System, Phaser, Reverb, Tremolo2, Zoia</div>
+        <div class="brand-cell"><strong>ENGL</strong>Invader II, Savage 120 Mark II, Savage 60 Mark II, Steve Morse Signature (E656–E671)</div>
+        <div class="brand-cell"><strong>Eventide</strong>Blackhole, H9, Knifedrop, Rose, Tricerachorus, UltraTap</div>
+        <div class="brand-cell"><strong>EVH</strong>5150III 100S Head, 5150III 100W Head, 5150III 50W (6L6 / EL34 variants), 5150III 50S 6L6 Head, 5150IIIS 100W EL34 Head</div>
+        <div class="brand-cell"><strong>Fender</strong>Tone Master Pro</div>
+        <div class="brand-cell"><strong>Flower Pedals</strong>Dahlia Dual Analog Delay, Hosta Wah Filter, Sunflower</div>
+        <div class="brand-cell"><strong>Fractal Audio Systems</strong>AX8, Axe-Fx II, Axe-Fx II XL, Axe-Fx II XL+, FX8</div>
+        <div class="brand-cell"><strong>Fred's Lab</strong>Buzzy!</div>
+        <div class="brand-cell"><strong>Free The Tone</strong>AS-1R Ambi Space, FF-1Y, Flight Time FT-2Y, PA-1QA, PA-1QB, PA-1QG, TA-1H Tri Avatar</div>
+        <div class="brand-cell"><strong>G Lab</strong>BC1, MIDI 2 X LOOP-er, MIDI 4 X LOOP-er, MIDI Wowee Wah MWW-1</div>
+        <div class="brand-cell"><strong>Gamechanger Audio</strong>Bigsby, Motor Pedal</div>
+        <div class="brand-cell"><strong>GFI System</strong>Duophony, Enieqma, Solis Ventus, Specular Tempus, Synesthesia</div>
+        <div class="brand-cell"><strong>HeadRush</strong>Core, Flex Prime, Gigboard, Looperboard, MX5, Pedalboard, VX5</div>
+        <div class="brand-cell"><strong>Hologram Electronics</strong>Chroma Console, Dream Sequence, Microcosm</div>
+        <div class="brand-cell"><strong>Hotone</strong>Ampero, Ampero 2 Stomp</div>
+        <div class="brand-cell"><strong>Hughes &amp; Kettner</strong>GrandMeister Deluxe 40, TriAmp Mk3</div>
+        <div class="brand-cell"><strong>Idoru</strong>P1</div>
+        <div class="brand-cell"><strong>IK Multimedia</strong>ToneX, UNO Synth</div>
+        <div class="brand-cell"><strong>Jackson Audio</strong>Asabi, Bloom, Broken Arrow, El Guapo, Golden Boy, New Wave, The Optimist</div>
+        <div class="brand-cell"><strong>Jet Pedals</strong>Eternity Delay, Lamb, Revelation Reverb 2.0</div>
+        <div class="brand-cell"><strong>JMK Music Pedals</strong>CLOCKstep</div>
+        <div class="brand-cell"><strong>Keeley Electronics</strong>Nocturne</div>
+        <div class="brand-cell"><strong>Kemper</strong>Profiler, Profiler Player</div>
+        <div class="brand-cell"><strong>Kernom</strong>Elipse, Moho, Ridge</div>
+        <div class="brand-cell"><strong>Kinotone</strong>Ribbons, Ribbons (Firmware 2.0), Sparks</div>
+        <div class="brand-cell"><strong>Korg</strong>Kaoss Pad 2, Kaoss Pad 3, microKORG, microKORG XL+, Minilogue, minilogue xd, Monologue, MS2000, Volca series (Bass, Beats, Drum, FM, Keys, Kick, NuBass, Sample), Wavestate</div>
+        <div class="brand-cell"><strong>KSR Amplification</strong>Artemis 100, Colossus H-100, Gemini 100</div>
+        <div class="brand-cell"><strong>Laney</strong>BBC The Difference Engine, Ironheart Loudpedal</div>
+        <div class="brand-cell"><strong>Line 6</strong>Catalyst CX, DL4 MkII, DT25 (Head &amp; 112), Helix, Helix Floor, Helix LT, Helix Rack and Control, Helix Stadium, HX Effects, HX One, HX Stomp, HX Stomp XL, M5/M9/M13, Pocket POD, POD Go, POD HD Pro X, POD HD500X, Powercab Plus series</div>
+        <div class="brand-cell"><strong>Make Noise Co.</strong>0 Coast</div>
+        <div class="brand-cell"><strong>Marshall</strong>DSL40CR</div>
+        <div class="brand-cell"><strong>MeeBlip</strong>Geode, Triode</div>
+        <div class="brand-cell"><strong>Melbourne Instruments</strong>Nina</div>
+        <div class="brand-cell"><strong>Meris</strong>Enzo, Enzo X, Hedra, LVX, Mercury 7, Mercury X, Ottobit JR, Polymoon</div>
+        <div class="brand-cell"><strong>MFB</strong>Tanzbar Lite</div>
+        <div class="brand-cell"><strong>Modal Electronics</strong>002R, 008R, 1, 2, 8, Argon 8, Argon 8M, Argon 8X, CRAFTsynth 2.0, SKULPTsynthesiser</div>
+        <div class="brand-cell"><strong>Modor</strong>NF-1</div>
+        <div class="brand-cell"><strong>Montreal Assembly</strong>856 for ZELLERSASN</div>
+        <div class="brand-cell"><strong>Mooer</strong>GE300, GE300 Lite, Ocean Machine</div>
+        <div class="brand-cell"><strong>Moog</strong>Grandmother, Matriarch, MF-104M, MF-105M MIDI MuRF, MF-108M Cluster Flux, Minimoog Voyager, Minimoog Voyager XL, Minitaur, Mother 32, Sub Phatty, Subharmonicon, Subsequent 25, Subsequent 37</div>
+        <div class="brand-cell"><strong>Morningstar Engineering</strong>MC3, MC4 Pro, MC6 MkII, MC6 Pro, MC8, MC8 Pro, ML5, ML5R, ML10X</div>
+        <div class="brand-cell"><strong>Mutable Instruments</strong>Shruthi</div>
+        <div class="brand-cell"><strong>Neunaber</strong>Illumine, Neuron</div>
+        <div class="brand-cell"><strong>Neural DSP</strong>Nano Cortex, Quad Cortex, Quad Cortex Mini</div>
+        <div class="brand-cell"><strong>Noise Engineering</strong>Batverb</div>
+        <div class="brand-cell"><strong>Nord</strong>C1, C2, C2D, Drum 2, Electro 2/3/3HP/4HP/4SW/4D/5D/5HP/6, Grand, Lead 1/2/2X/3/4/4R/A1/A1R, Piano 1/2/3/4, Rack 3, Stage 1/2/2EX/3/EX, Wave, Wave 2</div>
+        <div class="brand-cell"><strong>Novation</strong>Bass Station II, Bass Station Keyboard, Circuit, Circuit Mono Station, Circuit Rhythm, MiniNova, Peak, Summit, UltraNova</div>
+        <div class="brand-cell"><strong>Old Blood Noise Endeavors</strong>Black Fountain, Dark Star Stereo, Signal Blender Stereo, Sunlight Stereo Reverb</div>
+        <div class="brand-cell"><strong>One Control</strong>MIDI Solo Stereo Loop</div>
+        <div class="brand-cell"><strong>OPFXS</strong>V Uno</div>
+        <div class="brand-cell"><strong>Oscillator Devices</strong>ABY, Goblin-EXP in EHX Pitch Fork, Hydra 4X, Minerva, Siren</div>
+        <div class="brand-cell"><strong>OTO Machines</strong>BAM, BIM, Biscuit, BOUM</div>
+        <div class="brand-cell"><strong>Panda Audio</strong>Future Impact</div>
+        <div class="brand-cell"><strong>Peavey</strong>Mini MEGA</div>
+        <div class="brand-cell"><strong>Pigtronix</strong>Echolution 2 Deluxe, Echolution 3, Infinity</div>
+        <div class="brand-cell"><strong>Poly Effects</strong>Flat V, Verbs</div>
+        <div class="brand-cell"><strong>Positive Grid</strong>Bias Distortion Pro, Bias Head, Bias Rack</div>
+        <div class="brand-cell"><strong>Ramble FX</strong>Kismet</div>
+        <div class="brand-cell"><strong>Red Panda</strong>Bitmap 2, Context 2, Particle 2, Radius, Raster 2, Tensor</div>
+        <div class="brand-cell"><strong>Revv</strong>D20, G20</div>
+        <div class="brand-cell"><strong>RJM Music</strong>Mastermind PBC/10, Mini Amp Gizmo, Mini Effect Gizmo X, Overture</div>
+        <div class="brand-cell"><strong>Roland</strong>BK-7M, D-05, FA-06/07/08, Fantom, FR-18D, GAIA SH-01, JD-XA, JD-Xi, JP-08, JU-06, JX-03, SE-02, SH-01A, System-1, System-8, TB-03, TR-08, TR-09, TR-8, VP-03</div>
+        <div class="brand-cell"><strong>Sequential</strong>OB-6, Pro 3, Prophet 6, Prophet 12, Prophet X, Rev 2</div>
+        <div class="brand-cell"><strong>Seymour Duncan</strong>Andromeda</div>
+        <div class="brand-cell"><strong>Sheeran</strong>Looper X, Looper+</div>
+        <div class="brand-cell"><strong>Singular Sound</strong>Aeros Looper, BeatBuddy</div>
+        <div class="brand-cell"><strong>Sound Sculpture</strong>Switchblade 8F</div>
+        <div class="brand-cell"><strong>Source Audio</strong>Artifakt, Atlas, C4 Synth, Collider, EQ2, Nemesis, Programmable EQ, Spectrum Intelligence Filter, Ultrawave, Ventris</div>
+        <div class="brand-cell"><strong>Stone Deaf</strong>Syncopy, Tremotron</div>
+        <div class="brand-cell"><strong>Strymon</strong>BigSky, BigSky MX, BlueSky, Brig, Cloudburst, Compadre, Deco, DIG, El Capistan, EC-1, Flint, Iridium, Lex, Mobius, NightSky, Riverside, Sunset, Timeline, Ultraviolet, Volante, Zelzah</div>
+        <div class="brand-cell"><strong>Studiologic</strong>Sledge</div>
+        <div class="brand-cell"><strong>Suhr</strong>Discovery, Hedgehog, PT100</div>
+        <div class="brand-cell"><strong>Sunday Sounds</strong>Sunday Guitar 2, Sunday Keys 2020</div>
+        <div class="brand-cell"><strong>Swindler Effects</strong>Red Mountain Tremolo V2, The Gulf Chorus V2</div>
+        <div class="brand-cell"><strong>Synergy Amps</strong>Syn2, Syn20IR</div>
+        <div class="brand-cell"><strong>Tasty Chips</strong>GR1</div>
+        <div class="brand-cell"><strong>TC Electronic</strong>Ditto X4, Flashback 2 X4 Delay, Hall of Fame 2 X4 Reverb, Nova Drive, Plethora X3, Plethora X5</div>
+        <div class="brand-cell"><strong>TC-Helicon</strong>VoiceLive 3, VoiceLive 3 Extreme, VoiceLive Rack, VoiceLive Touch 2</div>
+        <div class="brand-cell"><strong>teenage engineering</strong>OP-Z</div>
+        <div class="brand-cell"><strong>That Worship Sound</strong>Worship Essentials 2, Worship Guitar Essentials 2</div>
+        <div class="brand-cell"><strong>Tone King</strong>Imperial Tri-Tube Preamp</div>
+        <div class="brand-cell"><strong>Two notes Audio Engineering</strong>Opus, Torpedo C.A.B. (v4), Torpedo Captor X, Torpedo Live v3/v4, Torpedo Studio</div>
+        <div class="brand-cell"><strong>Universal Audio</strong>Anti, Astra, Del-Verb, Dream, Enigmatic, Galaxy, Golden, Knuckles, Lion, Max, OX Stomp, Ruby, Starlight, Woodrow</div>
+        <div class="brand-cell"><strong>Valeton</strong>GP-200, GP-200LT, GP-5</div>
+        <div class="brand-cell"><strong>Vongon</strong>Polyphrase</div>
+        <div class="brand-cell"><strong>Waldorf</strong>Blofeld</div>
+        <div class="brand-cell"><strong>Walrus Audio</strong>ACS1, ACS1 Mk2, D1 (Old &amp; New), D1 Mk2, M1, M1 Mk2, Meraki Stereo Analog Delay, Qi, R1, R1 Mk2, Xero</div>
+        <div class="brand-cell"><strong>Wampler Pedals</strong>Catacombs, Metaverse, Pantheon, Terraform</div>
+        <div class="brand-cell"><strong>WMD</strong>Geiger Counter Pro</div>
+        <div class="brand-cell"><strong>Yamaha</strong>reface CP, reface CS, reface DX, reface YC</div>
+    </div>
+
+    <p class="tier-title-note" style="margin-top: 12px;">The MIDI Library updates regularly via the open community at openmidi.com.</p>
+
+    <p>If your pedal is on neither list, the <strong>Profile Builder Wizard</strong> still works the old-fashioned way &mdash; paste the MIDI implementation chart from the manual and PedalEditor walks you through organizing CCs, algorithms, and parameters. Or import a community-built profile as a single file.</p>
 
     <h2>Why Not the Stock App?</h2>
 
@@ -505,12 +647,12 @@
     <div class="faq">
         <details>
             <summary>What is PedalEditor?</summary>
-            <p>PedalEditor is a native iOS, iPadOS, and macOS app that edits and organizes presets for MIDI-enabled guitar effects pedals. It supports 47+ pedals across 13 brands &mdash; Strymon, Chase Bliss, Walrus Audio, Meris, Eventide, Boss, UAFX, and more &mdash; and adds setlist-based scene recall, iCloud library sync, and wireless MIDI from iPhone.</p>
+            <p>A native iOS, iPadOS, and macOS app that edits and organizes presets for MIDI-enabled guitar effects pedals. Ships with <strong>47 prebuilt profiles</strong> across 14 brands &mdash; Strymon, Chase Bliss, Walrus Audio, Meris, Eventide, Boss, UAFX, and more &mdash; plus a built-in <strong>MIDI Library</strong> of 500+ more devices that the Profile Builder pre-fills in one tap. Adds setlist-based scene recall, iCloud library sync, and wireless MIDI from iPhone.</p>
         </details>
 
         <details>
             <summary>Which pedals does PedalEditor support?</summary>
-            <p>47 pedals at launch across 13 brands. See the supported pedals section above for the full list. Pedal not on the list? Use the Profile Builder Wizard to build a profile from the manufacturer's MIDI implementation chart, or import a community-built profile file.</p>
+            <p>Two tiers. <strong>47 prebuilt profiles</strong> at launch across 14 brands &mdash; full visual editors with algorithm switching, dual-channel support, and category routing. Plus a <strong>built-in MIDI Library</strong> of 500+ more devices across 100+ brands &mdash; pick one in the Profile Builder and the CC list, parameter names, ranges, and categories pre-fill instantly. See the full list in the section above.</p>
         </details>
 
         <details>
@@ -545,7 +687,7 @@
 
         <details>
             <summary>What if my pedal isn't on the supported list?</summary>
-            <p>Use the Profile Builder Wizard. Paste the MIDI implementation chart from the pedal's manual and the app walks you through organizing CCs into algorithms and parameters. You can also import community-built profile files without waiting for an app update.</p>
+            <p>First check the <strong>MIDI Library</strong> &mdash; 500+ devices across 100+ brands have their CC charts pre-imported, so the Profile Builder fills in parameter names and ranges in one tap. If it isn't covered there either, use the Profile Builder Wizard: paste the MIDI implementation chart from the pedal's manual and the app walks you through organizing CCs into algorithms and parameters. You can also import community-built <code>.pedalprofile</code> files without waiting for an app update.</p>
         </details>
     </div>
 
