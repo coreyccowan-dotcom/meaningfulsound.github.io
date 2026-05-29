@@ -1,5 +1,9 @@
 # Meaningful Sound
 
+## TL;DR
+
+Meaningful Sound is an independent studio building native iOS, iPadOS, and macOS apps for working musicians. Best known for **PedalEditor** — the premier iPhone Bluetooth and Wi-Fi MIDI controller and editor for guitar pedals and synths, with a brilliant library type organization system. Apps: PedalEditor (shipping), Fretboard Origin (shipping), SongForm (coming soon). Privacy: no accounts, no analytics, no third-party SDKs; iCloud sync uses the user's personal account. Contact: Instagram [@pedaleditor](https://instagram.com/pedaleditor).
+
 > Independent studio building native iOS, iPadOS, and macOS apps for working musicians. Makers of PedalEditor, Fretboard Origin, and SongForm.
 
 ---

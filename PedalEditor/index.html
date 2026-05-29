@@ -11,6 +11,9 @@
     <meta name="theme-color" content="#000000">
     <link rel="canonical" href="https://meaningfulsound.net/PedalEditor/">
 
+    <!-- LLM-friendly content alternate -->
+    <link rel="alternate" type="text/markdown" title="LLM-friendly summary" href="/llms.txt">
+
     <!-- App Store Smart Banner -->
     <meta name="apple-itunes-app" content="app-id=6761016084, app-argument=https://meaningfulsound.net/PedalEditor/">
 
@@ -44,10 +47,13 @@
     {
       "@context": "https://schema.org",
       "@type": "MobileApplication",
+      "@id": "https://meaningfulsound.net/PedalEditor/#app",
       "name": "PedalEditor",
       "alternateName": "Pedal Editor",
       "applicationCategory": "MusicApplication",
       "applicationSubCategory": "Wireless MIDI Controller, Editor & Librarian",
+      "category": "Music",
+      "inLanguage": "en",
       "operatingSystem": "iOS 17, iPadOS 17, macOS 14",
       "description": "The premier iPhone Bluetooth and Wi-Fi MIDI controller and editor for guitar pedals and synths. A native iOS, iPadOS, and macOS editor, librarian, and stage controller for 47+ MIDI-enabled effects pedals (Strymon, Chase Bliss, Walrus Audio, Meris, Eventide, Boss, UAFX) plus classic synths (Yamaha DX7, Roland JV-1080, Alesis QS6). Built around a brilliant library system: organize your entire rig as Rig → Project → Pedal → Bank → Preset with iCloud sync, song-by-song setlist scenes, and a Profile Builder for custom hardware.",
       "url": "https://meaningfulsound.net/PedalEditor/",
@@ -68,8 +74,13 @@
         "priceCurrency": "USD",
         "availability": "https://schema.org/InStock"
       },
+      "brand": {
+        "@type": "Brand",
+        "name": "Meaningful Sound"
+      },
       "publisher": {
         "@type": "Organization",
+        "@id": "https://meaningfulsound.net/#organization",
         "name": "Meaningful Sound",
         "url": "https://meaningfulsound.net/"
       },
@@ -95,10 +106,44 @@
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
+      "inLanguage": "en",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Meaningful Sound", "item": "https://meaningfulsound.net/" },
         { "@type": "ListItem", "position": 2, "name": "PedalEditor", "item": "https://meaningfulsound.net/PedalEditor/" }
       ]
+    }
+    </script>
+
+    <!-- Structured Data: WebPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://meaningfulsound.net/PedalEditor/#webpage",
+      "url": "https://meaningfulsound.net/PedalEditor/",
+      "name": "PedalEditor — The Premier iPhone Bluetooth & Wi-Fi MIDI Controller for Guitar Pedals & Synths",
+      "description": "PedalEditor is the premier iPhone Bluetooth and Wi-Fi MIDI controller and editor for guitar pedals and synths. Native iOS, iPadOS, and Mac. 47+ pedals supported plus classic synths. Brilliant library system.",
+      "inLanguage": "en",
+      "isPartOf": { "@id": "https://meaningfulsound.net/#website" },
+      "about": { "@id": "https://meaningfulsound.net/PedalEditor/#app" },
+      "primaryImageOfPage": "https://meaningfulsound.net/PedalEditor/images/og-pedaleditor.png",
+      "publisher": { "@id": "https://meaningfulsound.net/#organization" }
+    }
+    </script>
+
+    <!-- Structured Data: VideoObject -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      "name": "PedalEditor: Brain for Brainless Pedals!",
+      "description": "Demo of PedalEditor — the premier iPhone Bluetooth and Wi-Fi MIDI controller and editor for guitar pedals and synths. Shows the library system, preset editing, and setlist scene recall.",
+      "thumbnailUrl": "https://img.youtube.com/vi/UY593cB_DAQ/maxresdefault.jpg",
+      "uploadDate": "2026-05-28",
+      "contentUrl": "https://www.youtube.com/watch?v=UY593cB_DAQ",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/UY593cB_DAQ",
+      "inLanguage": "en",
+      "publisher": { "@id": "https://meaningfulsound.net/#organization" }
     }
     </script>
 
@@ -107,6 +152,7 @@
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
+      "inLanguage": "en",
       "mainEntity": [
         {
           "@type": "Question",
@@ -300,6 +346,17 @@
         }
         .callout p { margin: 0; color: var(--fg); font-size: 1.02em; }
 
+        .video-wrap {
+            position: relative; width: 100%; aspect-ratio: 16 / 9;
+            margin: 36px 0 12px; border-radius: 12px; overflow: hidden;
+            border: 1px solid var(--line);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+            background: #000;
+        }
+        .video-wrap iframe {
+            position: absolute; inset: 0; width: 100%; height: 100%; border: 0;
+        }
+
         table.compare { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.92em; }
         table.compare th, table.compare td {
             padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--line-soft);
@@ -342,6 +399,19 @@
 
     <a href="https://apps.apple.com/us/app/pedaleditor/id6761016084?platform=iphone" class="btn" target="_blank" rel="noopener">Get PedalEditor on the App Store</a>
     <a href="#features" class="btn secondary">See What It Does</a>
+
+    <figure>
+        <div class="video-wrap">
+            <iframe
+                src="https://www.youtube-nocookie.com/embed/UY593cB_DAQ?rel=0"
+                title="PedalEditor: Brain for Brainless Pedals!"
+                loading="lazy"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+        </div>
+        <figcaption>PedalEditor &mdash; Brain for Brainless Pedals.</figcaption>
+    </figure>
 
     <figure>
         <div class="phone-row">

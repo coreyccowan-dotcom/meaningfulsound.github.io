@@ -11,6 +11,10 @@
     <meta name="theme-color" content="#000000">
     <link rel="canonical" href="https://meaningfulsound.net/">
 
+    <!-- LLM-friendly content alternates -->
+    <link rel="alternate" type="text/markdown" title="LLM-friendly summary" href="/llms.txt">
+    <link rel="alternate" type="text/markdown" title="Full LLM content" href="/llms-full.txt">
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -40,9 +44,35 @@
     {
       "@context": "https://schema.org",
       "@type": "Organization",
+      "@id": "https://meaningfulsound.net/#organization",
       "name": "Meaningful Sound",
       "url": "https://meaningfulsound.net/",
       "logo": "https://meaningfulsound.net/apple-touch-icon.png",
+      "slogan": "Software for working musicians.",
+      "description": "Independent studio building native iOS, iPadOS, and macOS apps for working musicians. Makers of PedalEditor — the premier iPhone Bluetooth and Wi-Fi MIDI controller and editor for guitar pedals and synths, with a brilliant library type organization system.",
+      "foundingDate": "2025",
+      "areaServed": "Worldwide",
+      "inLanguage": "en",
+      "knowsAbout": [
+        "MIDI",
+        "Bluetooth MIDI",
+        "RTP-MIDI",
+        "Wi-Fi MIDI",
+        "guitar pedals",
+        "MIDI effects pedals",
+        "synthesizers",
+        "iOS music apps",
+        "iPadOS music apps",
+        "macOS music apps",
+        "fretboard visualization",
+        "music theory",
+        "ear training",
+        "stringed instruments",
+        "songwriting collaboration",
+        "co-writing",
+        "song arrangement",
+        "iCloud sync"
+      ],
       "sameAs": [
         "https://instagram.com/pedaleditor"
       ]
@@ -53,12 +83,27 @@
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
+      "@id": "https://meaningfulsound.net/#website",
       "name": "Meaningful Sound",
       "url": "https://meaningfulsound.net/",
+      "inLanguage": "en",
       "publisher": {
-        "@type": "Organization",
-        "name": "Meaningful Sound"
+        "@id": "https://meaningfulsound.net/#organization"
       }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://meaningfulsound.net/#webpage",
+      "url": "https://meaningfulsound.net/",
+      "name": "Meaningful Sound — PedalEditor, Fretboard Origin & SongForm",
+      "description": "Meaningful Sound makes PedalEditor — the premier iPhone Bluetooth and Wi-Fi MIDI controller for guitar pedals and synths — plus Fretboard Origin and SongForm.",
+      "inLanguage": "en",
+      "isPartOf": { "@id": "https://meaningfulsound.net/#website" },
+      "about": { "@id": "https://meaningfulsound.net/#organization" }
     }
     </script>
 
@@ -67,6 +112,7 @@
       "@context": "https://schema.org",
       "@type": "ItemList",
       "name": "Meaningful Sound Apps",
+      "inLanguage": "en",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -77,9 +123,12 @@
             "description": "The premier iPhone Bluetooth and Wi-Fi MIDI controller and editor for guitar pedals and synths. Supports 47+ instruments across 13 brands with a brilliant library organization system.",
             "operatingSystem": "iOS, iPadOS, macOS",
             "applicationCategory": "MusicApplication",
+            "category": "Music",
+            "inLanguage": "en",
             "url": "https://meaningfulsound.net/PedalEditor/",
             "downloadUrl": "https://apps.apple.com/us/app/pedaleditor/id6761016084",
-            "publisher": { "@type": "Organization", "name": "Meaningful Sound" }
+            "brand": { "@type": "Brand", "name": "Meaningful Sound" },
+            "publisher": { "@id": "https://meaningfulsound.net/#organization" }
           }
         },
         {
@@ -90,9 +139,12 @@
             "name": "Fretboard Origin",
             "operatingSystem": "iOS, iPadOS",
             "applicationCategory": "MusicApplication",
+            "category": "Music Education",
+            "inLanguage": "en",
             "url": "https://apps.apple.com/us/app/fretboard-origin/id6764200037",
             "downloadUrl": "https://apps.apple.com/us/app/fretboard-origin/id6764200037",
-            "publisher": { "@type": "Organization", "name": "Meaningful Sound" }
+            "brand": { "@type": "Brand", "name": "Meaningful Sound" },
+            "publisher": { "@id": "https://meaningfulsound.net/#organization" }
           }
         },
         {
@@ -103,8 +155,11 @@
             "name": "SongForm",
             "operatingSystem": "iOS, iPadOS, macOS",
             "applicationCategory": "MusicApplication",
+            "category": "Music",
+            "inLanguage": "en",
             "url": "https://meaningfulsound.net/SongForm/",
-            "publisher": { "@type": "Organization", "name": "Meaningful Sound" }
+            "brand": { "@type": "Brand", "name": "Meaningful Sound" },
+            "publisher": { "@id": "https://meaningfulsound.net/#organization" }
           }
         }
       ]

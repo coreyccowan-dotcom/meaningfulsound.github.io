@@ -11,6 +11,9 @@
     <meta name="theme-color" content="#000000">
     <link rel="canonical" href="https://meaningfulsound.net/FretboardOrigin/">
 
+    <!-- LLM-friendly content alternate -->
+    <link rel="alternate" type="text/markdown" title="LLM-friendly summary" href="/llms.txt">
+
     <!-- App Store Smart Banner -->
     <meta name="apple-itunes-app" content="app-id=6764200037, app-argument=https://meaningfulsound.net/FretboardOrigin/">
 
@@ -41,9 +44,12 @@
     {
       "@context": "https://schema.org",
       "@type": "MobileApplication",
+      "@id": "https://meaningfulsound.net/FretboardOrigin/#app",
       "name": "Fretboard Origin",
       "applicationCategory": "EducationalApplication",
       "applicationSubCategory": "Music Education & Practice",
+      "category": "Music Education",
+      "inLanguage": "en",
       "operatingSystem": "iOS 17, iPadOS 17",
       "description": "A native iPhone and iPad fretboard visualizer, chord and scale library, ear-training tool, and strobe tuner for 34+ stringed instruments including guitar, bass, ukulele, mandolin, banjo, sitar, oud, koto, charango, and more. Features thousands of chord voicings across 43 qualities, 14 scale types, 13 arpeggio types, real-time pitch detection, Tanpura drone, and pattern builder with MIDI import.",
       "url": "https://meaningfulsound.net/FretboardOrigin/",
@@ -64,8 +70,13 @@
         "priceCurrency": "USD",
         "availability": "https://schema.org/InStock"
       },
+      "brand": {
+        "@type": "Brand",
+        "name": "Meaningful Sound"
+      },
       "publisher": {
         "@type": "Organization",
+        "@id": "https://meaningfulsound.net/#organization",
         "name": "Meaningful Sound",
         "url": "https://meaningfulsound.net/"
       },
@@ -92,10 +103,28 @@
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
+      "inLanguage": "en",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Meaningful Sound", "item": "https://meaningfulsound.net/" },
         { "@type": "ListItem", "position": 2, "name": "Fretboard Origin", "item": "https://meaningfulsound.net/FretboardOrigin/" }
       ]
+    }
+    </script>
+
+    <!-- Structured Data: WebPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://meaningfulsound.net/FretboardOrigin/#webpage",
+      "url": "https://meaningfulsound.net/FretboardOrigin/",
+      "name": "Fretboard Origin — Fretboard Visualizer, Chord/Scale Library & Practice Companion for 34+ Stringed Instruments",
+      "description": "Fretboard Origin is a native iPhone and iPad fretboard visualizer, chord/scale library, ear-training tool, and strobe tuner for 34+ stringed instruments.",
+      "inLanguage": "en",
+      "isPartOf": { "@id": "https://meaningfulsound.net/#website" },
+      "about": { "@id": "https://meaningfulsound.net/FretboardOrigin/#app" },
+      "primaryImageOfPage": "https://meaningfulsound.net/FretboardOrigin/images/og-fretboard-origin.png",
+      "publisher": { "@id": "https://meaningfulsound.net/#organization" }
     }
     </script>
 
@@ -104,6 +133,7 @@
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
+      "inLanguage": "en",
       "mainEntity": [
         {
           "@type": "Question",

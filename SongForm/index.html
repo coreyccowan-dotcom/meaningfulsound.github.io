@@ -11,6 +11,9 @@
     <meta name="theme-color" content="#000000">
     <link rel="canonical" href="https://meaningfulsound.net/SongForm/">
 
+    <!-- LLM-friendly content alternate -->
+    <link rel="alternate" type="text/markdown" title="LLM-friendly summary" href="/llms.txt">
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -38,15 +41,23 @@
     {
       "@context": "https://schema.org",
       "@type": "MobileApplication",
+      "@id": "https://meaningfulsound.net/SongForm/#app",
       "name": "SongForm",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "Songwriting & Music Collaboration",
+      "category": "Music",
+      "inLanguage": "en",
       "operatingSystem": "iOS 17, iPadOS 17",
       "description": "A native iPhone and iPad workspace for songwriters. Build songs as a sequence of sections (verse, pre-chorus, chorus, bridge, intro, interlude, outro), layer audio recordings, chord performances, and step patterns per section, and co-write with collaborators using a fragment-based contribution model with a lead-as-gatekeeper approval flow.",
       "url": "https://meaningfulsound.net/SongForm/",
       "image": "https://meaningfulsound.net/SongForm/images/og-songform.png",
+      "brand": {
+        "@type": "Brand",
+        "name": "Meaningful Sound"
+      },
       "publisher": {
         "@type": "Organization",
+        "@id": "https://meaningfulsound.net/#organization",
         "name": "Meaningful Sound",
         "url": "https://meaningfulsound.net/"
       },
@@ -75,10 +86,28 @@
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
+      "inLanguage": "en",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Meaningful Sound", "item": "https://meaningfulsound.net/" },
         { "@type": "ListItem", "position": 2, "name": "SongForm", "item": "https://meaningfulsound.net/SongForm/" }
       ]
+    }
+    </script>
+
+    <!-- Structured Data: WebPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://meaningfulsound.net/SongForm/#webpage",
+      "url": "https://meaningfulsound.net/SongForm/",
+      "name": "SongForm — A Songwriter's Workspace for Co-Writing, Sections, Lyrics & Demos",
+      "description": "SongForm is a native iPhone and iPad workspace for songwriters. Section-based arrangement, lyric editor, chord charts, multi-layer audio recording, fragment-based co-writing.",
+      "inLanguage": "en",
+      "isPartOf": { "@id": "https://meaningfulsound.net/#website" },
+      "about": { "@id": "https://meaningfulsound.net/SongForm/#app" },
+      "primaryImageOfPage": "https://meaningfulsound.net/SongForm/images/og-songform.png",
+      "publisher": { "@id": "https://meaningfulsound.net/#organization" }
     }
     </script>
 
@@ -87,6 +116,7 @@
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
+      "inLanguage": "en",
       "mainEntity": [
         {
           "@type": "Question",
