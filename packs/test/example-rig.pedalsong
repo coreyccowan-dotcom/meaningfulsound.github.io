@@ -1,0 +1,38 @@
+{
+  "exportedAt" : "2026-05-29T12:00:00Z",
+  "formatVersion" : 1,
+  "pedalRequirements" : [
+    {
+      "displayName" : "Walrus Mako M1",
+      "pedalProfileID" : "walrus-m1",
+      "profileVersion" : "1.0.0",
+      "required" : true
+    }
+  ],
+  "sections" : [
+    {
+      "id" : "11111111-1111-1111-1111-111111111111",
+      "name" : "Test Section",
+      "order" : 0,
+      "presetLinks" : [
+        {
+          "pedalProfileID" : "walrus-m1",
+          "preset" : {
+            "algorithmId" : "chorus-traditional",
+            "effectCategoryId" : "chorus",
+            "name" : "Universal Link Smoke Test",
+            "parameterValues" : {},
+            "tags" : ["test"]
+          },
+          "profileVersion" : "1.0.0"
+        }
+      ]
+    }
+  ],
+  "songMetadata" : {
+    "name" : "Universal Link Smoke Test",
+    "notes" : "Internal verification pack — install confirms the .pedalsong → onOpenURL → SongImportView pipeline works.",
+    "tags" : ["test"]
+  },
+  "submittedBy" : "internal-test"
+}
