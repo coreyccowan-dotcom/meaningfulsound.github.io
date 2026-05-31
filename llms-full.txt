@@ -48,8 +48,8 @@ PedalEditor is a native iPhone, iPad, and Mac editor, librarian, and stage contr
 - **Setlist scenes.** Build an ordered setlist where each song carries a snapshot of your whole board. One tap fires Program Change to every pedal simultaneously, respecting per-pedal MIDI channels and message timing.
 - **iCloud sync.** Library shared across iPhone, iPad, and Mac. Edit at home, perform on stage. Encrypted end-to-end by Apple in the user's personal iCloud account.
 - **Performance Mode.** Full-screen, stage-ready, no menus. Chrome disappears — just the song list, the current scene, and per-pedal status confirmation.
-- **Bidirectional MIDI.** On compatible pedals, edit a knob on the hardware and the app updates in real time; edit in the app and the pedal responds instantly.
-- **Profile Builder Wizard.** Paste the MIDI implementation chart from any unsupported pedal's manual and the app walks you through organizing CCs into algorithms and parameters.
+- **Bidirectional MIDI.** The app always sends MIDI to the pedal instantly. On hardware that broadcasts knob CC (Chase Bliss Brothers, several Boss and Meris pedals), tweaks on the pedal mirror back to the app live. On hardware that stores full preset state but doesn't broadcast (Strymon BigSky/Timeline, Walrus Mako, most Chase Bliss), the app pulls every stored preset back via bulk SysEx capture.
+- **Profile Builder Wizard.** For ~553 devices in the built-in MIDI Library, the app pre-fills the CC list, parameter names, and ranges in one tap — no AI involved. For anything off-database, the AI-assisted path generates a prompt you paste into Gemini, Claude, or ChatGPT along with your pedal's MIDI implementation chart; paste the response back and the app assembles it into a working profile.
 - **Preset sharing.** Export any preset or pack as a `.pedalpreset` file (JSON with profile metadata). Send to bandmates, post online, or import from collaborators with version checking.
 
 ### Supported Pedals (Effects, 44 of 47)
@@ -88,7 +88,7 @@ PedalEditor does not collect, store, transmit, or share personal information. No
 
 | Feature | PedalEditor | Nixie / Walrus / Chase Bliss / Meris apps |
 |---|---|---|
-| Multi-brand support | 47 pedals + synths, 13 brands | One brand each |
+| Multi-brand support | 47 pedals + synths, 14 brands | One brand each |
 | Rig & project organization | Yes | Flat preset list |
 | Setlist scene recall | Yes — whole board, one tap | No |
 | iPhone wireless remote | Peer-to-peer over Wi-Fi | No |
@@ -99,7 +99,7 @@ PedalEditor does not collect, store, transmit, or share personal information. No
 ### FAQ Summary
 
 - **What is PedalEditor?** A native iPhone/iPad/Mac editor and wireless MIDI controller for 47+ guitar pedals and synths.
-- **Which pedals does it support?** 47 across 13 brands (full list above). Profile Builder for the rest.
+- **Which pedals does it support?** 47 across 14 brands (full list above). Profile Builder for the rest.
 - **Is it a replacement for Nixie / Walrus app / Chase Bliss app?** Yes. One app for every brand, plus features none of them have.
 - **How does it connect?** Bluetooth LE MIDI, RTP-MIDI over Wi-Fi, or USB MIDI.
 - **iPhone, iPad, and Mac?** Yes — native on all three. iCloud syncs the library.
