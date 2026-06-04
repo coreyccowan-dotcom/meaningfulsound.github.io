@@ -45,7 +45,7 @@ PedalEditor is a native iPhone, iPad, and Mac editor, librarian, and stage contr
 - **Wireless MIDI from iPhone.** Bluetooth LE MIDI for direct iPhone-to-pedal communication on supported hardware. RTP-MIDI over Wi-Fi for wireless connection on your local network. USB MIDI via any Core MIDI interface for wired use.
 - **Edit every parameter.** Visual knobs, sliders, toggles, and algorithm selectors mapped from each pedal's official MIDI implementation. Every CC, every PC, every NRPN, every SysEx template.
 - **Brilliant library organization.** Rig → Project → Pedal → Bank → Preset hierarchy. Free-form preset names independent of the hardware's display limits. Unlimited preset slots (app-side, not bound by hardware limits).
-- **Setlist scenes.** Build an ordered setlist where each song carries a snapshot of your whole board. One tap fires Program Change to every pedal simultaneously, respecting per-pedal MIDI channels and message timing.
+- **Setlist scenes.** Build an ordered setlist where each song carries a snapshot of your whole board. One tap fires Program Change to every pedal simultaneously, on each pedal's configured MIDI channel.
 - **iCloud sync.** Library shared across iPhone, iPad, and Mac. Edit at home, perform on stage. Encrypted end-to-end by Apple in the user's personal iCloud account.
 - **Performance Mode.** Full-screen, stage-ready, no menus. Chrome disappears — just the song list, the current scene, and per-pedal status confirmation.
 - **Bidirectional MIDI on broadcasting hardware.** The app always sends MIDI to the pedal instantly. On hardware that broadcasts knob CC (Chase Bliss Brothers, several Boss and Meris pedals), tweaks on the pedal mirror back to the app live, keeping the editor in sync as you work the hardware.

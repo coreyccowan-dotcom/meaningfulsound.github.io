@@ -207,7 +207,7 @@
           "name": "What is a setlist scene in PedalEditor?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A setlist scene is a snapshot of preset assignments across every pedal on your board, recallable in one tap. Building a setlist lets you fire 'Verse 1' to BigSky PC#42, Timeline PC#15, and M1 PC#3 simultaneously, then jump to 'Chorus' which changes all three. The app respects per-pedal MIDI channels and message timing."
+            "text": "A setlist scene is a snapshot of preset assignments across every pedal on your board, recallable in one tap. Building a setlist lets you fire 'Verse 1' to BigSky PC#42, Timeline PC#15, and M1 PC#3 simultaneously, then jump to 'Chorus' which changes all three. The app sends each pedal's Program Change on the channel configured for that pedal."
           }
         },
         {
@@ -481,14 +481,12 @@
 
     <h2>Setlists &amp; Performance Mode</h2>
 
-    <p>Build an ordered setlist where each song carries a snapshot of your whole board. One tap fires a Program Change to every pedal simultaneously, respecting per-pedal MIDI channels and message timing. Reorder songs at soundcheck by dragging. Switch into full-screen Performance Mode and the chrome disappears &mdash; just the song list, the current scene, and a confirmation that every pedal received the change.</p>
+    <p>Build an ordered setlist where each song carries a snapshot of your whole board. One tap fires a Program Change to every pedal simultaneously, on each pedal's configured MIDI channel. Reorder songs at soundcheck by dragging. Switch into full-screen Performance Mode and the chrome disappears &mdash; just the song list and the current scene.</p>
 
     <ul class="feature-list">
         <li><strong>Multi-pedal scenes.</strong> "Verse 1" fires BigSky PC#42, Timeline PC#15, and M1 PC#3 in one tap.</li>
         <li><strong>Performance Mode.</strong> Full-screen, stage-ready, no menus. Mac and iPad hide everything that isn't the show.</li>
         <li><strong>Performance Pads.</strong> Configurable grid of custom MIDI buttons &mdash; CCs, PCs, or scenes &mdash; with your own labels and colors.</li>
-        <li><strong>Status feedback.</strong> Sending / Sent / Failed indicators per pedal so you know the board got the change before the downbeat.</li>
-        <li><strong>Message timing.</strong> Per-pedal delay enforcement honors each manufacturer's MIDI throughput specs.</li>
     </ul>
 
     <figure>
@@ -750,7 +748,7 @@
 
         <details>
             <summary>What is a setlist scene?</summary>
-            <p>A snapshot of preset assignments across every pedal on your board, recallable in one tap. Building a setlist lets you fire "Verse 1" to BigSky PC#42, Timeline PC#15, and M1 PC#3 simultaneously, then jump to "Chorus" and change all three. The app respects per-pedal MIDI channels and message timing.</p>
+            <p>A snapshot of preset assignments across every pedal on your board, recallable in one tap. Building a setlist lets you fire "Verse 1" to BigSky PC#42, Timeline PC#15, and M1 PC#3 simultaneously, then jump to "Chorus" and change all three. The app sends each pedal's Program Change on the channel configured for that pedal.</p>
         </details>
 
         <details>
