@@ -1,0 +1,1481 @@
+{
+  "appVersion": "1.2.0-daypack",
+  "banks": [
+    {
+      "colorHex": "#5B7BC8",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "id": "D512B868-5398-480E-838E-0B6467A731A2",
+      "isActive": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "BigSky \u2014 Day One",
+      "notes": "Day-one demo content. Sardonic-cowboy voice."
+    },
+    {
+      "colorHex": "#3FA08C",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "id": "3FCEE682-6DC7-4A98-8828-8EECF75F4D6E",
+      "isActive": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Timeline \u2014 Day One",
+      "notes": "Day-one demo content. Sardonic-cowboy voice."
+    },
+    {
+      "colorHex": "#C08040",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "id": "F5F0476F-819F-4D5E-85B4-92B9BE3D2134",
+      "isActive": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "ACS1 \u2014 Day One",
+      "notes": "Day-one demo content. Sardonic-cowboy voice."
+    },
+    {
+      "colorHex": "#9050C8",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "id": "28A2FCC2-F0A2-497B-8967-E02C9BE03C8B",
+      "isActive": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "M1 \u2014 Day One",
+      "notes": "Day-one demo content. Sardonic-cowboy voice."
+    }
+  ],
+  "exportDate": "2026-06-16T13:37:14Z",
+  "formatVersion": 1,
+  "groups": [],
+  "performanceScenes": [],
+  "presetCollections": [],
+  "presets": [
+    {
+      "algorithmId": "room-default",
+      "bankId": "D512B868-5398-480E-838E-0B6467A731A2",
+      "colorHex": "#7B5BA4",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "room",
+      "id": "64686B6B-487C-4937-8990-8CB28802926F",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Room Full Of Strangers",
+      "parameterValues": {
+        "14": 40,
+        "15": 70,
+        "16": 95,
+        "17": 78,
+        "18": 30,
+        "23": 30,
+        "3": 60,
+        "58": 16,
+        "59": 1,
+        "61": 12,
+        "9": 25
+      },
+      "pcNumber": 0,
+      "pedalProfileId": "strymon-bigsky",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "hall-default",
+      "bankId": "D512B868-5398-480E-838E-0B6467A731A2",
+      "colorHex": "#3A3550",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "hall",
+      "id": "9B88CDD5-E08D-47D2-9719-0190159FCC9A",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Dark Hall",
+      "parameterValues": {
+        "14": 30,
+        "15": 80,
+        "16": 110,
+        "17": 110,
+        "18": 50,
+        "23": 30,
+        "3": 35,
+        "39": 18,
+        "40": 1,
+        "42": 5,
+        "9": 15
+      },
+      "pcNumber": 1,
+      "pedalProfileId": "strymon-bigsky",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "plate-default",
+      "bankId": "D512B868-5398-480E-838E-0B6467A731A2",
+      "colorHex": "#A07B5B",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "plate",
+      "id": "1D6C020D-A10B-437A-8979-0937C4048AB4",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Service For One",
+      "parameterValues": {
+        "14": 20,
+        "15": 55,
+        "16": 60,
+        "17": 50,
+        "18": 20,
+        "23": 30,
+        "3": 70,
+        "68": 0,
+        "69": 8,
+        "9": 10
+      },
+      "pcNumber": 2,
+      "pedalProfileId": "strymon-bigsky",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "spring-default",
+      "bankId": "D512B868-5398-480E-838E-0B6467A731A2",
+      "colorHex": "#4F7A8A",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "spring",
+      "id": "C1624264-9D9A-4677-8E8D-A089C9994F1B",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Artesian Well",
+      "parameterValues": {
+        "14": 50,
+        "15": 75,
+        "16": 40,
+        "17": 95,
+        "18": 10,
+        "23": 30,
+        "3": 55,
+        "62": 2,
+        "63": 2,
+        "64": 15,
+        "9": 100
+      },
+      "pcNumber": 3,
+      "pedalProfileId": "strymon-bigsky",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "swell-default",
+      "bankId": "D512B868-5398-480E-838E-0B6467A731A2",
+      "colorHex": "#C8A95B",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "swell",
+      "id": "626918FF-47CA-4A4E-A567-EBDF4D9DDA73",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Swell Guy",
+      "parameterValues": {
+        "14": 35,
+        "15": 90,
+        "16": 70,
+        "17": 100,
+        "18": 0,
+        "23": 30,
+        "3": 75,
+        "65": 10,
+        "66": 18,
+        "67": 0,
+        "9": 50
+      },
+      "pcNumber": 4,
+      "pedalProfileId": "strymon-bigsky",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "bloom-default",
+      "bankId": "D512B868-5398-480E-838E-0B6467A731A2",
+      "colorHex": "#B584A8",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "bloom",
+      "id": "A681CCDB-1FE4-4BBC-939E-D6D512B2637C",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Late Bloomer",
+      "parameterValues": {
+        "14": 45,
+        "15": 85,
+        "16": 90,
+        "17": 105,
+        "18": 40,
+        "23": 30,
+        "3": 65,
+        "30": 14,
+        "31": 12,
+        "32": 15,
+        "9": 30
+      },
+      "pcNumber": 5,
+      "pedalProfileId": "strymon-bigsky",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "cloud-default",
+      "bankId": "D512B868-5398-480E-838E-0B6467A731A2",
+      "colorHex": "#8E97A3",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "cloud",
+      "id": "C61925D2-6CB9-4F7D-898F-ADBF3119E2F1",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Overcast All Week",
+      "parameterValues": {
+        "14": 70,
+        "15": 100,
+        "16": 80,
+        "17": 118,
+        "18": 70,
+        "23": 30,
+        "3": 45,
+        "37": 20,
+        "38": 14,
+        "9": 64
+      },
+      "pcNumber": 6,
+      "pedalProfileId": "strymon-bigsky",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "chorale-default",
+      "bankId": "D512B868-5398-480E-838E-0B6467A731A2",
+      "colorHex": "#5A4830",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "chorale",
+      "id": "84363D74-05AD-4167-B37F-3FF2BE72DAEA",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Chorus Of Scorpions",
+      "parameterValues": {
+        "14": 60,
+        "15": 80,
+        "16": 40,
+        "17": 90,
+        "18": 25,
+        "23": 30,
+        "3": 50,
+        "33": 5,
+        "34": 2,
+        "9": 70
+      },
+      "pcNumber": 7,
+      "pedalProfileId": "strymon-bigsky",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "shimmer-default",
+      "bankId": "D512B868-5398-480E-838E-0B6467A731A2",
+      "colorHex": "#E0A040",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "shimmer",
+      "id": "0998D174-4BF5-4BD5-9A58-ADC6434BDFB3",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Heat Off The Asphalt",
+      "parameterValues": {
+        "14": 75,
+        "15": 78,
+        "16": 50,
+        "17": 100,
+        "18": 35,
+        "23": 30,
+        "24": 8,
+        "25": 24,
+        "26": 12,
+        "27": 14,
+        "28": 0,
+        "3": 80,
+        "9": 50
+      },
+      "pcNumber": 8,
+      "pedalProfileId": "strymon-bigsky",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "magneto-default",
+      "bankId": "D512B868-5398-480E-838E-0B6467A731A2",
+      "colorHex": "#4060A8",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "magneto",
+      "id": "D7D19BC4-0C10-4AFD-A298-EB211D5219E3",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Magnetic North",
+      "parameterValues": {
+        "14": 55,
+        "15": 70,
+        "16": 60,
+        "17": 100,
+        "18": 40,
+        "23": 30,
+        "3": 50,
+        "54": 1,
+        "55": 12,
+        "56": 14,
+        "57": 2,
+        "9": 70
+      },
+      "pcNumber": 9,
+      "pedalProfileId": "strymon-bigsky",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "nonlinear-default",
+      "bankId": "D512B868-5398-480E-838E-0B6467A731A2",
+      "colorHex": "#7A3030",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "nonlinear",
+      "id": "7C0FB950-E1C4-4044-A42C-7BBF85A5C84E",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "A Brief Sermon",
+      "parameterValues": {
+        "14": 25,
+        "15": 85,
+        "16": 50,
+        "17": 60,
+        "18": 5,
+        "23": 30,
+        "3": 60,
+        "43": 6,
+        "44": 12,
+        "45": 18,
+        "46": 2,
+        "47": 4,
+        "48": 5,
+        "9": 90
+      },
+      "pcNumber": 10,
+      "pedalProfileId": "strymon-bigsky",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "reflections-default",
+      "bankId": "D512B868-5398-480E-838E-0B6467A731A2",
+      "colorHex": "#909090",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "reflections",
+      "id": "68F33C7B-FFE3-45E0-AA87-2BE0596A1171",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Two-Way Mirror",
+      "parameterValues": {
+        "14": 20,
+        "15": 60,
+        "16": 90,
+        "17": 70,
+        "18": 60,
+        "23": 30,
+        "3": 70,
+        "49": 5,
+        "50": 1,
+        "51": 2,
+        "52": 8,
+        "9": 30
+      },
+      "pcNumber": 11,
+      "pedalProfileId": "strymon-bigsky",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "digital-default",
+      "bankId": "3FCEE682-6DC7-4A98-8828-8EECF75F4D6E",
+      "colorHex": "#6080A0",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "digital",
+      "id": "EC0CEC4A-03A9-490C-A9D5-49FD30688B49",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Returned To Sender",
+      "parameterValues": {
+        "14": 55,
+        "15": 80,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "3": 55,
+        "38": 2,
+        "47": 4,
+        "56": 0,
+        "9": 60
+      },
+      "pcNumber": 0,
+      "pedalProfileId": "strymon-timeline",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "dual-default",
+      "bankId": "3FCEE682-6DC7-4A98-8828-8EECF75F4D6E",
+      "colorHex": "#806080",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "dual",
+      "id": "035F9147-D2FA-45C4-B08B-9C4DBF50A8F9",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Twins, Estranged",
+      "parameterValues": {
+        "14": 75,
+        "15": 64,
+        "16": 10,
+        "17": 30,
+        "18": 30,
+        "3": 70,
+        "32": 18,
+        "33": 14,
+        "34": 12,
+        "36": 1,
+        "38": 4,
+        "47": 6,
+        "9": 70
+      },
+      "pcNumber": 1,
+      "pedalProfileId": "strymon-timeline",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "pattern-default",
+      "bankId": "3FCEE682-6DC7-4A98-8828-8EECF75F4D6E",
+      "colorHex": "#80A060",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "pattern",
+      "id": "627A7784-11FF-488F-AA03-2531361726FA",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "We Practice The Routine",
+      "parameterValues": {
+        "14": 70,
+        "15": 64,
+        "16": 15,
+        "17": 0,
+        "18": 0,
+        "3": 75,
+        "38": 3,
+        "39": 6,
+        "47": 4,
+        "9": 80
+      },
+      "pcNumber": 2,
+      "pedalProfileId": "strymon-timeline",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "reverse-default",
+      "bankId": "3FCEE682-6DC7-4A98-8828-8EECF75F4D6E",
+      "colorHex": "#A04040",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "reverse",
+      "id": "8D061F5F-5DEF-42B1-88F8-AEA54FF5F59A",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Letters We Should've Burned",
+      "parameterValues": {
+        "14": 80,
+        "15": 50,
+        "16": 20,
+        "17": 25,
+        "18": 25,
+        "3": 85,
+        "38": 10,
+        "47": 8,
+        "9": 85
+      },
+      "pcNumber": 3,
+      "pedalProfileId": "strymon-timeline",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "ice-default",
+      "bankId": "3FCEE682-6DC7-4A98-8828-8EECF75F4D6E",
+      "colorHex": "#9FCAD8",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "ice",
+      "id": "B94B7F5F-3B47-4EF7-9FD9-E3EBCC463711",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Cold Motel",
+      "parameterValues": {
+        "14": 85,
+        "15": 90,
+        "16": 0,
+        "17": 20,
+        "18": 35,
+        "25": 16,
+        "3": 80,
+        "30": 19,
+        "38": 8,
+        "46": 1,
+        "47": 6,
+        "9": 90
+      },
+      "pcNumber": 4,
+      "pedalProfileId": "strymon-timeline",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "duck-default",
+      "bankId": "3FCEE682-6DC7-4A98-8828-8EECF75F4D6E",
+      "colorHex": "#6CA075",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "duck",
+      "id": "D95D49AD-74EE-4D91-B9BB-B493D52A9860",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Polite At Parties",
+      "parameterValues": {
+        "14": 80,
+        "15": 64,
+        "16": 5,
+        "17": 0,
+        "18": 0,
+        "3": 70,
+        "37": 12,
+        "38": 4,
+        "47": 4,
+        "54": 1,
+        "55": 8,
+        "9": 75
+      },
+      "pcNumber": 5,
+      "pedalProfileId": "strymon-timeline",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "swell-default",
+      "bankId": "3FCEE682-6DC7-4A98-8828-8EECF75F4D6E",
+      "colorHex": "#D2B484",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "swell",
+      "id": "5FDCA904-8970-4ECB-AF6F-C8FFDAB17D54",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Easy On The Eyes",
+      "parameterValues": {
+        "14": 85,
+        "15": 70,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "3": 75,
+        "38": 10,
+        "44": 22,
+        "47": 4,
+        "9": 80
+      },
+      "pcNumber": 6,
+      "pedalProfileId": "strymon-timeline",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "trem-default",
+      "bankId": "3FCEE682-6DC7-4A98-8828-8EECF75F4D6E",
+      "colorHex": "#C8408A",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "trem",
+      "id": "C9CF04B0-036B-4400-BA62-4ED8E7BC3E04",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Neon Sign, Half Burnt Out",
+      "parameterValues": {
+        "14": 70,
+        "15": 50,
+        "16": 25,
+        "17": 90,
+        "18": 100,
+        "29": 3,
+        "3": 60,
+        "38": 6,
+        "47": 4,
+        "57": 16,
+        "61": 22,
+        "9": 65
+      },
+      "pcNumber": 7,
+      "pedalProfileId": "strymon-timeline",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "filter-default",
+      "bankId": "3FCEE682-6DC7-4A98-8828-8EECF75F4D6E",
+      "colorHex": "#7A6090",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "filter",
+      "id": "DEF87C40-7BC5-4A06-87E9-C481AF0CE90D",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Through The Curtain",
+      "parameterValues": {
+        "14": 75,
+        "15": 35,
+        "16": 10,
+        "17": 25,
+        "18": 50,
+        "28": 2,
+        "3": 70,
+        "38": 5,
+        "40": 8,
+        "41": 14,
+        "42": 14,
+        "43": 0,
+        "47": 6,
+        "9": 80
+      },
+      "pcNumber": 8,
+      "pedalProfileId": "strymon-timeline",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "lofi-default",
+      "bankId": "3FCEE682-6DC7-4A98-8828-8EECF75F4D6E",
+      "colorHex": "#8B7355",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "lofi",
+      "id": "396ED18B-8D27-4887-A3E4-486B44118D58",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "AM Reception, Approximately",
+      "parameterValues": {
+        "14": 65,
+        "15": 45,
+        "16": 50,
+        "17": 15,
+        "18": 15,
+        "3": 65,
+        "38": 12,
+        "47": 10,
+        "49": 6,
+        "50": 8,
+        "51": 16,
+        "52": 12,
+        "53": 3,
+        "9": 70
+      },
+      "pcNumber": 9,
+      "pedalProfileId": "strymon-timeline",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "dtape-default",
+      "bankId": "3FCEE682-6DC7-4A98-8828-8EECF75F4D6E",
+      "colorHex": "#704018",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "dtape",
+      "id": "79BE1411-F303-45F0-9692-9893265996FA",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Old Reel, Found In Storage",
+      "parameterValues": {
+        "14": 75,
+        "15": 40,
+        "16": 35,
+        "17": 60,
+        "18": 75,
+        "3": 80,
+        "38": 8,
+        "47": 6,
+        "58": 0,
+        "59": 14,
+        "9": 90
+      },
+      "pcNumber": 10,
+      "pedalProfileId": "strymon-timeline",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "dbucket-default",
+      "bankId": "3FCEE682-6DC7-4A98-8828-8EECF75F4D6E",
+      "colorHex": "#406030",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "dbucket",
+      "id": "B61E8846-B767-4F7C-BA53-C5D0F9CB282A",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Barrel Of Wishes",
+      "parameterValues": {
+        "14": 70,
+        "15": 35,
+        "16": 30,
+        "17": 35,
+        "18": 40,
+        "3": 75,
+        "38": 10,
+        "45": 0,
+        "47": 4,
+        "9": 85
+      },
+      "pcNumber": 11,
+      "pedalProfileId": "strymon-timeline",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "fullerton-clean",
+      "bankId": "F5F0476F-819F-4D5E-85B4-92B9BE3D2134",
+      "colorHex": "#C8C0A8",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "fullerton",
+      "id": "DDCC8D40-11C7-45FE-8B1D-0D6ACE7659F2",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Boardwalk, Off-Season",
+      "parameterValues": {
+        "14": 55,
+        "15": 80,
+        "20": 70,
+        "21": 18,
+        "22": 95,
+        "27": 0,
+        "3": 70
+      },
+      "pcNumber": 0,
+      "pedalProfileId": "walrus-acs1-mk1",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "fullerton-clean",
+      "bankId": "F5F0476F-819F-4D5E-85B4-92B9BE3D2134",
+      "colorHex": "#E68A40",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "fullerton",
+      "id": "06DAB61B-9D82-4AA6-9E8B-CD2CBCAFC1C9",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Sunburn, Day Three",
+      "parameterValues": {
+        "14": 70,
+        "15": 95,
+        "20": 75,
+        "21": 35,
+        "22": 60,
+        "27": 1,
+        "3": 60
+      },
+      "pcNumber": 1,
+      "pedalProfileId": "walrus-acs1-mk1",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "fullerton-clean",
+      "bankId": "F5F0476F-819F-4D5E-85B4-92B9BE3D2134",
+      "colorHex": "#A05030",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "fullerton",
+      "id": "F57759FF-CBBD-458E-9119-F71D3E0F08BC",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "The Convertible Won't Start",
+      "parameterValues": {
+        "14": 50,
+        "15": 70,
+        "20": 65,
+        "21": 25,
+        "22": 80,
+        "27": 2,
+        "3": 85
+      },
+      "pcNumber": 2,
+      "pedalProfileId": "walrus-acs1-mk1",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "fullerton-clean",
+      "bankId": "F5F0476F-819F-4D5E-85B4-92B9BE3D2134",
+      "colorHex": "#7AA8C0",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "fullerton",
+      "id": "82E05B06-A35B-4EBE-9D0A-839B851D7FB4",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Pier Doesn't Reach",
+      "parameterValues": {
+        "14": 45,
+        "15": 88,
+        "20": 70,
+        "21": 12,
+        "22": 120,
+        "27": 0,
+        "3": 75
+      },
+      "pcNumber": 3,
+      "pedalProfileId": "walrus-acs1-mk1",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "london-crunch",
+      "bankId": "F5F0476F-819F-4D5E-85B4-92B9BE3D2134",
+      "colorHex": "#506068",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "london",
+      "id": "454EF523-583A-4995-BF92-12642142F79B",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Forgot The Umbrella Again",
+      "parameterValues": {
+        "14": 75,
+        "15": 70,
+        "20": 72,
+        "21": 75,
+        "22": 95,
+        "27": 1,
+        "3": 95
+      },
+      "pcNumber": 4,
+      "pedalProfileId": "walrus-acs1-mk1",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "london-crunch",
+      "bankId": "F5F0476F-819F-4D5E-85B4-92B9BE3D2134",
+      "colorHex": "#404858",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "london",
+      "id": "53C82F28-9A21-4213-8107-324BF53881C8",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Bus Stop, Indefinitely",
+      "parameterValues": {
+        "14": 65,
+        "15": 60,
+        "20": 70,
+        "21": 60,
+        "22": 110,
+        "27": 1,
+        "3": 105
+      },
+      "pcNumber": 5,
+      "pedalProfileId": "walrus-acs1-mk1",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "london-crunch",
+      "bankId": "F5F0476F-819F-4D5E-85B4-92B9BE3D2134",
+      "colorHex": "#9A6A8A",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "london",
+      "id": "B7BCC284-2008-4A8B-BD4E-33E9B34F92FC",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "The Cardigan Was Hers",
+      "parameterValues": {
+        "14": 80,
+        "15": 65,
+        "20": 68,
+        "21": 50,
+        "22": 100,
+        "27": 3,
+        "3": 90
+      },
+      "pcNumber": 6,
+      "pedalProfileId": "walrus-acs1-mk1",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "london-crunch",
+      "bankId": "F5F0476F-819F-4D5E-85B4-92B9BE3D2134",
+      "colorHex": "#683828",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "london",
+      "id": "DAADB8F1-4CAF-4C5B-A37C-DF7E37944D74",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Pub Closes At Two (No Dogs Allowed)",
+      "parameterValues": {
+        "14": 85,
+        "15": 72,
+        "20": 75,
+        "21": 95,
+        "22": 80,
+        "27": 4,
+        "3": 100
+      },
+      "pcNumber": 7,
+      "pedalProfileId": "walrus-acs1-mk1",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "dartford-jangle",
+      "bankId": "F5F0476F-819F-4D5E-85B4-92B9BE3D2134",
+      "colorHex": "#605040",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "dartford",
+      "id": "E4A19119-812D-474C-B0A3-985EA00CBC8B",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "The Train Was Late, Predictably",
+      "parameterValues": {
+        "14": 110,
+        "15": 75,
+        "20": 75,
+        "21": 80,
+        "22": 80,
+        "27": 2,
+        "3": 65
+      },
+      "pcNumber": 8,
+      "pedalProfileId": "walrus-acs1-mk1",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "dartford-jangle",
+      "bankId": "F5F0476F-819F-4D5E-85B4-92B9BE3D2134",
+      "colorHex": "#4A3E32",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "dartford",
+      "id": "521ECC99-AF90-4817-8394-BC3E89D79537",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "The Lodger Stayed Three Months",
+      "parameterValues": {
+        "14": 100,
+        "15": 60,
+        "20": 72,
+        "21": 70,
+        "22": 105,
+        "27": 5,
+        "3": 60
+      },
+      "pcNumber": 9,
+      "pedalProfileId": "walrus-acs1-mk1",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "dartford-jangle",
+      "bankId": "F5F0476F-819F-4D5E-85B4-92B9BE3D2134",
+      "colorHex": "#2A1F15",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "dartford",
+      "id": "25D21A17-22D1-443B-8291-82F847017D2F",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Borrowed Leather Jacket",
+      "parameterValues": {
+        "14": 115,
+        "15": 85,
+        "20": 78,
+        "21": 95,
+        "22": 70,
+        "27": 2,
+        "3": 70
+      },
+      "pcNumber": 10,
+      "pedalProfileId": "walrus-acs1-mk1",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "dartford-jangle",
+      "bankId": "F5F0476F-819F-4D5E-85B4-92B9BE3D2134",
+      "colorHex": "#7A4525",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "dartford",
+      "id": "FFCECCBB-2A37-4B79-B2B9-B2884391E2D1",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Doc Was Stinking Drunk",
+      "parameterValues": {
+        "14": 90,
+        "15": 55,
+        "20": 80,
+        "21": 105,
+        "22": 95,
+        "27": 4,
+        "3": 75
+      },
+      "pcNumber": 11,
+      "pedalProfileId": "walrus-acs1-mk1",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "chorus-traditional",
+      "bankId": "28A2FCC2-F0A2-497B-8967-E02C9BE03C8B",
+      "colorHex": "#7090C0",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "chorus",
+      "id": "479792FF-0099-4282-AC8E-464A3C3DD680",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Slightly Late For The Party",
+      "parameterValues": {
+        "14": 10,
+        "15": 0,
+        "19": 70,
+        "20": 64,
+        "21": 80,
+        "22": 0,
+        "23": 15,
+        "24": 25,
+        "25": 1,
+        "26": 5,
+        "27": 12,
+        "3": 38,
+        "9": 55
+      },
+      "pcNumber": 0,
+      "pedalProfileId": "walrus-m1",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "chorus-trichorus",
+      "bankId": "28A2FCC2-F0A2-497B-8967-E02C9BE03C8B",
+      "colorHex": "#508AA0",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "chorus",
+      "id": "5E36F9F7-52C3-4AD1-96F0-B476364C1EE8",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Tripled In Translation",
+      "parameterValues": {
+        "14": 5,
+        "15": 1,
+        "19": 75,
+        "20": 64,
+        "21": 90,
+        "22": 0,
+        "23": 8,
+        "24": 45,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "3": 45,
+        "9": 80
+      },
+      "pcNumber": 1,
+      "pedalProfileId": "walrus-m1",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "phaser-2stage",
+      "bankId": "28A2FCC2-F0A2-497B-8967-E02C9BE03C8B",
+      "colorHex": "#C040A0",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "phaser",
+      "id": "99449FAF-755E-4F8C-93C4-33090C1E1DCC",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Disco Phase",
+      "parameterValues": {
+        "14": 0,
+        "15": 0,
+        "19": 80,
+        "20": 64,
+        "21": 95,
+        "22": 0,
+        "23": 10,
+        "24": 20,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "3": 95,
+        "9": 110
+      },
+      "pcNumber": 2,
+      "pedalProfileId": "walrus-m1",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "phaser-univibe",
+      "bankId": "28A2FCC2-F0A2-497B-8967-E02C9BE03C8B",
+      "colorHex": "#603870",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "phaser",
+      "id": "A63126FB-4DF1-4814-9C9E-8F3BB4BDD18A",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "A Vibe And A Hard Place",
+      "parameterValues": {
+        "14": 20,
+        "15": 0,
+        "19": 60,
+        "20": 80,
+        "21": 70,
+        "22": 0,
+        "23": 25,
+        "24": 30,
+        "25": 2,
+        "26": 8,
+        "27": 10,
+        "3": 55,
+        "9": 95
+      },
+      "pcNumber": 3,
+      "pedalProfileId": "walrus-m1",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "tremolo-traditional",
+      "bankId": "28A2FCC2-F0A2-497B-8967-E02C9BE03C8B",
+      "colorHex": "#C8B040",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "tremolo",
+      "id": "1CF3DA77-0CCF-45D9-A9A1-295A331D2A61",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "The Porch Light Flickering",
+      "parameterValues": {
+        "14": 12,
+        "15": 0,
+        "19": 70,
+        "20": 64,
+        "21": 0,
+        "22": 0,
+        "23": 5,
+        "24": 15,
+        "25": 2,
+        "26": 6,
+        "27": 8,
+        "3": 78,
+        "9": 100
+      },
+      "pcNumber": 4,
+      "pedalProfileId": "walrus-m1",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "tremolo-harmonic",
+      "bankId": "28A2FCC2-F0A2-497B-8967-E02C9BE03C8B",
+      "colorHex": "#A0A0B0",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "tremolo",
+      "id": "9DC60721-556F-4C2F-B449-4666AF1B64C8",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Barely There",
+      "parameterValues": {
+        "14": 5,
+        "15": 1,
+        "19": 65,
+        "20": 64,
+        "21": 30,
+        "22": 0,
+        "23": 0,
+        "24": 35,
+        "25": 1,
+        "26": 0,
+        "27": 4,
+        "3": 42,
+        "9": 32
+      },
+      "pcNumber": 5,
+      "pedalProfileId": "walrus-m1",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "vibrato-vinyl",
+      "bankId": "28A2FCC2-F0A2-497B-8967-E02C9BE03C8B",
+      "colorHex": "#604030",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "vibrato",
+      "id": "E7703A6F-784D-4EE7-B663-D40446412245",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Slightly Warped",
+      "parameterValues": {
+        "14": 35,
+        "15": 0,
+        "19": 55,
+        "20": 64,
+        "21": 0,
+        "22": 0,
+        "23": 10,
+        "24": 20,
+        "25": 3,
+        "26": 25,
+        "27": 40,
+        "3": 30,
+        "9": 45
+      },
+      "pcNumber": 6,
+      "pedalProfileId": "walrus-m1",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "vibrato-tape",
+      "bankId": "28A2FCC2-F0A2-497B-8967-E02C9BE03C8B",
+      "colorHex": "#7A2A2A",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "vibrato",
+      "id": "4477F79F-6E96-43A4-A49E-AFFBC90000E7",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "You Stepped On My War Record!",
+      "parameterValues": {
+        "14": 70,
+        "15": 0,
+        "19": 45,
+        "20": 90,
+        "21": 0,
+        "22": 0,
+        "23": 35,
+        "24": 15,
+        "25": 4,
+        "26": 55,
+        "27": 95,
+        "3": 65,
+        "9": 95
+      },
+      "pcNumber": 7,
+      "pedalProfileId": "walrus-m1",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "rotary-horndrum",
+      "bankId": "28A2FCC2-F0A2-497B-8967-E02C9BE03C8B",
+      "colorHex": "#D0A878",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "rotary",
+      "id": "DB8527BD-C6DF-48F3-BBF6-4D7FCE1A996B",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Breakfast For Two",
+      "parameterValues": {
+        "14": 8,
+        "15": 0,
+        "19": 75,
+        "20": 64,
+        "21": 64,
+        "22": 0,
+        "23": 20,
+        "24": 40,
+        "25": 1,
+        "26": 4,
+        "27": 5,
+        "3": 35,
+        "9": 70
+      },
+      "pcNumber": 8,
+      "pedalProfileId": "walrus-m1",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "rotary-horn",
+      "bankId": "28A2FCC2-F0A2-497B-8967-E02C9BE03C8B",
+      "colorHex": "#A07060",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "rotary",
+      "id": "1B5C5B76-0F15-4977-B40B-DFB54129D9C6",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "No Drum, No Service",
+      "parameterValues": {
+        "14": 5,
+        "15": 0,
+        "19": 80,
+        "20": 64,
+        "21": 64,
+        "22": 0,
+        "23": 15,
+        "24": 30,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "3": 80,
+        "9": 60
+      },
+      "pcNumber": 9,
+      "pedalProfileId": "walrus-m1",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "filter-lowpass",
+      "bankId": "28A2FCC2-F0A2-497B-8967-E02C9BE03C8B",
+      "colorHex": "#404848",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "filter",
+      "id": "6DB1D13B-033D-4393-B619-C52024C782BD",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Without My Wallet",
+      "parameterValues": {
+        "14": 25,
+        "15": 0,
+        "19": 30,
+        "20": 64,
+        "21": 0,
+        "22": 70,
+        "23": 10,
+        "24": 35,
+        "25": 2,
+        "26": 12,
+        "27": 0,
+        "3": 25,
+        "9": 90
+      },
+      "pcNumber": 10,
+      "pedalProfileId": "walrus-m1",
+      "tags": [
+        "day-one"
+      ]
+    },
+    {
+      "algorithmId": "filter-bandpass",
+      "bankId": "28A2FCC2-F0A2-497B-8967-E02C9BE03C8B",
+      "colorHex": "#A09040",
+      "createdDate": "2026-06-16T13:37:14Z",
+      "effectCategoryId": "filter",
+      "id": "FD63B72C-82B1-4E5B-85F9-A9879FA3F868",
+      "isEmpty": false,
+      "isFavorite": false,
+      "modifiedDate": "2026-06-16T13:37:14Z",
+      "name": "Through A Keyhole",
+      "parameterValues": {
+        "14": 10,
+        "15": 2,
+        "19": 70,
+        "20": 64,
+        "21": 0,
+        "22": 85,
+        "23": 20,
+        "24": 25,
+        "25": 1,
+        "26": 5,
+        "27": 0,
+        "3": 40,
+        "9": 110
+      },
+      "pcNumber": 11,
+      "pedalProfileId": "walrus-m1",
+      "tags": [
+        "day-one"
+      ]
+    }
+  ],
+  "projects": [],
+  "rigAssignments": [],
+  "rigs": [],
+  "setlistEntries": [],
+  "setlistSongs": [],
+  "setlists": [],
+  "songs": [],
+  "userProfiles": []
+}
