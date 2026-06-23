@@ -4,7 +4,7 @@
 
 ## Apps
 
-- [PedalEditor](https://meaningfulsound.net/PedalEditor/): The premier iPhone Bluetooth and Wi-Fi MIDI controller, editor, and librarian for guitar pedals and synthesizers. Supports 47+ instruments across 14 brands including Strymon, Chase Bliss, Walrus Audio, Meris, Eventide, Boss, UAFX, Source Audio, Hologram, Red Panda, Old Blood Noise, plus classic synths (Yamaha DX7, Roland JV-1080, Alesis QS6). Brilliant library organization system: Rig → Project → Pedal → Bank → Preset. Song-by-song setlist scenes recall whole-board presets in one tap. iCloud sync across iPhone, iPad, and Mac. No accounts, no analytics. [App Store](https://apps.apple.com/us/app/pedaleditor/id6761016084).
+- [PedalEditor](https://meaningfulsound.net/PedalEditor/): The premier iPhone Bluetooth and Wi-Fi MIDI controller, editor, and librarian for guitar pedals and synthesizers. Supports 47+ instruments across 14 brands including Strymon, Chase Bliss, Walrus Audio, Meris, Eventide, Boss, UAFX, Source Audio, Hologram, Red Panda, Old Blood Noise, plus classic synths (Yamaha DX7, Roland JV-1080, Alesis QS6). Brilliant library organization system: Rig → Project → Pedal → Collection → Preset. Song-by-song setlist scenes recall whole-board presets in one tap. iCloud sync across iPhone, iPad, and Mac. No accounts, no analytics. [App Store](https://apps.apple.com/us/app/pedaleditor/id6761016084).
 - [Fretboard Origin](https://meaningfulsound.net/FretboardOrigin/): A fretboard companion for every stringed instrument you play — 34 instruments (guitar, bass, mandolin, banjo, ukulele, oud, sitar, koto, charango, and more), thousands of chord voicings across 43 qualities, 14 scale types in every key, 13 arpeggio types, built-in YIN strobe tuner, and a tanpura drone for practice. Native iPhone, iPad. [App Store](https://apps.apple.com/us/app/fretboard-origin/id6764200037).
 - [SongForm](https://meaningfulsound.net/SongForm/): A songwriter's workspace for sections, lyrics, layers, and co-writes. Multi-take recording, key/scale theory, fragment-based collaboration, portable `.songform` document. Native iPhone, iPad, and Mac. Coming soon.
 
@@ -26,7 +26,7 @@
 
 - **Strymon (12):** BigSky, Cloudburst, Compadre, Deco v2, DIG v2, Flint v2, Iridium, NightSky, Riverside, Sunset, Timeline, Volante
 - **Chase Bliss (7):** Blooper, Brothers, Generation Loss MkII, Habit, Lossy, Mood MkII, Warped Vinyl MkII
-- **Walrus Audio (5):** ACS1 MkI, ACS1 MkII, Mako D1, Mako M1, Mako R1
+- **Walrus Audio (5):** ACS1, ACS1 MkII, Mako D1, Mako M1, Mako R1
 - **Meris (4):** Enzo, Hedra, LVX, Mercury7
 - **Boss (4):** DD-200, EQ-200, IR-200, RE-202
 - **UAFX (3):** Dream '65, Lion '68, Ruby '63

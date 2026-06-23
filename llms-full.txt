@@ -44,7 +44,7 @@ PedalEditor is a native iPhone, iPad, and Mac editor, librarian, and stage contr
 
 - **Wireless MIDI from iPhone.** Bluetooth LE MIDI for direct iPhone-to-pedal communication on supported hardware. RTP-MIDI over Wi-Fi for wireless connection on your local network. USB MIDI via any Core MIDI interface for wired use.
 - **Edit every parameter.** Visual knobs, sliders, toggles, and algorithm selectors mapped from each pedal's official MIDI implementation. Every CC, every PC, every NRPN, every SysEx template.
-- **Brilliant library organization.** Rig → Project → Pedal → Bank → Preset hierarchy. Free-form preset names independent of the hardware's display limits. Unlimited preset slots (app-side, not bound by hardware limits).
+- **Brilliant library organization.** Rig → Project → Pedal → Collection → Preset hierarchy. Free-form preset names independent of the hardware's display limits. Unlimited preset slots (app-side, not bound by hardware limits).
 - **Setlist scenes.** Build an ordered setlist where each song carries a snapshot of your whole board. One tap fires Program Change to every pedal simultaneously, on each pedal's configured MIDI channel.
 - **iCloud sync.** Library shared across iPhone, iPad, and Mac. Edit at home, perform on stage. Encrypted end-to-end by Apple in the user's personal iCloud account.
 - **Performance Mode.** Full-screen, stage-ready, no menus. Chrome disappears — just the song list, the current scene, and per-pedal status confirmation.
@@ -56,7 +56,7 @@ PedalEditor is a native iPhone, iPad, and Mac editor, librarian, and stage contr
 
 - **Strymon (12):** BigSky, Cloudburst, Compadre, Deco v2, DIG v2, Flint v2, Iridium, NightSky, Riverside, Sunset, Timeline, Volante
 - **Chase Bliss (7):** Blooper, Brothers, Generation Loss MkII, Habit, Lossy, Mood MkII, Warped Vinyl MkII
-- **Walrus Audio (5):** ACS1 MkI, ACS1 MkII, Mako D1, Mako M1, Mako R1
+- **Walrus Audio (5):** ACS1, ACS1 MkII, Mako D1, Mako M1, Mako R1
 - **Meris (4):** Enzo, Hedra, LVX, Mercury7
 - **Boss (4):** DD-200, EQ-200, IR-200, RE-202
 - **UAFX (3):** Dream '65, Lion '68, Ruby '63
