@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Greetings From Nowhere — A preset pack for PedalEditor</title>
+<style>
+  :root {
+    --paper: #f3ede0;
+    --paper-edge: #e6dec9;
+    --ink: #1d1a16;
+    --ink-soft: #5a544a;
+    --rule: #c9bfa6;
+    --stamp: #8a3a2a;
+    --cta-bg: #1d1a16;
+    --cta-fg: #f3ede0;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--paper-edge); color: var(--ink); }
+  body {
+    font-family: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    padding: 2rem 1rem 4rem;
+    min-height: 100vh;
+  }
+  .postcard {
+    max-width: 38rem;
+    margin: 0 auto;
+    background: var(--paper);
+    border: 1px dashed var(--rule);
+    padding: 2.25rem 1.75rem 2.5rem;
+    position: relative;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.04), 0 14px 32px -18px rgba(29,26,22,0.18);
+  }
+  .stamp {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    width: 4.25rem;
+    height: 5rem;
+    border: 1px solid var(--stamp);
+    color: var(--stamp);
+    font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+    font-size: 0.55rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.4rem 0.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: rotate(4deg);
+    background:
+      radial-gradient(circle at 0% 50%, transparent 3px, var(--paper) 3.5px) 0 0/8px 8px repeat-y,
+      radial-gradient(circle at 100% 50%, transparent 3px, var(--paper) 3.5px) 100% 0/8px 8px repeat-y,
+      radial-gradient(circle at 50% 0%, transparent 3px, var(--paper) 3.5px) 0 0/8px 8px repeat-x,
+      radial-gradient(circle at 50% 100%, transparent 3px, var(--paper) 3.5px) 0 100%/8px 8px repeat-x,
+      var(--paper);
+  }
+  .stamp .top { font-weight: 600; line-height: 1.1; }
+  .stamp .mid { font-size: 1.1rem; font-weight: 700; line-height: 1; }
+  .stamp .bot { line-height: 1.1; opacity: 0.85; }
+  .overline {
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 0 0 0.5rem;
+  }
+  h1 {
+    font-family: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    font-size: clamp(1.9rem, 6.5vw, 2.6rem);
+    line-height: 1.05;
+    font-weight: 700;
+    margin: 0 0 0.4rem;
+    letter-spacing: -0.01em;
+  }
+  .byline {
+    font-style: italic;
+    color: var(--ink-soft);
+    margin: 0 0 1.5rem;
+    font-size: 1rem;
+  }
+  hr {
+    border: 0;
+    border-top: 1px dashed var(--rule);
+    margin: 1.75rem 0;
+  }
+  h2 {
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    font-weight: 600;
+    margin: 0 0 0.9rem;
+  }
+  p { margin: 0 0 1rem; }
+  .tagline {
+    font-size: 1.05rem;
+    font-style: italic;
+    color: var(--ink);
+  }
+  .titlelist {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: var(--ink);
+    margin: 0 0 1.25rem;
+  }
+  .pedals { list-style: none; padding: 0; margin: 0 0 1rem; }
+  .pedals li { padding: 0.35rem 0; border-bottom: 1px dotted var(--rule); font-size: 0.97rem; }
+  .pedals li:last-child { border-bottom: 0; }
+  .pedals .role { color: var(--ink-soft); font-style: italic; font-size: 0.88rem; }
+  ol.steps {
+    margin: 0 0 1rem 1.2rem;
+    padding: 0;
+    font-size: 0.97rem;
+  }
+  ol.steps li { margin-bottom: 0.4rem; }
+  .closing-aside {
+    font-style: italic;
+    color: var(--ink-soft);
+    font-size: 0.93rem;
+  }
+  .cta-block {
+    text-align: center;
+    margin: 2rem 0 0.5rem;
+  }
+  .cta-button {
+    display: inline-block;
+    background: var(--cta-bg);
+    color: var(--cta-fg);
+    text-decoration: none;
+    padding: 0.95rem 1.6rem;
+    border-radius: 999px;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    box-shadow: 0 8px 20px -10px rgba(29,26,22,0.45);
+    transition: transform 0.12s ease;
+  }
+  .cta-button:hover { transform: translateY(-1px); }
+  .price-strike {
+    display: inline-block;
+    margin-left: 0.6rem;
+    color: var(--ink-soft);
+    text-decoration: line-through;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    font-size: 0.95rem;
+    vertical-align: middle;
+  }
+  .launch-note {
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    letter-spacing: 0.04em;
+  }
+  .download-aside {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    font-style: italic;
+    margin: 0.75rem 0 0;
+  }
+  footer {
+    max-width: 38rem;
+    margin: 2rem auto 0;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+  footer a { color: var(--ink-soft); text-decoration: underline; text-decoration-style: dotted; }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1d1a16;
+      --paper-edge: #110f0c;
+      --ink: #f0e9d8;
+      --ink-soft: #a39a86;
+      --rule: #3a3328;
+      --stamp: #d97a5c;
+      --cta-bg: #f0e9d8;
+      --cta-fg: #1d1a16;
+    }
+    .postcard { box-shadow: 0 1px 0 rgba(255,255,255,0.03), 0 14px 32px -18px rgba(0,0,0,0.6); }
+  }
+</style>
+</head>
+<body>
+
+<article class="postcard">
+  <div class="stamp" aria-hidden="true">
+    <div class="top">PACK<br>2026</div>
+    <div class="mid">M·S</div>
+    <div class="bot">VIA<br>NOWHERE</div>
+  </div>
+
+  <p class="overline">Preset Pack · No. 1</p>
+  <h1>Greetings From<br>Nowhere</h1>
+  <p class="byline">A preset pack for PedalEditor — by Meaningful Sound.</p>
+
+  <p class="tagline">It arrived by postcard. No return address.</p>
+
+  <hr>
+
+  <h2>The pack</h2>
+  <p><strong>Greetings From Nowhere</strong> is the first preset pack from Meaningful Sound. Forty-eight presets, nineteen songs, seven setlists, and four collections built for four specific pedals: Strymon BigSky, Strymon Timeline, Walrus Audio ACS1 mk1, and Walrus Audio M1 mk1.</p>
+
+  <hr>
+
+  <h2>Forty-eight presets</h2>
+  <p class="titlelist">Room Full Of Strangers — Dark Hall — Service For One — Artesian Well — Swell Guy — Late Bloomer — Overcast All Week — Chorus Of Scorpions — Heat Off The Asphalt — Magnetic North — Two-Way Mirror — Returned To Sender — Cold Motel — Polite At Parties — Neon Sign Half Burnt Out — Boardwalk Off-Season</p>
+
+  <h2>Nineteen songs</h2>
+  <p class="titlelist">Adjacent Room · Bellhop Elegy · Checkout Was Mutual · Hot Bread Zeke · Needle In The Luggage · Passport To Nowhere · Suite 4B · Suzy&rsquo;s Binoculars · The Lobby Was Warm · The Mint On The Pillow · Two Towels No Reason · Continental Breakfast Alone · Ice Machine At Three · Do Not Disturb Probably · Late Fee Mutual · The Concierge Knows · Vacancy Eventually · Postcard From Room 12 · The Pool Closed At Dusk</p>
+
+  <h2>Seven setlists</h2>
+  <p class="titlelist">Asteroid City &mdash; Diplomacy · Divorce Court &mdash; Early Set · Durango &mdash; Dance Hall · New Penzance &mdash; Calbash · Sweet Home Avignon &mdash; Revised · Bottle Rocket &mdash; Last Call · The Grand Sonora &mdash; Late Set</p>
+
+  <p>Each song maps its scenes across the four target pedals. Each setlist is a different read on the same material.</p>
+
+  <hr>
+
+  <h2>Pedals required</h2>
+  <ul class="pedals">
+    <li>Strymon BigSky <span class="role">reverb</span></li>
+    <li>Strymon Timeline <span class="role">delay</span></li>
+    <li>Walrus Audio ACS1 mk1 <span class="role">amp &amp; cab</span></li>
+    <li>Walrus Audio M1 mk1 <span class="role">modulation</span></li>
+  </ul>
+  <p class="closing-aside">If you&rsquo;re running a subset of these, the rest of the pack still installs cleanly. Presets for pedals you don&rsquo;t own are there when you&rsquo;re ready for them. Nothing is missing &mdash; just waiting.</p>
+
+  <hr>
+
+  <h2>How to install</h2>
+  <p>This pack requires a current <strong>TestFlight build of PedalEditor</strong>. The public App Store version may not yet include <code>.presetpack</code> support &mdash; the TestFlight build is where that handler lives.</p>
+  <ol class="steps">
+    <li>Tap <strong>Get the Pack</strong> below.</li>
+    <li>The <code>.presetpack</code> file downloads to your device.</li>
+    <li>Open it from Files &mdash; PedalEditor launches automatically.</li>
+    <li>An install sheet appears. Review what&rsquo;s coming in, then confirm.</li>
+    <li>The pack lands in your library with its own IDs. Installing again later won&rsquo;t clobber anything already there.</li>
+  </ol>
+  <p>That&rsquo;s it. No account. No sync step. No cloud required.</p>
+
+  <div class="cta-block">
+    <a class="cta-button" href="greetings-from-nowhere.presetpack" download>Get the Pack &mdash; $49</a><span class="price-strike">$69</span>
+    <p class="launch-note">LAUNCH PRICE</p>
+    <p class="download-aside">Single download. Installs into PedalEditor on your device.</p>
+  </div>
+</article>
+
+<footer>
+  Meaningful Sound &mdash; independent iOS &amp; macOS apps for working musicians.<br>
+  <a href="https://meaningfulsound.net/PedalEditor/">PedalEditor</a>
+</footer>
+
+</body>
+</html>
