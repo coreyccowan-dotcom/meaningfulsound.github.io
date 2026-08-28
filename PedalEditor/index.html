@@ -1,789 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PedalEditor &mdash; The Premier iPhone Bluetooth &amp; Wi-Fi MIDI Controller for Guitar Pedals &amp; Synths | Meaningful Sound</title>
-    <meta name="description" content="PedalEditor is the premier iPhone Bluetooth and Wi-Fi MIDI controller and editor for guitar pedals and synths. Native iOS, iPadOS, and Mac. 53 pedals from 14 brands supported (Strymon, Chase Bliss, Walrus Audio, Meris, Eventide, Boss, UAFX, Source Audio, Hologram, Red Panda, Old Blood Noise) plus classic synths (DX7, JV-1080, QS6). Rig → Project → Pedal → Collection → Preset library with per-Collection A/B/C states and setlist scenes. iCloud sync. No accounts.">
-    <meta name="keywords" content="iPhone MIDI controller, iPhone MIDI editor, Bluetooth MIDI controller, Wi-Fi MIDI controller, RTP-MIDI iPhone, wireless MIDI guitar pedal, MIDI pedal editor, MIDI pedal librarian, MIDI synth editor, MIDI synth librarian, Strymon editor, Strymon Nixie alternative, Chase Bliss editor, Walrus Audio editor, Meris LVX editor, Eventide MIDI editor, Boss pedal editor, UAFX editor, Yamaha DX7 editor, Roland JV-1080 editor, Alesis QS6 editor, pedalboard MIDI, MIDI setlist scenes, preset library organization, iCloud preset sync, native iOS music app, PedalEditor, Meaningful Sound">
-    <meta name="author" content="Meaningful Sound">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
-    <meta name="theme-color" content="#000000">
-    <link rel="canonical" href="https://meaningfulsound.net/PedalEditor/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PedalEditor &mdash; Brain for Brainless Pedals | Meaningful Sound</title>
+<meta name="description" content="PedalEditor talks to your guitar pedals over Bluetooth or Wi-Fi, keeps every preset in one library across brands, and changes the whole board when the song changes. Native iPhone, iPad and Mac. 39 pedals from Strymon, Walrus Audio, UAFX and Line 6, each built from the manufacturer's manual and audited.">
+<meta name="author" content="Meaningful Sound">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="theme-color" content="#e8dfc8">
+<link rel="canonical" href="https://meaningfulsound.net/PedalEditor/">
+<link rel="alternate" type="text/markdown" title="LLM-friendly summary" href="/llms.txt">
+<meta name="apple-itunes-app" content="app-id=6761016084, app-argument=https://meaningfulsound.net/PedalEditor/">
 
-    <!-- LLM-friendly content alternate -->
-    <link rel="alternate" type="text/markdown" title="LLM-friendly summary" href="/llms.txt">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 
-    <!-- App Store Smart Banner -->
-    <meta name="apple-itunes-app" content="app-id=6761016084, app-argument=https://meaningfulsound.net/PedalEditor/">
+<meta property="og:type" content="product">
+<meta property="og:site_name" content="Meaningful Sound">
+<meta property="og:title" content="PedalEditor &mdash; Brain for Brainless Pedals">
+<meta property="og:description" content="Talks to your pedals over Bluetooth. Keeps every preset in one library. Changes the whole board when the song changes.">
+<meta property="og:url" content="https://meaningfulsound.net/PedalEditor/">
+<meta property="og:image" content="https://meaningfulsound.net/PedalEditor/images/banner.jpg">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PedalEditor &mdash; Brain for Brainless Pedals">
+<meta name="twitter:description" content="Talks to your pedals over Bluetooth. Keeps every preset in one library. Changes the whole board when the song changes.">
+<meta name="twitter:image" content="https://meaningfulsound.net/PedalEditor/images/banner.jpg">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="manifest" href="/site.webmanifest">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "@id": "https://meaningfulsound.net/PedalEditor/#app",
+  "name": "PedalEditor",
+  "applicationCategory": "MusicApplication",
+  "operatingSystem": "iOS 17, iPadOS 17, macOS 14",
+  "description": "PedalEditor talks to MIDI guitar pedals over Bluetooth LE, Wi-Fi (RTP-MIDI) or USB, keeps every preset in one library across brands, and changes the whole board by song and song section. 39 pedals supported across Strymon, Walrus Audio, UAFX and Line 6, each profile built from the manufacturer's manual and audited before release.",
+  "url": "https://meaningfulsound.net/PedalEditor/",
+  "downloadUrl": "https://apps.apple.com/us/app/pedaleditor/id6761016084",
+  "publisher": { "@type": "Organization", "name": "Meaningful Sound" },
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="product">
-    <meta property="og:site_name" content="Meaningful Sound">
-    <meta property="og:title" content="PedalEditor &mdash; The Premier iPhone MIDI Controller for Guitar Pedals &amp; Synths">
-    <meta property="og:description" content="Wireless Bluetooth & Wi-Fi MIDI for 54 guitar pedals and classic synths. Rig → Project → Pedal → Collection → Preset library. Native iPhone, iPad, and Mac.">
-    <meta property="og:url" content="https://meaningfulsound.net/PedalEditor/">
-    <meta property="og:image" content="https://meaningfulsound.net/PedalEditor/images/og-pedaleditor.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="PedalEditor running on iPad showing a MIDI preset editor">
-    <meta property="og:locale" content="en_US">
+<style>
+:root{
+  --sand:#e8dfc8; --sand-deep:#ded2b6; --cream:#f4eee1;
+  --ink:#3a2a1e; --ink-soft:#6b5644; --muted:#8d7a63;
+  --terracotta:#c0553a; --sage:#7fa89a; --gold:#8a6f3d;
+  --line:#d3c6a8;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--sand);color:var(--ink)}
+body{font-family:var(--sans);line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="PedalEditor &mdash; The Premier iPhone MIDI Controller for Pedals &amp; Synths">
-    <meta name="twitter:description" content="Wireless Bluetooth & Wi-Fi MIDI for 54 guitar pedals and classic synths. Rig → Project → Pedal → Collection → Preset library. iPhone, iPad, and Mac.">
-    <meta name="twitter:image" content="https://meaningfulsound.net/PedalEditor/images/og-pedaleditor.png">
+.banner{width:100%;background:var(--sand)}
+.banner img{width:100%;height:auto}
 
-    <!-- Structured Data: SoftwareApplication -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "MobileApplication",
-      "@id": "https://meaningfulsound.net/PedalEditor/#app",
-      "name": "PedalEditor",
-      "alternateName": "Pedal Editor",
-      "applicationCategory": "MusicApplication",
-      "applicationSubCategory": "Wireless MIDI Controller, Editor & Librarian",
-      "category": "Music",
-      "inLanguage": "en",
-      "operatingSystem": "iOS 17, iPadOS 17, macOS 14",
-      "description": "The premier iPhone Bluetooth and Wi-Fi MIDI controller and editor for guitar pedals and synths. A native iOS, iPadOS, and macOS editor, librarian, and stage controller for 54 MIDI-enabled effects pedals from 14 brands (Strymon, Chase Bliss, Walrus Audio, Meris, Eventide, Boss, UAFX, Source Audio, Hologram, Red Panda, Old Blood Noise) plus classic synths (Yamaha DX7, Roland JV-1080, Alesis QS6). Organize your entire rig as Rig → Project → Pedal → Collection → Preset with per-Collection A/B/C slot states, iCloud sync, song-by-song setlist scenes, Performance Pads on stage, Read from Pedal on supported Strymon hardware, and an AI-assisted Profile Builder for custom devices.",
-      "url": "https://meaningfulsound.net/PedalEditor/",
-      "downloadUrl": "https://apps.apple.com/us/app/pedaleditor/id6761016084",
-      "installUrl": "https://apps.apple.com/us/app/pedaleditor/id6761016084",
-      "image": "https://meaningfulsound.net/PedalEditor/images/og-pedaleditor.png",
-      "screenshot": [
-        "https://meaningfulsound.net/PedalEditor/images/iphone-03.webp",
-        "https://meaningfulsound.net/PedalEditor/images/iphone-04.webp",
-        "https://meaningfulsound.net/PedalEditor/images/iphone-02.webp",
-        "https://meaningfulsound.net/PedalEditor/images/iphone-06.webp",
-        "https://meaningfulsound.net/PedalEditor/images/iphone-05.webp",
-        "https://meaningfulsound.net/PedalEditor/images/iphone-01.webp"
-      ],
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock"
-      },
-      "brand": {
-        "@type": "Brand",
-        "name": "Meaningful Sound"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "@id": "https://meaningfulsound.net/#organization",
-        "name": "Meaningful Sound",
-        "url": "https://meaningfulsound.net/"
-      },
-      "featureList": [
-        "The premier iPhone Bluetooth & Wi-Fi MIDI controller for guitar pedals and synths",
-        "Edits 54 MIDI pedals from 14 brands plus classic synths (Yamaha DX7, Roland JV-1080, Alesis QS6)",
-        "Library hierarchy: Rig → Project → Pedal → Collection → Preset",
-        "Per-Collection A/B/C slot states for room/studio/fly-rig variants",
-        "Bluetooth LE MIDI for direct iPhone-to-hardware connection",
-        "RTP-MIDI over Wi-Fi for wireless MIDI on your local network",
-        "Setlist scenes recall whole-board presets per song",
-        "Performance Pads — configurable grid of scene, CC, PC, and section actions for stage use",
-        "Read from Pedal — pull SysEx snapshots from Strymon hardware into editable presets",
-        "iCloud preset library sync across iPhone, iPad, and Mac",
-        "Profile Builder Wizard for custom pedal and synth support",
-        "Bidirectional MIDI on supported hardware",
-        ".pedalpreset file export and import",
-        "No accounts, no analytics, no tracking"
-      ]
-    }
-    </script>
+.wrap{max-width:820px;margin:0 auto;padding:0 24px;text-align:center}
+.eyebrow{font-family:var(--sans);font-size:.72em;font-weight:700;text-transform:uppercase;letter-spacing:3px;color:var(--muted);margin:0 0 18px}
+.eyebrow a{text-decoration:none;color:inherit}
 
-    <!-- Structured Data: BreadcrumbList -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "inLanguage": "en",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Meaningful Sound", "item": "https://meaningfulsound.net/" },
-        { "@type": "ListItem", "position": 2, "name": "PedalEditor", "item": "https://meaningfulsound.net/PedalEditor/" }
-      ]
-    }
-    </script>
+h1{font-family:var(--serif);font-size:3.3em;line-height:1.04;letter-spacing:-1px;margin:0 0 18px;font-weight:700}
+.lede{font-size:1.22em;color:var(--ink-soft);margin:0 auto 30px;max-width:32em;font-weight:300}
+.title-card{padding:56px 0 8px;border-bottom:1px solid var(--line)}
+.title-card .rule{width:64px;height:1px;background:var(--terracotta);margin:0 auto 26px}
 
-    <!-- Structured Data: WebPage -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "@id": "https://meaningfulsound.net/PedalEditor/#webpage",
-      "url": "https://meaningfulsound.net/PedalEditor/",
-      "name": "PedalEditor — The Premier iPhone Bluetooth & Wi-Fi MIDI Controller for Guitar Pedals & Synths",
-      "description": "PedalEditor is the premier iPhone Bluetooth and Wi-Fi MIDI controller and editor for guitar pedals and synths. Native iOS, iPadOS, and Mac. 53 pedals from 14 brands plus classic synths. Rig → Project → Pedal → Collection → Preset library with per-Collection A/B/C states.",
-      "inLanguage": "en",
-      "isPartOf": { "@id": "https://meaningfulsound.net/#website" },
-      "about": { "@id": "https://meaningfulsound.net/PedalEditor/#app" },
-      "primaryImageOfPage": "https://meaningfulsound.net/PedalEditor/images/og-pedaleditor.png",
-      "publisher": { "@id": "https://meaningfulsound.net/#organization" }
-    }
-    </script>
+.pill{display:inline-block;padding:10px 20px;border-radius:999px;font-size:.9em;font-weight:600;
+  text-decoration:none;border:1px solid var(--ink);color:var(--ink);background:transparent;
+  transition:background .15s ease,color .15s ease}
+.pill:hover{background:var(--ink);color:var(--cream)}
+.pill.filled{background:var(--terracotta);border-color:var(--terracotta);color:#fff}
+.pill.filled:hover{background:#a8452e;border-color:#a8452e}
+.links{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:8px;justify-content:center}
 
-    <!-- Structured Data: VideoObject -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "VideoObject",
-      "name": "PedalEditor: Brain for Brainless Pedals!",
-      "description": "Demo of PedalEditor — the premier iPhone Bluetooth and Wi-Fi MIDI controller and editor for guitar pedals and synths. Shows the library system, preset editing, and setlist scene recall.",
-      "thumbnailUrl": "https://img.youtube.com/vi/UY593cB_DAQ/maxresdefault.jpg",
-      "uploadDate": "2026-05-28",
-      "contentUrl": "https://www.youtube.com/watch?v=UY593cB_DAQ",
-      "embedUrl": "https://www.youtube-nocookie.com/embed/UY593cB_DAQ",
-      "inLanguage": "en",
-      "publisher": { "@id": "https://meaningfulsound.net/#organization" }
-    }
-    </script>
+h2{font-family:var(--sans);font-weight:700;text-transform:uppercase;font-size:.72em;letter-spacing:3px;
+  color:var(--gold);margin:66px 0 26px;display:flex;align-items:center;gap:16px}
+h2::before,h2::after{content:"";flex:1;height:1px;background:var(--line)}
 
-    <!-- Structured Data: FAQPage -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "inLanguage": "en",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is PedalEditor?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "PedalEditor is a native iOS, iPadOS, and macOS app that edits and organizes presets for MIDI-enabled guitar effects pedals. It ships with 53 prebuilt profiles across 14 brands including Strymon, Chase Bliss, Walrus Audio, Meris, Eventide, Boss, and UAFX, plus a built-in MIDI Library of 500+ more devices that the Profile Builder pre-fills in one tap. It adds Library Collections with per-Collection A/B/C slot states, setlist-based scene recall, Performance Pads, Read from Pedal on supported Strymon hardware, iCloud library sync, and wireless MIDI from iPhone."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Which pedals does PedalEditor support?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Coverage comes in two tiers. Tier 1 is 53 prebuilt profiles across 14 brands &mdash; Strymon (BigSky, Cloudburst, Compadre, Deco v2, DIG v2, Flint v2, Iridium, Mobius, NightSky, Riverside, Sunset, Timeline, Volante), Meris (Enzo, Enzo X, Hedra, LVX, Mercury 7, Mercury X, Ottobit Jr, Polymoon), Chase Bliss (Blooper, Brothers, Generation Loss MkII, Habit, Lossy, Mood MkII, Warped Vinyl MkII), Walrus Audio (ACS1, ACS1 MkII, Mako D1, Mako M1, Mako R1), Boss (DD-200, EQ-200, IR-200, RE-202), UAFX (Dream '65, Lion '68, Ruby '63), Source Audio (Atlas, C4 Synth, Ultrawave), Red Panda (Particle V2, Tensor), Eventide (Space, TimeFactor), Hologram (Chroma Console, Microcosm), Old Blood Noise (Dark Star), and vintage synths (DX7, JV-1080, QS6). Tier 2 is a built-in MIDI Library of 500+ more devices across 100+ brands &mdash; the Profile Builder pre-fills the CC list, parameter names, and ranges in one tap, leaving you to finish hardware slots and save method. The full supported-pedals list appears on the PedalEditor page."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is PedalEditor a replacement for Nixie, the Walrus app, or the Chase Bliss app?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. PedalEditor replaces every single-brand editor with one cross-brand workspace. It edits the same parameters those apps edit, while adding rig management, song-by-song setlist scene recall, wireless iPhone control, .pedalpreset file sharing, and iCloud sync that none of the single-brand editors offer."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How does PedalEditor connect to my pedals?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "PedalEditor uses Bluetooth LE MIDI for direct iPhone-to-pedal communication on supported hardware, RTP-MIDI over Wi-Fi for wireless connection across your local network, and USB MIDI via any Core MIDI interface for wired use on Mac or USB-C iPad. The app auto-detects connected pedals via MIDI Identity Reply and selects the matching profile."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does PedalEditor work on iPhone, iPad, and Mac?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. PedalEditor is a native app for iPhone, iPad, and Mac with adaptive layouts on each. The library syncs across all three devices through iCloud. iPhone can also act as a wireless remote for a Mac running PedalEditor on stage."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does PedalEditor collect data or require an account?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. PedalEditor has no account system, no analytics, no advertising, and no third-party SDKs. Local Network permission is requested only to talk to your pedals via MIDI. Optional preset sync uses your personal iCloud account, encrypted end-to-end by Apple."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is a setlist scene in PedalEditor?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A setlist scene is a snapshot of preset assignments across every pedal on your board, recallable in one tap. Building a setlist lets you fire 'Verse 1' to BigSky PC#42, Timeline PC#15, and M1 PC#3 simultaneously, then jump to 'Chorus' which changes all three. The app sends each pedal's Program Change on the channel configured for that pedal."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I share presets I create with other PedalEditor users?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Any preset can be exported as a .pedalpreset file (JSON with profile metadata). Send it to bandmates, post it online, or import .pedalpreset files from other users. The app performs version checking and warns if the sender used a newer profile."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What if my pedal isn't on the supported list?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "First check the built-in MIDI Library &mdash; 500+ devices across 100+ brands have their CC charts pre-imported, so the Profile Builder fills in parameter names and ranges in one tap with no AI step. For anything off-database, the AI-assisted Profile Builder Wizard generates a prompt you paste into Gemini, Claude, or ChatGPT along with your pedal's MIDI implementation chart; paste the response back and the app assembles it into a working profile. You can also import community-built profile files without waiting for an app update."
-          }
-        }
-      ]
-    }
-    </script>
+.panels{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.panel{background:var(--cream);border:1px solid var(--line);border-radius:4px;padding:26px 22px}
+.panel .no{font-size:.68em;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--terracotta);margin:0 0 12px}
+.panel h3{font-family:var(--serif);font-size:1.26em;margin:0 0 10px;font-weight:700;letter-spacing:-.2px}
+.panel p{margin:0;font-size:.95em;color:var(--ink-soft);text-align:left}
 
-    <style>
-        :root {
-            --fg: #1a1a1a;
-            --fg-soft: #444;
-            --muted: #888;
-            --line: #ececec;
-            --line-soft: #f3f3f3;
-            --bg: #ffffff;
-            --bg-soft: #fafafa;
-            --bg-card: #f7f7f7;
-            --accent: #000000;
-        }
-        * { box-sizing: border-box; }
-        html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
-            line-height: 1.65;
-            -webkit-font-smoothing: antialiased;
-        }
-        .wrap { max-width: 880px; margin: 0 auto; padding: 56px 24px 80px; }
+.brand{display:block;background:var(--cream);border:1px solid var(--line);border-radius:4px;
+  padding:22px;margin-bottom:10px;text-decoration:none;
+  transition:border-color .15s ease,transform .15s ease}
+.brand:hover{border-color:var(--terracotta);transform:translateY(-1px)}
+.brand .name{display:block;font-family:var(--serif);font-size:1.44em;font-weight:700;letter-spacing:-.2px}
+.brand .list{display:block;margin:10px auto 0;max-width:34em;font-size:.94em;
+  color:var(--ink-soft);line-height:1.6}
+.brand .soon{display:block;margin:12px auto 0;max-width:34em;font-size:.9em;color:var(--muted)}
+.brand .soon .label{display:block;font-size:.74em;font-weight:700;text-transform:uppercase;
+  letter-spacing:2px;color:var(--terracotta);margin-bottom:4px}
 
-        .brand-header { font-size: 0.85em; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: var(--muted); margin-bottom: 12px; }
-        h1 { font-size: 3em; margin: 0 0 12px 0; letter-spacing: -1.5px; line-height: 1.05; }
-        .tagline { font-size: 1.35em; color: var(--fg-soft); margin: 0 0 28px 0; font-weight: 300; }
-        .lede { font-size: 1.08em; color: var(--fg-soft); margin: 0 0 28px 0; }
-        .supported-summary { font-size: 0.92em; color: var(--muted); margin: 0 0 28px 0; line-height: 1.65; }
-        .supported-summary strong { color: var(--fg); }
+.facts p{color:var(--ink-soft);max-width:34em;margin-left:auto;margin-right:auto}
+.facts .price{border-top:1px solid var(--line);padding-top:22px;margin-top:26px;color:var(--ink)}
 
-        h2 {
-            font-weight: 700; text-transform: uppercase; font-size: 0.82em; letter-spacing: 1.5px;
-            color: var(--accent); margin: 64px 0 18px; padding-bottom: 8px; border-bottom: 1px solid var(--line);
-        }
-        h3 { font-size: 1.25em; margin: 28px 0 8px; letter-spacing: -0.3px; }
+footer{margin-top:80px;border-top:1px solid var(--line);padding:24px 0 64px;
+  font-size:.78em;color:var(--muted);display:flex;gap:20px;flex-wrap:wrap;
+  align-items:center;justify-content:center;text-transform:uppercase;letter-spacing:2px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--ink)}
+.updated{width:100%;color:var(--muted)}
 
-        p { margin: 0 0 16px; }
-
-        .btn {
-            display: inline-block; background: var(--accent); color: #fff; padding: 14px 32px;
-            text-decoration: none; border-radius: 8px; font-weight: 600; margin-top: 8px;
-            transition: background .15s ease;
-        }
-        .btn:hover { background: #333; }
-        .btn.secondary {
-            background: transparent; color: var(--accent); border: 1px solid var(--accent);
-            margin-left: 8px;
-        }
-        .btn.secondary:hover { background: var(--accent); color: #fff; }
-
-        .feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; }
-        .feature {
-            padding: 22px; background: var(--bg-card); border-radius: 10px;
-            border: 1px solid var(--line);
-        }
-        .feature strong { display: block; margin-bottom: 6px; font-size: 1.02em; }
-        .feature p { margin: 0; color: var(--fg-soft); font-size: 0.96em; }
-
-        .feature-list { margin: 16px 0; padding: 0; list-style: none; }
-        .feature-list li {
-            padding: 14px 0; border-bottom: 1px solid var(--line-soft);
-            color: var(--fg-soft);
-        }
-        .feature-list li:last-child { border-bottom: none; }
-        .feature-list li strong { color: var(--fg); display: inline; margin-right: 6px; }
-
-        .brand-grid {
-            display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 20px 0;
-        }
-        .brand-cell {
-            padding: 14px 16px; background: var(--bg-soft); border: 1px solid var(--line);
-            border-radius: 8px; font-size: 0.95em;
-        }
-        .brand-cell strong { display: block; font-size: 0.78em; text-transform: uppercase;
-            letter-spacing: 1px; color: var(--muted); margin-bottom: 4px; font-weight: 700; }
-
-        .library-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 16px 0; }
-        .library-grid .brand-cell { padding: 10px 12px; font-size: 0.85em; line-height: 1.5; }
-        .library-grid .brand-cell strong { font-size: 0.72em; margin-bottom: 3px; }
-        h3.tier-title {
-            font-size: 0.92em; text-transform: uppercase; letter-spacing: 1.5px;
-            color: var(--fg); margin: 28px 0 4px; font-weight: 700;
-        }
-        .tier-title-note { font-size: 0.88em; color: var(--muted); margin: 0 0 12px; }
-
-        .stat-row {
-            display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;
-            margin: 24px 0; padding: 24px; background: var(--bg-soft);
-            border-radius: 10px; border: 1px solid var(--line);
-        }
-        .stat { text-align: center; }
-        .stat .num { display: block; font-size: 1.8em; font-weight: 700; letter-spacing: -1px; color: var(--accent); }
-        .stat .lbl { display: block; font-size: 0.78em; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin-top: 4px; }
-
-        figure { margin: 32px 0; }
-        figure figcaption { margin-top: 12px; font-size: 0.88em; color: var(--muted); text-align: center; }
-        .phone {
-            display: block; margin: 0 auto; width: 100%; max-width: 300px;
-            height: auto; aspect-ratio: 1320 / 2868; object-fit: cover;
-            border-radius: 36px; border: 1px solid var(--line);
-            box-shadow: 0 12px 40px rgba(0,0,0,0.08);
-        }
-        .phone-row {
-            display: grid; grid-template-columns: repeat(3, 1fr);
-            gap: 20px; margin: 36px 0; align-items: start;
-        }
-        .phone-row .phone { max-width: 100%; }
-        .phone-pair {
-            display: grid; grid-template-columns: repeat(2, 1fr);
-            gap: 24px; margin: 32px 0; align-items: start;
-            max-width: 560px; margin-left: auto; margin-right: auto;
-        }
-        .phone-pair .phone { max-width: 100%; }
-
-        .callout {
-            margin: 28px 0; padding: 24px 28px; background: var(--bg-soft);
-            border-left: 3px solid var(--accent); border-radius: 4px;
-        }
-        .callout p { margin: 0; color: var(--fg); font-size: 1.02em; }
-
-        .video-wrap {
-            position: relative; width: 100%; aspect-ratio: 16 / 9;
-            margin: 36px 0 12px; border-radius: 12px; overflow: hidden;
-            border: 1px solid var(--line);
-            box-shadow: 0 12px 40px rgba(0,0,0,0.08);
-            background: #000;
-        }
-        .video-wrap iframe {
-            position: absolute; inset: 0; width: 100%; height: 100%; border: 0;
-        }
-
-        table.compare { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.92em; }
-        table.compare th, table.compare td {
-            padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--line-soft);
-        }
-        table.compare th { font-weight: 700; color: var(--fg); font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px; background: var(--bg-soft); }
-        table.compare td:first-child { font-weight: 600; color: var(--fg); }
-        table.compare td.yes { color: var(--accent); font-weight: 600; }
-        table.compare td.no { color: #c0c0c0; }
-
-        footer {
-            margin-top: 80px; padding-top: 24px; border-top: 1px solid var(--line);
-            font-size: 0.9em; color: var(--muted); display: flex; flex-wrap: wrap; gap: 14px; align-items: center;
-        }
-        footer a { color: var(--muted); text-decoration: none; border-bottom: 1px solid transparent; }
-        footer a:hover { border-bottom: 1px solid var(--muted); color: var(--fg); }
-        footer .spacer { flex: 1; }
-
-        @media (max-width: 640px) {
-            .wrap { padding: 40px 18px 60px; }
-            h1 { font-size: 2.2em; }
-            .tagline { font-size: 1.15em; }
-            .feature-grid { grid-template-columns: 1fr; }
-            .brand-grid { grid-template-columns: 1fr 1fr; }
-            .library-grid { grid-template-columns: 1fr; }
-            .stat-row { grid-template-columns: 1fr 1fr; padding: 18px; }
-            .btn.secondary { margin-left: 0; margin-top: 8px; }
-            .phone-row { grid-template-columns: 1fr; gap: 28px; max-width: 280px; margin-left: auto; margin-right: auto; }
-            .phone-pair { grid-template-columns: 1fr; gap: 28px; max-width: 280px; }
-        }
-    </style>
+@media(max-width:720px){
+  h1{font-size:2.4em}
+  .panels{grid-template-columns:1fr}
+  .title-card{padding-top:36px}
+}
+</style>
 </head>
 <body>
+
+<div class="banner">
+  <img src="images/banner.jpg" width="1211" height="471" alt="The PedalEditor app icon floating above a desert at dusk">
+</div>
+
 <div class="wrap">
 
-    <div class="brand-header">Meaningful Sound</div>
-    <h1>PedalEditor</h1>
-    <p class="tagline">The premier iPhone Bluetooth &amp; Wi-Fi MIDI controller for guitar pedals and synths.</p>
-
-    <p class="lede">PedalEditor is a native iPhone, iPad, and Mac editor, librarian, and stage controller for MIDI-enabled effects pedals and synthesizers &mdash; with a library system that finally makes sense. Replace Nixie, the Walrus app, the Chase Bliss app, the Meris app, and every other single-brand editor with one workspace that organizes your entire rig, recalls full-board scenes by song, and travels with you on stage.</p>
-
-    <p class="supported-summary"><strong>Supported pedals &amp; synths (53 prebuilt profiles):</strong> <strong>Strymon</strong> &mdash; BigSky, Cloudburst, Compadre, Deco v2, DIG v2, Flint v2, Iridium, Mobius, NightSky, Riverside, Sunset, Timeline, Volante. <strong>Meris</strong> &mdash; Enzo, Enzo X, Hedra, LVX, Mercury 7, Mercury X, Ottobit Jr, Polymoon. <strong>Chase Bliss</strong> &mdash; Blooper, Brothers, Generation Loss MkII, Habit, Lossy, Mood MkII, Warped Vinyl MkII. <strong>Walrus Audio</strong> &mdash; ACS1, ACS1 MkII, Mako D1, Mako M1, Mako R1. <strong>Boss</strong> &mdash; DD-200, EQ-200, IR-200, RE-202. <strong>UAFX</strong> &mdash; Dream '65, Lion '68, Ruby '63. <strong>Source Audio</strong> &mdash; Atlas, C4 Synth, Ultrawave. <strong>Red Panda</strong> &mdash; Particle V2, Tensor. <strong>Eventide</strong> &mdash; Space, TimeFactor. <strong>Hologram</strong> &mdash; Chroma Console, Microcosm. <strong>Old Blood Noise</strong> &mdash; Dark Star. <strong>Vintage synths</strong> &mdash; Yamaha DX7, Roland JV-1080, Alesis QS6. Plus a built-in MIDI Library of 500+ more devices across 100+ brands via the Profile Builder.</p>
-
-    <a href="https://apps.apple.com/us/app/pedaleditor/id6761016084?platform=iphone" class="btn" target="_blank" rel="noopener">Get PedalEditor on the App Store</a>
-    <a href="#features" class="btn secondary">See What It Does</a>
-
-    <figure>
-        <div class="video-wrap">
-            <iframe
-                src="https://www.youtube-nocookie.com/embed/UY593cB_DAQ?rel=0"
-                title="PedalEditor: Brain for Brainless Pedals!"
-                loading="lazy"
-                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen></iframe>
-        </div>
-        <figcaption>PedalEditor &mdash; Brain for Brainless Pedals.</figcaption>
-    </figure>
-
-    <figure>
-        <div class="phone-row">
-            <img class="phone" src="images/iphone-03.webp" alt="PedalEditor BigSky preset editor on iPhone showing effect category controls and the preset library sheet" width="1320" height="2868" loading="eager">
-            <img class="phone" src="images/iphone-04.webp" alt="PedalEditor Setlists list on iPhone" width="1320" height="2868" loading="lazy">
-            <img class="phone" src="images/iphone-02.webp" alt="A PedalEditor setlist on iPhone with the Perform button visible" width="1320" height="2868" loading="lazy">
-        </div>
-    </figure>
-
-    <div class="stat-row">
-        <div class="stat"><span class="num">54</span><span class="lbl">Pedals &amp; Synths</span></div>
-        <div class="stat"><span class="num">14</span><span class="lbl">Brands</span></div>
-        <div class="stat"><span class="num">3</span><span class="lbl">Platforms</span></div>
-        <div class="stat"><span class="num">0</span><span class="lbl">Cloud Accounts</span></div>
+  <div class="title-card">
+    <p class="eyebrow"><a href="/">Meaningful Sound</a></p>
+    <div class="rule"></div>
+    <h1>Brain for Brainless Pedals</h1>
+    <p class="lede">An app that talks to your guitar pedals over Bluetooth or Wi&#8209;Fi, remembers every preset you&rsquo;ve ever made, and sends the right sounds to the right places when the song changes.</p>
+    <div class="links">
+      <a class="pill filled" href="https://apps.apple.com/us/app/pedaleditor/id6761016084">App Store</a>
+      <a class="pill" href="https://instagram.com/pedaleditor">Instagram</a>
     </div>
+  </div>
 
-    <h2 id="features">What It Does</h2>
-
-    <div class="feature-grid">
-        <div class="feature">
-            <strong>Edit every parameter</strong>
-            <p>Visual knobs, sliders, toggles, and algorithm selectors mapped from each pedal's official MIDI implementation. Every CC, every PC, every NRPN.</p>
-        </div>
-        <div class="feature">
-            <strong>Organize your whole rig</strong>
-            <p>Rig &rarr; Project &rarr; Pedal &rarr; Collection &rarr; Preset. Free-form names. Unlimited slots. Built for how musicians actually think.</p>
-        </div>
-        <div class="feature">
-            <strong>Recall whole-board scenes</strong>
-            <p>Setlists fire a Program Change to every pedal at once. Tap a song, the entire board snaps to the right sound.</p>
-        </div>
-        <div class="feature">
-            <strong>Wireless from iPhone</strong>
-            <p>Bluetooth LE MIDI and RTP-MIDI over Wi-Fi. Control your rig from the phone in your pocket &mdash; no laptop, no cables.</p>
-        </div>
-        <div class="feature">
-            <strong>Sync across devices</strong>
-            <p>iCloud-backed library shared across iPhone, iPad, and Mac. Edit at home, perform on stage, no exports required.</p>
-        </div>
-        <div class="feature">
-            <strong>Share presets as files</strong>
-            <p>Export any preset or pack as a <code>.pedalpreset</code> file. Send to bandmates, post online, or import from others with version checking.</p>
-        </div>
+  <h2>What it does</h2>
+  <div class="panels">
+    <div class="panel">
+      <p class="no">No. 1</p>
+      <h3>It knows their language</h3>
+      <p>Most pedals understand MIDI. Most editors understand one pedal. Every profile here was built from the manufacturer&rsquo;s manual &mdash; every parameter, every range, every machine. It knows which knob does what before you plug anything in.</p>
     </div>
-
-    <h2>The Preset Editor</h2>
-
-    <p>Every supported pedal gets a faithful, parameter-complete editor. Switch algorithms and the UI reshapes to match &mdash; BigSky's 12 reverb machines, DIG's three delay voicings, LVX's structures. Move a knob in the app and MIDI transmits instantly. On hardware that broadcasts knob changes (Chase Bliss Brothers, several Boss and Meris pedals), tweaks on the pedal mirror back to the app live &mdash; the editor and the hardware stay in sync as you work the knobs.</p>
-
-    <ul class="feature-list">
-        <li><strong>Parameter coverage.</strong> 7-bit CC, 14-bit CC, NRPN, and SysEx &mdash; whichever the pedal speaks, the editor speaks it natively.</li>
-        <li><strong>Algorithm switching.</strong> Pick the engine, and every knob and routing option reshapes to the right layout.</li>
-        <li><strong>Dual-channel pedals.</strong> Independent L/R parameter editing for stereo pedals like Walrus ACS1 and Chase Bliss Mood MkII.</li>
-        <li><strong>Expression mapping.</strong> Route an expression pedal to any parameter, with source CC, target range, and curve per preset.</li>
-        <li><strong>Long, descriptive names.</strong> Free-form preset names independent of the hardware's display limits.</li>
-        <li><strong>Slot-aware assignment.</strong> See which Program Change numbers are occupied and which are free before you write.</li>
-    </ul>
-
-    <figure>
-        <img class="phone" src="images/iphone-06.webp" alt="PedalEditor BigSky editor on iPhone with the preset action menu open" width="1320" height="2868" loading="lazy">
-        <figcaption>The editor reshapes to match each algorithm. No two pedals feel the same &mdash; because they aren't.</figcaption>
-    </figure>
-
-    <h2>Setlists &amp; Performance Mode</h2>
-
-    <p>Build an ordered setlist where each song carries a snapshot of your whole board. One tap fires a Program Change to every pedal simultaneously, on each pedal's configured MIDI channel. Reorder songs at soundcheck by dragging. Switch into full-screen Performance Mode and the chrome disappears &mdash; just the song list and the current scene.</p>
-
-    <ul class="feature-list">
-        <li><strong>Multi-pedal scenes.</strong> "Verse 1" fires BigSky PC#42, Timeline PC#15, and M1 PC#3 in one tap.</li>
-        <li><strong>Performance Mode.</strong> Full-screen, stage-ready, no menus. Mac and iPad hide everything that isn't the show.</li>
-        <li><strong>Performance Pads.</strong> Configurable grid of custom MIDI buttons &mdash; CCs, PCs, or scenes &mdash; with your own labels and colors.</li>
-    </ul>
-
-    <figure>
-        <div class="phone-pair">
-            <img class="phone" src="images/iphone-04.webp" alt="PedalEditor Setlists list on iPhone showing multiple saved setlists" width="1320" height="2868" loading="lazy">
-            <img class="phone" src="images/iphone-02.webp" alt="A PedalEditor setlist on iPhone with songs and the Perform button" width="1320" height="2868" loading="lazy">
-        </div>
-        <figcaption>Build a setlist, tap Perform &mdash; the whole board snaps to each song's scene.</figcaption>
-    </figure>
-
-    <h2>The Rig System</h2>
-
-    <p>Define your physical board once &mdash; which pedals, which MIDI channels, how they're wired &mdash; and PedalEditor remembers. Run multiple boards? Define multiple rigs and switch between them. The app gates editing on rig confirmation, so you never accidentally fire MIDI at the wrong setup. Projects sit beneath rigs to separate sounds by band, venue, or purpose without duplicating the hardware definition.</p>
-
-    <figure>
-        <div class="phone-pair">
-            <img class="phone" src="images/iphone-05.webp" alt="PedalEditor Select Your Rig screen on iPhone" width="1320" height="2868" loading="lazy">
-            <img class="phone" src="images/iphone-01.webp" alt="PedalEditor Songs library on iPhone" width="1320" height="2868" loading="lazy">
-        </div>
-        <figcaption>Pick a rig, then organize sounds as songs &mdash; the library system everything else hangs from.</figcaption>
-    </figure>
-
-    <div class="callout">
-        <p><strong>The app is the source of truth.</strong> Your preset library lives in PedalEditor &mdash; on your devices, synced through iCloud. The pedal is a render target. Edit offline, deploy on stage, never lose a sound to a firmware update or a hardware swap.</p>
+    <div class="panel">
+      <p class="no">No. 2</p>
+      <h3>One library, every pedal</h3>
+      <p>Presets live in the app. The pedal is only where they play. Organised by rig, project and collection &mdash; not by numbered slots in hardware memory that a firmware update can erase.</p>
     </div>
-
-    <h2>Sync &amp; Connectivity</h2>
-
-    <ul class="feature-list">
-        <li><strong>Bluetooth LE MIDI.</strong> Direct iPhone &rarr; pedal on supported hardware. No Mac, no interface, no cables.</li>
-        <li><strong>Network MIDI (RTP-MIDI).</strong> Wireless MIDI over your local Wi-Fi network, peer-to-peer.</li>
-        <li><strong>USB MIDI.</strong> Wired fallback via any Core MIDI interface on Mac or USB-C iPad.</li>
-        <li><strong>Auto-detection.</strong> Plug in a pedal and PedalEditor identifies it via MIDI Identity Reply and pre-selects the matching profile.</li>
-        <li><strong>iPhone &harr; Mac bridge.</strong> Run the editor on your Mac connected to your rig; control it wirelessly from your iPhone in your pocket on stage.</li>
-        <li><strong>MIDI Monitor.</strong> Real-time IN/OUT log with decoded message descriptions and hex for debugging.</li>
-    </ul>
-
-    <h2>Supported Pedals &amp; Synths</h2>
-
-    <p>PedalEditor ships with two layers of coverage: <strong>53 prebuilt profiles</strong> &mdash; full visual editors with algorithm switching, dual-channel support, and category routing &mdash; plus a built-in <strong>MIDI Library</strong> of 500+ more devices that the Profile Builder pre-fills in one tap. Between the two, almost any MIDI-enabled pedal or synth on the market is one step away from being playable in your rig.</p>
-
-    <h3 class="tier-title">Prebuilt Profiles</h3>
-    <p class="tier-title-note">53 fully-built editors across 14 brands. Every parameter, every algorithm, every CC mapped from the manufacturer's official MIDI implementation. Four hardware-verified end-to-end: BigSky, TimeLine, Walrus ACS1, Walrus Mako M1.</p>
-
-    <div class="brand-grid">
-        <div class="brand-cell"><strong>Strymon</strong>BigSky, Cloudburst, Compadre, Deco v2, DIG v2, Flint v2, Iridium, Mobius, NightSky, Riverside, Sunset, Timeline, Volante</div>
-        <div class="brand-cell"><strong>Meris</strong>Enzo, Enzo X, Hedra, LVX, Mercury 7, Mercury X, Ottobit Jr, Polymoon</div>
-        <div class="brand-cell"><strong>Chase Bliss</strong>Blooper, Brothers, Generation Loss MkII, Habit, Lossy, Mood MkII, Warped Vinyl MkII</div>
-        <div class="brand-cell"><strong>Walrus Audio</strong>ACS1, ACS1 MkII, Mako D1, Mako M1, Mako R1</div>
-        <div class="brand-cell"><strong>Boss</strong>DD-200, EQ-200, IR-200, RE-202</div>
-        <div class="brand-cell"><strong>UAFX</strong>Dream '65, Lion '68, Ruby '63</div>
-        <div class="brand-cell"><strong>Source Audio</strong>Atlas, C4 Synth, Ultrawave</div>
-        <div class="brand-cell"><strong>Red Panda</strong>Particle V2, Tensor</div>
-        <div class="brand-cell"><strong>Eventide</strong>Space, TimeFactor</div>
-        <div class="brand-cell"><strong>Hologram</strong>Chroma Console, Microcosm</div>
-        <div class="brand-cell"><strong>Old Blood Noise</strong>Dark Star</div>
-        <div class="brand-cell"><strong>Vintage Synths</strong>Yamaha DX7, Roland JV-1080, Alesis QS6</div>
+    <div class="panel">
+      <p class="no">No. 3</p>
+      <h3>It follows the set</h3>
+      <p>Build a song with a section for every part. Assign presets. Tap once and the whole board changes. The setlist goes from top to bottom. So does the show.</p>
     </div>
+  </div>
 
-    <h3 class="tier-title">MIDI Library</h3>
-    <p class="tier-title-note">500+ more devices across 100+ brands &mdash; legendary synths, drum machines, multi-effects, modelers, and boutique pedals. Pick one in the Profile Builder and the CC list, parameter names, ranges, and categories pre-fill instantly. You finish hardware slots and save method, then ship.</p>
+  <h2>Brands it speaks fluently</h2>
+  <a class="brand" href="strymon/">
+    <span class="name">Strymon</span>
+    <span class="list">BigSky &middot; BigSky MX &middot; blueSky V2 &middot; Brig &middot; Cloudburst &middot; Compadre &middot; Deco &middot; DIG &middot; EC&#8209;1 &middot; El Capistan V2 &middot; Flint &middot; Iridium &middot; Lex V2 &middot; Mobius &middot; NightSky &middot; Riverside &middot; Sunset &middot; TimeLine &middot; UltraViolet &middot; Volante &middot; Zelzah</span>
+  </a>
+  <a class="brand" href="walrus-audio/">
+    <span class="name">Walrus Audio</span>
+    <span class="list">ACS1 &middot; ACS1 MkII &middot; D1 &middot; D1 MkII &middot; M1 &middot; M1 MkII &middot; Meraki &middot; Qi Etherealizer &middot; R1 &middot; R1 MkII</span>
+  </a>
+  <a class="brand" href="meris/">
+    <span class="name">Meris</span>
+    <span class="list">LVX</span>
+    <span class="soon"><span class="label">Coming Soon</span>Enzo &middot; Enzo X &middot; Hedra &middot; Mercury7 &middot; Mercury X &middot; Ottobit Jr. &middot; Polymoon</span>
+  </a>
+  <a class="brand" href="uafx/">
+    <span class="name">UAFX</span>
+    <span class="list">Dream &rsquo;65 &middot; Lion &rsquo;68 &middot; Ruby &rsquo;63 &middot; Woodrow &rsquo;55 &middot; Knuckles &rsquo;92 &middot; ANTI 1992 &middot; Enigmatic &rsquo;82</span>
+    <span class="soon"><span class="label">Coming Soon</span>Astra &middot; Del&#8209;Verb &middot; Galaxy &rsquo;74 &middot; Golden Reverberator &middot; Max &middot; OX Stomp &middot; Starlight</span>
+  </a>
+  <a class="brand" href="line-6/">
+    <span class="name">Line 6</span>
+    <span class="list">DL4 MkII</span>
+    <span class="soon"><span class="label">Coming Soon</span>HX One &middot; M13 &middot; M5 &middot; M9</span>
+  </a>
 
-    <div class="brand-grid library-grid">
-        <div class="brand-cell"><strong>3 Degrees Audio</strong>Hue Stereo Multi Effect Pedal</div>
-        <div class="brand-cell"><strong>Access</strong>Virus TI</div>
-        <div class="brand-cell"><strong>AdrenaLinn</strong>III</div>
-        <div class="brand-cell"><strong>Aerospace Audio</strong>Atmosphere v2, Atmosphere v3</div>
-        <div class="brand-cell"><strong>Alexander</strong>Colour Theory, Defender Neo, F.13 Neo, Fever Pitch, Marshmallow, Now We Are Ghosts, Oblivion Vintage Delay, Quadrant, Quadrant Audio Mirror, Radical Delay DX, Rewind, Sky 5000, Space Race, Super Neo-Matic, Super Radical Delay, Superball, Syntax Error, Wavelength</div>
-        <div class="brand-cell"><strong>Arturia</strong>MatrixBrute, MicroFreak, MiniFreak</div>
-        <div class="brand-cell"><strong>Ashdown</strong>Lb 30 2.N</div>
-        <div class="brand-cell"><strong>Atomic</strong>Amplifire, Amplifire 12, Amplifire 3, Amplifire 6</div>
-        <div class="brand-cell"><strong>Avid</strong>Eleven Rack</div>
-        <div class="brand-cell"><strong>Beetronics</strong>Seabee Harmochorus</div>
-        <div class="brand-cell"><strong>Behringer</strong>BM-15M MURF Box, Deepmind 12, Deepmind 12D, Deepmind 6, Pro 800, Vintager AC112, X-Air</div>
-        <div class="brand-cell"><strong>Blackstar Amplification</strong>Amped 1, Amped 3, Silverline Deluxe, Silverline Deluxe Head, Silverline Stereo Deluxe</div>
-        <div class="brand-cell"><strong>BluGuitar</strong>Amp1 (Mercury &amp; Iridium Edition)</div>
-        <div class="brand-cell"><strong>Bondi Effects</strong>Art Van Delay</div>
-        <div class="brand-cell"><strong>Boss</strong>DD-500, DM-101, GT1000 Core, Katana, Katana Artist, Katana Head, MD-500, OD-200, RC-10R, RE-202, RV-500, Slicer SL-2</div>
-        <div class="brand-cell"><strong>Chaos Audio</strong>Stratus</div>
-        <div class="brand-cell"><strong>Chase Bliss Audio</strong>Ayahuasca, Bliss Factory, Blooper, Brothers, Brothers AM, Clean, Condor, CXM 1978, Dark World, Generation Loss MKI, Generation Loss MKII, Gravitas, Habit, Lossy, Lost + Found, Mood, Mood MkII, Onward, Preamp MkII, Reverse Mode C, Spectre, Thermae, Tonal Recall, Warped Vinyl HiFi, Wombtone, Wombtone MKII</div>
-        <div class="brand-cell"><strong>Colortone Pedals</strong>VibroVerb, ZeroSum</div>
-        <div class="brand-cell"><strong>Cornerstone Music Gear</strong>Nucleo</div>
-        <div class="brand-cell"><strong>Darkglass Electronics</strong>Anagram, Microtubes Infinity</div>
-        <div class="brand-cell"><strong>Dave Smith Instruments</strong>Evolver</div>
-        <div class="brand-cell"><strong>Decibel Eleven</strong>Loop Expander</div>
-        <div class="brand-cell"><strong>DigiTech</strong>Bass Whammy, Whammy, Whammy DT</div>
-        <div class="brand-cell"><strong>Dimehead</strong>NAM</div>
-        <div class="brand-cell"><strong>Disaster Area</strong>DPC Micro, DPC-8EZ Gen2, Micro Clock Gen4, NNB Expanse Bridge</div>
-        <div class="brand-cell"><strong>Dr. Scientist</strong>Dusk, The Atmosphere</div>
-        <div class="brand-cell"><strong>Dreadbox</strong>Medusa, Typhon</div>
-        <div class="brand-cell"><strong>Electro-Harmonix</strong>1440 Stereo Looper, 45000, 8-Step Program, 95000, HOG2, ModRex, POG3</div>
-        <div class="brand-cell"><strong>Electronic Audio Experiments</strong>Sending v2, Sending v2 (Firmware 2.0)</div>
-        <div class="brand-cell"><strong>Elektron</strong>Analog Drive, Analog Four MKII, Analog Heat MKII, Analog Rytm MKII, Digitakt, Digitone, Digitone Keys, Model:Cycles, Model:Samples, Octatrack MKII</div>
-        <div class="brand-cell"><strong>EM Custom</strong>AMI Universal Dual TRS</div>
-        <div class="brand-cell"><strong>Empress</strong>Echo System, Phaser, Reverb, Tremolo2, Zoia</div>
-        <div class="brand-cell"><strong>ENGL</strong>Invader II, Savage 120 Mark II, Savage 60 Mark II, Steve Morse Signature (E656–E671)</div>
-        <div class="brand-cell"><strong>Eventide</strong>Blackhole, H9, Knifedrop, Rose, Tricerachorus, UltraTap</div>
-        <div class="brand-cell"><strong>EVH</strong>5150III 100S Head, 5150III 100W Head, 5150III 50W (6L6 / EL34 variants), 5150III 50S 6L6 Head, 5150IIIS 100W EL34 Head</div>
-        <div class="brand-cell"><strong>Fender</strong>Tone Master Pro</div>
-        <div class="brand-cell"><strong>Flower Pedals</strong>Dahlia Dual Analog Delay, Hosta Wah Filter, Sunflower</div>
-        <div class="brand-cell"><strong>Fractal Audio Systems</strong>AX8, Axe-Fx II, Axe-Fx II XL, Axe-Fx II XL+, FX8</div>
-        <div class="brand-cell"><strong>Fred's Lab</strong>Buzzy!</div>
-        <div class="brand-cell"><strong>Free The Tone</strong>AS-1R Ambi Space, FF-1Y, Flight Time FT-2Y, PA-1QA, PA-1QB, PA-1QG, TA-1H Tri Avatar</div>
-        <div class="brand-cell"><strong>G Lab</strong>BC1, MIDI 2 X LOOP-er, MIDI 4 X LOOP-er, MIDI Wowee Wah MWW-1</div>
-        <div class="brand-cell"><strong>Gamechanger Audio</strong>Bigsby, Motor Pedal</div>
-        <div class="brand-cell"><strong>GFI System</strong>Duophony, Enieqma, Solis Ventus, Specular Tempus, Synesthesia</div>
-        <div class="brand-cell"><strong>HeadRush</strong>Core, Flex Prime, Gigboard, Looperboard, MX5, Pedalboard, VX5</div>
-        <div class="brand-cell"><strong>Hologram Electronics</strong>Chroma Console, Dream Sequence, Microcosm</div>
-        <div class="brand-cell"><strong>Hotone</strong>Ampero, Ampero 2 Stomp</div>
-        <div class="brand-cell"><strong>Hughes &amp; Kettner</strong>GrandMeister Deluxe 40, TriAmp Mk3</div>
-        <div class="brand-cell"><strong>Idoru</strong>P1</div>
-        <div class="brand-cell"><strong>IK Multimedia</strong>ToneX, UNO Synth</div>
-        <div class="brand-cell"><strong>Jackson Audio</strong>Asabi, Bloom, Broken Arrow, El Guapo, Golden Boy, New Wave, The Optimist</div>
-        <div class="brand-cell"><strong>Jet Pedals</strong>Eternity Delay, Lamb, Revelation Reverb 2.0</div>
-        <div class="brand-cell"><strong>JMK Music Pedals</strong>CLOCKstep</div>
-        <div class="brand-cell"><strong>Keeley Electronics</strong>Nocturne</div>
-        <div class="brand-cell"><strong>Kemper</strong>Profiler, Profiler Player</div>
-        <div class="brand-cell"><strong>Kernom</strong>Elipse, Moho, Ridge</div>
-        <div class="brand-cell"><strong>Kinotone</strong>Ribbons, Ribbons (Firmware 2.0), Sparks</div>
-        <div class="brand-cell"><strong>Korg</strong>Kaoss Pad 2, Kaoss Pad 3, microKORG, microKORG XL+, Minilogue, minilogue xd, Monologue, MS2000, Volca series (Bass, Beats, Drum, FM, Keys, Kick, NuBass, Sample), Wavestate</div>
-        <div class="brand-cell"><strong>KSR Amplification</strong>Artemis 100, Colossus H-100, Gemini 100</div>
-        <div class="brand-cell"><strong>Laney</strong>BBC The Difference Engine, Ironheart Loudpedal</div>
-        <div class="brand-cell"><strong>Line 6</strong>Catalyst CX, DL4 MkII, DT25 (Head &amp; 112), Helix, Helix Floor, Helix LT, Helix Rack and Control, Helix Stadium, HX Effects, HX One, HX Stomp, HX Stomp XL, M5/M9/M13, Pocket POD, POD Go, POD HD Pro X, POD HD500X, Powercab Plus series</div>
-        <div class="brand-cell"><strong>Make Noise Co.</strong>0 Coast</div>
-        <div class="brand-cell"><strong>Marshall</strong>DSL40CR</div>
-        <div class="brand-cell"><strong>MeeBlip</strong>Geode, Triode</div>
-        <div class="brand-cell"><strong>Melbourne Instruments</strong>Nina</div>
-        <div class="brand-cell"><strong>Meris</strong>Enzo, Enzo X, Hedra, LVX, Mercury 7, Mercury X, Ottobit JR, Polymoon</div>
-        <div class="brand-cell"><strong>MFB</strong>Tanzbar Lite</div>
-        <div class="brand-cell"><strong>Modal Electronics</strong>002R, 008R, 1, 2, 8, Argon 8, Argon 8M, Argon 8X, CRAFTsynth 2.0, SKULPTsynthesiser</div>
-        <div class="brand-cell"><strong>Modor</strong>NF-1</div>
-        <div class="brand-cell"><strong>Montreal Assembly</strong>856 for ZELLERSASN</div>
-        <div class="brand-cell"><strong>Mooer</strong>GE300, GE300 Lite, Ocean Machine</div>
-        <div class="brand-cell"><strong>Moog</strong>Grandmother, Matriarch, MF-104M, MF-105M MIDI MuRF, MF-108M Cluster Flux, Minimoog Voyager, Minimoog Voyager XL, Minitaur, Mother 32, Sub Phatty, Subharmonicon, Subsequent 25, Subsequent 37</div>
-        <div class="brand-cell"><strong>Morningstar Engineering</strong>MC3, MC4 Pro, MC6 MkII, MC6 Pro, MC8, MC8 Pro, ML5, ML5R, ML10X</div>
-        <div class="brand-cell"><strong>Mutable Instruments</strong>Shruthi</div>
-        <div class="brand-cell"><strong>Neunaber</strong>Illumine, Neuron</div>
-        <div class="brand-cell"><strong>Neural DSP</strong>Nano Cortex, Quad Cortex, Quad Cortex Mini</div>
-        <div class="brand-cell"><strong>Noise Engineering</strong>Batverb</div>
-        <div class="brand-cell"><strong>Nord</strong>C1, C2, C2D, Drum 2, Electro 2/3/3HP/4HP/4SW/4D/5D/5HP/6, Grand, Lead 1/2/2X/3/4/4R/A1/A1R, Piano 1/2/3/4, Rack 3, Stage 1/2/2EX/3/EX, Wave, Wave 2</div>
-        <div class="brand-cell"><strong>Novation</strong>Bass Station II, Bass Station Keyboard, Circuit, Circuit Mono Station, Circuit Rhythm, MiniNova, Peak, Summit, UltraNova</div>
-        <div class="brand-cell"><strong>Old Blood Noise Endeavors</strong>Black Fountain, Dark Star Stereo, Signal Blender Stereo, Sunlight Stereo Reverb</div>
-        <div class="brand-cell"><strong>One Control</strong>MIDI Solo Stereo Loop</div>
-        <div class="brand-cell"><strong>OPFXS</strong>V Uno</div>
-        <div class="brand-cell"><strong>Oscillator Devices</strong>ABY, Goblin-EXP in EHX Pitch Fork, Hydra 4X, Minerva, Siren</div>
-        <div class="brand-cell"><strong>OTO Machines</strong>BAM, BIM, Biscuit, BOUM</div>
-        <div class="brand-cell"><strong>Panda Audio</strong>Future Impact</div>
-        <div class="brand-cell"><strong>Peavey</strong>Mini MEGA</div>
-        <div class="brand-cell"><strong>Pigtronix</strong>Echolution 2 Deluxe, Echolution 3, Infinity</div>
-        <div class="brand-cell"><strong>Poly Effects</strong>Flat V, Verbs</div>
-        <div class="brand-cell"><strong>Positive Grid</strong>Bias Distortion Pro, Bias Head, Bias Rack</div>
-        <div class="brand-cell"><strong>Ramble FX</strong>Kismet</div>
-        <div class="brand-cell"><strong>Red Panda</strong>Bitmap 2, Context 2, Particle 2, Radius, Raster 2, Tensor</div>
-        <div class="brand-cell"><strong>Revv</strong>D20, G20</div>
-        <div class="brand-cell"><strong>RJM Music</strong>Mastermind PBC/10, Mini Amp Gizmo, Mini Effect Gizmo X, Overture</div>
-        <div class="brand-cell"><strong>Roland</strong>BK-7M, D-05, FA-06/07/08, Fantom, FR-18D, GAIA SH-01, JD-XA, JD-Xi, JP-08, JU-06, JX-03, SE-02, SH-01A, System-1, System-8, TB-03, TR-08, TR-09, TR-8, VP-03</div>
-        <div class="brand-cell"><strong>Sequential</strong>OB-6, Pro 3, Prophet 6, Prophet 12, Prophet X, Rev 2</div>
-        <div class="brand-cell"><strong>Seymour Duncan</strong>Andromeda</div>
-        <div class="brand-cell"><strong>Sheeran</strong>Looper X, Looper+</div>
-        <div class="brand-cell"><strong>Singular Sound</strong>Aeros Looper, BeatBuddy</div>
-        <div class="brand-cell"><strong>Sound Sculpture</strong>Switchblade 8F</div>
-        <div class="brand-cell"><strong>Source Audio</strong>Artifakt, Atlas, C4 Synth, Collider, EQ2, Nemesis, Programmable EQ, Spectrum Intelligence Filter, Ultrawave, Ventris</div>
-        <div class="brand-cell"><strong>Stone Deaf</strong>Syncopy, Tremotron</div>
-        <div class="brand-cell"><strong>Strymon</strong>BigSky, BigSky MX, BlueSky, Brig, Cloudburst, Compadre, Deco, DIG, El Capistan, EC-1, Flint, Iridium, Lex, Mobius, NightSky, Riverside, Sunset, Timeline, Ultraviolet, Volante, Zelzah</div>
-        <div class="brand-cell"><strong>Studiologic</strong>Sledge</div>
-        <div class="brand-cell"><strong>Suhr</strong>Discovery, Hedgehog, PT100</div>
-        <div class="brand-cell"><strong>Sunday Sounds</strong>Sunday Guitar 2, Sunday Keys 2020</div>
-        <div class="brand-cell"><strong>Swindler Effects</strong>Red Mountain Tremolo V2, The Gulf Chorus V2</div>
-        <div class="brand-cell"><strong>Synergy Amps</strong>Syn2, Syn20IR</div>
-        <div class="brand-cell"><strong>Tasty Chips</strong>GR1</div>
-        <div class="brand-cell"><strong>TC Electronic</strong>Ditto X4, Flashback 2 X4 Delay, Hall of Fame 2 X4 Reverb, Nova Drive, Plethora X3, Plethora X5</div>
-        <div class="brand-cell"><strong>TC-Helicon</strong>VoiceLive 3, VoiceLive 3 Extreme, VoiceLive Rack, VoiceLive Touch 2</div>
-        <div class="brand-cell"><strong>teenage engineering</strong>OP-Z</div>
-        <div class="brand-cell"><strong>That Worship Sound</strong>Worship Essentials 2, Worship Guitar Essentials 2</div>
-        <div class="brand-cell"><strong>Tone King</strong>Imperial Tri-Tube Preamp</div>
-        <div class="brand-cell"><strong>Two notes Audio Engineering</strong>Opus, Torpedo C.A.B. (v4), Torpedo Captor X, Torpedo Live v3/v4, Torpedo Studio</div>
-        <div class="brand-cell"><strong>Universal Audio</strong>Anti, Astra, Del-Verb, Dream, Enigmatic, Galaxy, Golden, Knuckles, Lion, Max, OX Stomp, Ruby, Starlight, Woodrow</div>
-        <div class="brand-cell"><strong>Valeton</strong>GP-200, GP-200LT, GP-5</div>
-        <div class="brand-cell"><strong>Vongon</strong>Polyphrase</div>
-        <div class="brand-cell"><strong>Waldorf</strong>Blofeld</div>
-        <div class="brand-cell"><strong>Walrus Audio</strong>ACS1, ACS1 Mk2, D1 (Old &amp; New), D1 Mk2, M1, M1 Mk2, Meraki Stereo Analog Delay, Qi, R1, R1 Mk2, Xero</div>
-        <div class="brand-cell"><strong>Wampler Pedals</strong>Catacombs, Metaverse, Pantheon, Terraform</div>
-        <div class="brand-cell"><strong>WMD</strong>Geiger Counter Pro</div>
-        <div class="brand-cell"><strong>Yamaha</strong>reface CP, reface CS, reface DX, reface YC</div>
-    </div>
+  <h2>Facts</h2>
+  <div class="facts">
+    <p>Available on iPhone, iPad and Mac. Connects over Bluetooth LE MIDI, Wi&#8209;Fi (RTP&#8209;MIDI) and USB. Bluetooth pairing happens inside the app on iPhone and iPad; on Mac you pair in Audio MIDI Setup.</p>
+    <p>No account. No analytics. No third&#8209;party SDKs. iCloud sync across your devices at no extra cost, with a local fallback if iCloud isn&rsquo;t available. Presets, songs and full backups export as files.</p>
+    <p class="price">Every profile is built from the manufacturer&rsquo;s manual and audited before it ships. <a href="profiles/">The full list is here</a> &mdash; what&rsquo;s in the app today, and what&rsquo;s on deck.</p>
+  </div>
 
-    <p>If your pedal is on neither list, the <strong>Profile Builder Wizard</strong> still works the old-fashioned way &mdash; paste the MIDI implementation chart from the manual and PedalEditor walks you through organizing CCs, algorithms, and parameters. Or import a community-built profile as a single file.</p>
-
-    <h2>Why Not the Stock App?</h2>
-
-    <table class="compare">
-        <thead>
-            <tr><th></th><th>PedalEditor</th><th>Stock Editors</th></tr>
-        </thead>
-        <tbody>
-            <tr><td>Multi-brand support</td><td class="yes">53 pedals, 14 brands</td><td class="no">One brand each</td></tr>
-            <tr><td>Rig &amp; project organization</td><td class="yes">Yes</td><td class="no">Flat preset list</td></tr>
-            <tr><td>Setlist scene recall</td><td class="yes">Yes &mdash; whole board, one tap</td><td class="no">No</td></tr>
-            <tr><td>iPhone remote on stage</td><td class="yes">Wireless, peer-to-peer</td><td class="no">No</td></tr>
-            <tr><td>Preset export &amp; sharing</td><td class="yes"><code>.pedalpreset</code> files + packs</td><td class="no">No / limited</td></tr>
-            <tr><td>Custom profiles for new pedals</td><td class="yes">Profile Builder Wizard</td><td class="no">Wait for an update</td></tr>
-            <tr><td>iCloud library sync</td><td class="yes">iPhone + iPad + Mac</td><td class="no">No</td></tr>
-        </tbody>
-    </table>
-
-    <h2>Platforms</h2>
-
-    <div class="feature-grid">
-        <div class="feature">
-            <strong>iPhone</strong>
-            <p>Full editor and controller. Bluetooth LE MIDI and RTP-MIDI direct to the pedal &mdash; or remote into a Mac session on stage.</p>
-        </div>
-        <div class="feature">
-            <strong>iPad</strong>
-            <p>Adaptive layouts for split-view and stacked editing. The big-screen home for sound design and setlist building.</p>
-        </div>
-        <div class="feature">
-            <strong>Mac</strong>
-            <p>Sidebar + detail layout. Hosts the Multipeer session for iPhone remote control. Connects to your rig via USB or any Core MIDI interface.</p>
-        </div>
-        <div class="feature">
-            <strong>Demo Mode</strong>
-            <p>Explore the editor with no hardware attached. See how the rig system, setlists, and Performance Mode feel before you connect.</p>
-        </div>
-    </div>
-
-    <h2>Frequently Asked Questions</h2>
-
-    <div class="faq">
-        <details>
-            <summary>What is PedalEditor?</summary>
-            <p>A native iOS, iPadOS, and macOS app that edits and organizes presets for MIDI-enabled guitar effects pedals. Ships with <strong>53 prebuilt profiles</strong> across 14 brands &mdash; Strymon, Chase Bliss, Walrus Audio, Meris, Eventide, Boss, UAFX, and more &mdash; plus a built-in <strong>MIDI Library</strong> of 500+ more devices that the Profile Builder pre-fills in one tap. Adds Library Collections with A/B/C slot states, setlist-based scene recall, Performance Pads, Read from Pedal on supported Strymon hardware, iCloud library sync, and wireless MIDI from iPhone.</p>
-        </details>
-
-        <details>
-            <summary>Which pedals does PedalEditor support?</summary>
-            <p>Two tiers. <strong>53 prebuilt profiles</strong> across 14 brands &mdash; full visual editors with algorithm switching, dual-channel support, and category routing. Four hardware-verified end-to-end (BigSky, TimeLine, Walrus ACS1, Walrus Mako M1); the rest are community-mapped and fully functional. Plus a <strong>built-in MIDI Library</strong> of 500+ more devices across 100+ brands &mdash; pick one in the Profile Builder and the CC list, parameter names, ranges, and categories pre-fill instantly. See the full list in the section above.</p>
-        </details>
-
-        <details>
-            <summary>Is PedalEditor a replacement for Nixie, the Walrus app, or the Chase Bliss app?</summary>
-            <p>Yes. PedalEditor replaces every single-brand editor with one cross-brand workspace. It edits the same parameters those apps edit, while adding rig management, song-by-song setlist scene recall, wireless iPhone control, <code>.pedalpreset</code> file sharing, and iCloud sync that none of the single-brand editors offer.</p>
-        </details>
-
-        <details>
-            <summary>How does PedalEditor connect to my pedals?</summary>
-            <p>Three ways. Bluetooth LE MIDI for direct iPhone-to-pedal communication on supported hardware. RTP-MIDI over Wi-Fi for wireless connection across your local network. USB MIDI via any Core MIDI interface for wired use on Mac or USB-C iPad. The app auto-detects connected pedals via MIDI Identity Reply and selects the matching profile.</p>
-        </details>
-
-        <details>
-            <summary>Does PedalEditor work on iPhone, iPad, and Mac?</summary>
-            <p>Yes. PedalEditor is a native app for iPhone, iPad, and Mac with adaptive layouts on each. The library syncs across all three devices through iCloud. iPhone can also act as a wireless remote for a Mac running PedalEditor on stage.</p>
-        </details>
-
-        <details>
-            <summary>Does PedalEditor collect data or require an account?</summary>
-            <p>No. No account system, no analytics, no advertising, no third-party SDKs. Local Network permission is requested only to talk to your pedals via MIDI. Optional preset sync uses your personal iCloud account, encrypted end-to-end by Apple.</p>
-        </details>
-
-        <details>
-            <summary>What is a setlist scene?</summary>
-            <p>A snapshot of preset assignments across every pedal on your board, recallable in one tap. Building a setlist lets you fire "Verse 1" to BigSky PC#42, Timeline PC#15, and M1 PC#3 simultaneously, then jump to "Chorus" and change all three. The app sends each pedal's Program Change on the channel configured for that pedal.</p>
-        </details>
-
-        <details>
-            <summary>Can I share presets with other PedalEditor users?</summary>
-            <p>Yes. Any preset can be exported as a <code>.pedalpreset</code> file (JSON with profile metadata). Send it to bandmates, post it online, or import <code>.pedalpreset</code> files from other users. The app performs version checking and warns if the sender used a newer profile.</p>
-        </details>
-
-        <details>
-            <summary>What if my pedal isn't on the supported list?</summary>
-            <p>First check the <strong>MIDI Library</strong> &mdash; 500+ devices across 100+ brands have their CC charts pre-imported, so the Profile Builder fills in parameter names and ranges in one tap. If it isn't covered there either, use the Profile Builder Wizard: paste the MIDI implementation chart from the pedal's manual and the app walks you through organizing CCs into algorithms and parameters. You can also import community-built <code>.pedalprofile</code> files without waiting for an app update.</p>
-        </details>
-    </div>
-
-    <h2>Privacy by Default</h2>
-
-    <p>No accounts. No analytics. No advertising. No third-party SDKs. Your presets sync through your own iCloud account &mdash; encrypted end-to-end by Apple &mdash; and MIDI never leaves your local network. PedalEditor requests Local Network permission solely to talk to your pedals.</p>
-
-    <p><a href="privacy/">Read the full privacy policy &rarr;</a></p>
-
-    <h2>Get the App</h2>
-
-    <p>PedalEditor is available on the App Store for iPhone and iPad. Questions or feature requests? Reach out on <a href="https://instagram.com/pedaleditor" target="_blank" rel="noopener">Instagram</a>.</p>
-
-    <a href="https://apps.apple.com/us/app/pedaleditor/id6761016084?platform=iphone" class="btn" target="_blank" rel="noopener">Get PedalEditor on the App Store</a>
-    <a href="https://instagram.com/pedaleditor" class="btn secondary" target="_blank" rel="noopener">Follow on Instagram</a>
-
-    <footer>
-        <a href="/">Meaningful Sound</a>
-        <a href="privacy/">Privacy Policy</a>
-        <a href="https://instagram.com/pedaleditor" target="_blank" rel="noopener">Instagram</a>
-        <span class="spacer"></span>
-        <span>&copy; 2026 Meaningful Sound</span>
-    </footer>
+  <footer>
+    <a href="/">Meaningful Sound</a>
+    <a href="privacy/">Privacy</a>
+    <a href="https://instagram.com/pedaleditor">Instagram</a>
+    <span class="updated">Updated 28 August 2026</span>
+  </footer>
 
 </div>
 </body>

@@ -22,91 +22,18 @@ Contact: Instagram [@pedaleditor](https://instagram.com/pedaleditor)
 
 ## App: PedalEditor
 
-**Tagline:** The premier iPhone Bluetooth & Wi-Fi MIDI controller for guitar pedals and synths.
-
 **URL:** https://meaningfulsound.net/PedalEditor/
 **App Store:** https://apps.apple.com/us/app/pedaleditor/id6761016084
 **Instagram:** https://instagram.com/pedaleditor
 **Platforms:** iPhone, iPad, Mac (native; SwiftUI; one codebase)
 
-### What It Is
+A native iPhone, iPad, and Mac MIDI controller, editor, and librarian for guitar pedals.
 
-PedalEditor is a native iPhone, iPad, and Mac editor, librarian, and stage controller for MIDI-enabled effects pedals and synthesizers. It replaces Nixie (Strymon), the Walrus app, the Chase Bliss app, the Meris app, and every other single-brand editor with one workspace that organizes your entire rig, recalls full-board scenes by song, and travels with you on stage.
-
-### Key Numbers
-
-- **47** pedals and synths supported at launch
-- **13** brands
-- **3** platforms (iPhone, iPad, Mac)
-- **0** cloud accounts required
-
-### Core Features
-
-- **Wireless MIDI from iPhone.** Bluetooth LE MIDI for direct iPhone-to-pedal communication on supported hardware. RTP-MIDI over Wi-Fi for wireless connection on your local network. USB MIDI via any Core MIDI interface for wired use.
-- **Edit every parameter.** Visual knobs, sliders, toggles, and algorithm selectors mapped from each pedal's official MIDI implementation. Every CC, every PC, every NRPN, every SysEx template.
-- **Brilliant library organization.** Rig → Project → Pedal → Collection → Preset hierarchy. Free-form preset names independent of the hardware's display limits. Unlimited preset slots (app-side, not bound by hardware limits).
-- **Setlist scenes.** Build an ordered setlist where each song carries a snapshot of your whole board. One tap fires Program Change to every pedal simultaneously, on each pedal's configured MIDI channel.
-- **iCloud sync.** Library shared across iPhone, iPad, and Mac. Edit at home, perform on stage. Encrypted end-to-end by Apple in the user's personal iCloud account.
-- **Performance Mode.** Full-screen, stage-ready, no menus. Chrome disappears — just the song list, the current scene, and per-pedal status confirmation.
-- **Bidirectional MIDI on broadcasting hardware.** The app always sends MIDI to the pedal instantly. On hardware that broadcasts knob CC (Chase Bliss Brothers, several Boss and Meris pedals), tweaks on the pedal mirror back to the app live, keeping the editor in sync as you work the hardware.
-- **Profile Builder Wizard.** For ~553 devices in the built-in MIDI Library, the app pre-fills the CC list, parameter names, and ranges in one tap — no AI involved. For anything off-database, the AI-assisted path generates a prompt you paste into Gemini, Claude, or ChatGPT along with your pedal's MIDI implementation chart; paste the response back and the app assembles it into a working profile.
-- **Preset sharing.** Export any preset or pack as a `.pedalpreset` file (JSON with profile metadata). Send to bandmates, post online, or import from collaborators with version checking.
-
-### Supported Pedals (Effects, 44 of 47)
-
-- **Strymon (12):** BigSky, Cloudburst, Compadre, Deco v2, DIG v2, Flint v2, Iridium, NightSky, Riverside, Sunset, Timeline, Volante
-- **Chase Bliss (7):** Blooper, Brothers, Generation Loss MkII, Habit, Lossy, Mood MkII, Warped Vinyl MkII
-- **Walrus Audio (5):** ACS1, ACS1 MkII, Mako D1, Mako M1, Mako R1
-- **Meris (4):** Enzo, Hedra, LVX, Mercury7
-- **Boss (4):** DD-200, EQ-200, IR-200, RE-202
-- **UAFX (3):** Dream '65, Lion '68, Ruby '63
-- **Source Audio (3):** Atlas, C4 Synth, Ultrawave
-- **Red Panda (2):** Particle V2, Tensor
-- **Eventide (2):** Space, TimeFactor
-- **Hologram (1):** Microcosm
-- **Old Blood Noise (1):** Dark Star
-
-### Supported Synths (3 of 47)
-
-- **Yamaha DX7** — FM synthesis classic
-- **Roland JV-1080** — workstation rompler
-- **Alesis QS6** — multitimbral synth
-
-### Connectivity Detail
-
-- **Bluetooth LE MIDI** — direct iPhone-to-pedal on supported hardware; no Mac, no cables
-- **RTP-MIDI (Network MIDI over Wi-Fi)** — wireless MIDI across the local network
-- **USB MIDI** — wired fallback on Mac or USB-C iPad
-- **Auto-detection** — MIDI Identity Reply triggers profile matching automatically
-- **iPhone ↔ Mac bridge** — run the editor on Mac with rig connected; control wirelessly from iPhone in your pocket on stage
+PedalEditor's feature descriptions and supported-device list are currently being revised and are not published here. Please do not cite feature, device-support, brand-count or pricing specifics for PedalEditor from cached or archived copies of this site — they are out of date. The App Store listing is the authoritative source.
 
 ### Privacy & Data
 
 PedalEditor does not collect, store, transmit, or share personal information. No accounts. No analytics. No advertising. No third-party SDKs. Local Network permission is requested solely for MIDI communication. iCloud sync (optional) uses the user's personal iCloud account.
-
-### Why PedalEditor (vs Single-Brand Editors)
-
-| Feature | PedalEditor | Nixie / Walrus / Chase Bliss / Meris apps |
-|---|---|---|
-| Multi-brand support | 47 pedals + synths, 14 brands | One brand each |
-| Rig & project organization | Yes | Flat preset list |
-| Setlist scene recall | Yes — whole board, one tap | No |
-| iPhone wireless remote | Peer-to-peer over Wi-Fi | No |
-| Preset export/sharing | `.pedalpreset` files + packs | No / limited |
-| Custom profiles for new pedals | Profile Builder Wizard | Wait for an update |
-| iCloud library sync | iPhone + iPad + Mac | No |
-
-### FAQ Summary
-
-- **What is PedalEditor?** A native iPhone/iPad/Mac editor and wireless MIDI controller for 47+ guitar pedals and synths.
-- **Which pedals does it support?** 47 across 14 brands (full list above). Profile Builder for the rest.
-- **Is it a replacement for Nixie / Walrus app / Chase Bliss app?** Yes. One app for every brand, plus features none of them have.
-- **How does it connect?** Bluetooth LE MIDI, RTP-MIDI over Wi-Fi, or USB MIDI.
-- **iPhone, iPad, and Mac?** Yes — native on all three. iCloud syncs the library.
-- **Does it collect data?** No. No accounts, no analytics, no third-party SDKs.
-- **What's a setlist scene?** A one-tap whole-board preset recall keyed to a song.
-- **Can I share presets?** Yes — `.pedalpreset` files with version checking.
-- **What if my pedal isn't supported?** Profile Builder Wizard from the manual's MIDI chart.
 
 ---
 
