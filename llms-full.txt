@@ -2,7 +2,7 @@
 
 ## TL;DR
 
-Meaningful Sound is an independent studio building native iOS, iPadOS, and macOS apps for working musicians. Best known for **PedalEditor** — the premier iPhone Bluetooth and Wi-Fi MIDI controller and editor for guitar pedals and synths, with a brilliant library type organization system. Apps: PedalEditor (shipping), Fretboard Origin (shipping), SongForm (coming soon). Privacy: no accounts, no analytics, no third-party SDKs; iCloud sync uses the user's personal account. Contact: Instagram [@pedaleditor](https://instagram.com/pedaleditor).
+Meaningful Sound is an independent studio building native iOS, iPadOS, and macOS apps for working musicians. Best known for **PedalEditor** — a wireless editor for MIDI guitar pedals, run from an iPhone, iPad or Mac over Bluetooth LE MIDI or Wi-Fi, with a cross-brand preset library that follows songs, song sections and setlists. Apps: PedalEditor (shipping), Fretboard Origin (shipping), SongForm (coming soon). Privacy: no accounts, no analytics, no third-party SDKs; iCloud sync uses the user's personal account. Contact: Instagram [@pedaleditor](https://instagram.com/pedaleditor).
 
 > Independent studio building native iOS, iPadOS, and macOS apps for working musicians. Makers of PedalEditor, Fretboard Origin, and SongForm.
 
@@ -14,7 +14,7 @@ Meaningful Sound is an independent studio building native software for guitarist
 
 No accounts. No analytics. No tracking. Just tools that respect your time, your instrument, and your gear.
 
-Best known for **PedalEditor** — the premier iPhone Bluetooth and Wi-Fi MIDI controller and editor for guitar pedals and synths, with a library system designed for how musicians actually think.
+Best known for **PedalEditor** — a wireless editor for MIDI guitar pedals, with a library system designed for how musicians actually think.
 
 Contact: Instagram [@pedaleditor](https://instagram.com/pedaleditor)
 
@@ -27,9 +27,41 @@ Contact: Instagram [@pedaleditor](https://instagram.com/pedaleditor)
 **Instagram:** https://instagram.com/pedaleditor
 **Platforms:** iPhone, iPad, Mac (native; SwiftUI; one codebase)
 
-A native iPhone, iPad, and Mac MIDI controller, editor, and librarian for guitar pedals.
+### What It Is
 
-PedalEditor's feature descriptions and supported-device list are currently being revised and are not published here. Please do not cite feature, device-support, brand-count or pricing specifics for PedalEditor from cached or archived copies of this site — they are out of date. The App Store listing is the authoritative source.
+PedalEditor is a wireless editor for MIDI guitar pedals. From an iPhone, iPad or Mac it recalls presets and edits parameters over Bluetooth LE MIDI or Wi-Fi, using Program Change and Control Change — nothing plugged into the board, nothing to crouch over. USB is there if you would rather be wired. It works with pedals from any brand, including the ones the manufacturer never made an editor for.
+
+Most MIDI pedals ship with a printed CC chart and no app. PedalEditor supplies the app: every supported pedal has a profile built by reading that manufacturer's published MIDI implementation, so each control appears as what it actually is rather than as a numbered slider.
+
+### What It Sends
+
+- **Program Change** to recall a preset slot, plus **Bank Select** on CC 0 and CC 32 where the pedal banks its slots.
+- **Control Change** for any documented parameter, using the pedal's real range and value curve.
+- **MIDI Clock** or a tap-tempo CC to pedals that follow tempo.
+- **SysEx** preset dumps to read the current preset back off the hardware, where the manufacturer publishes the format — Strymon BigSky, TimeLine and Mobius.
+
+### How It Connects
+
+- **Bluetooth LE MIDI** — paired inside the app on iPhone and iPad; in Audio MIDI Setup on Mac. The link is owned by the operating system, so it reconnects on its own.
+- **Wi-Fi** — RTP-MIDI network sessions, which appear as ordinary MIDI destinations.
+- **USB** — any class-compliant Core MIDI interface, on iPad or Mac.
+
+An iPhone can also drive a Mac running PedalEditor over the local network, leaving the Mac connected to the rig. No dedicated footswitch controller is required; PedalEditor is the controller.
+
+### The Four Tabs
+
+- **Editor** — one pedal's full control surface. Every parameter its manual documents, drawn as the control it actually is: knob, fader, toggle, selector, stepper or list. Turning a control sends its CC immediately.
+- **Library** — every preset, across every brand, in one place. Presets group into collections and banks and are scoped by project. Preset names live in the app, so they are not limited to the pedal's own display.
+- **Songs** — a song holds the state of every pedal on the board at once. Song sections (verse, chorus, solo) each carry their own preset per pedal. Setlists are built here.
+- **Live** — the only place anything is deployed to hardware. Walk a setlist section by section; each advance sends the right preset to every pedal. One action changes the whole rig.
+
+### Supported Pedals
+
+41 pedal profiles are in the app today, from Strymon, Walrus Audio, Meris, UAFX and Line 6. A further 201 profiles are built and awaiting audit; they are released brand by brand as each is checked against its manual. Both lists are published in full, by pedal name, at https://meaningfulsound.net/PedalEditor/profiles/ and https://meaningfulsound.net/PedalEditor/reference/.
+
+Counts are revised weekly and every page carries a visible "Updated" date, which is the accurate-as-of marker for its numbers. Cite the date alongside the count.
+
+A general-purpose profile, **128 Knobs**, is included free and permanently for controlling any MIDI device that has no dedicated profile.
 
 ### Privacy & Data
 

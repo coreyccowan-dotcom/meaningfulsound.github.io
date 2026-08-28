@@ -92,7 +92,7 @@ TEMPLATE = """<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Every Profile &mdash; PedalEditor | Meaningful Sound</title>
-<meta name="description" content="The complete PedalEditor profile reference: {n_avail} profiles available now and {n_deck} on deck, across {n_total} pedals and synths from Strymon, Walrus Audio, UAFX, Line 6, Chase Bliss, Meris, Eventide, Source Audio and more.">
+<meta name="description" content="The complete PedalEditor profile reference: {n_avail} pedal profiles available now, from Strymon, Walrus Audio, Meris, UAFX and Line 6, plus {n_deck} more built and awaiting audit.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <meta name="theme-color" content="#e8dfc8">
 <link rel="canonical" href="https://meaningfulsound.net/PedalEditor/profiles/">
@@ -159,17 +159,18 @@ footer a:hover{{color:var(--ink)}}
     <p class="lede">{n_avail} available now. {n_deck} on deck. Every one built from the manufacturer&rsquo;s manual.</p>
   </div>
 
-  <h2>Available Now &mdash; {n_avail_brands} brands</h2>
+  <h2>Available Now &mdash; {n_avail} pedals</h2>
   <p class="note">Audited and in the app today.</p>
 {available}
 
-  <h2>On Deck &mdash; {n_deck_brands} brands</h2>
+  <h2>On Deck &mdash; {n_deck} pedals</h2>
   <p class="note">Built and waiting on audit. They arrive brand by brand.</p>
 {ondeck}
 
   <footer>
     <a href="/PedalEditor/">PedalEditor</a>
     <a href="/">Meaningful Sound</a>
+    <a href="/PedalEditor/reference/">Reference</a>
     <a href="/PedalEditor/privacy/">Privacy</a>
     <span class="updated">Updated {updated}</span>
   </footer>

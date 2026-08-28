@@ -219,6 +219,7 @@ footer a:hover{{color:var(--ink)}}
   <footer>
     <a href="../">PedalEditor</a>
     <a href="/">Meaningful Sound</a>
+    <a href="../reference/">Reference</a>
     <a href="../privacy/">Privacy</a>
     <a href="https://instagram.com/pedaleditor">Instagram</a>
     <span class="updated">Updated {updated}</span>
