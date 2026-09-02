@@ -21,7 +21,7 @@ BRANDS = [
  "lede": "Strymon keeps a steady dialect. 300 preset slots on nearly every box &mdash; 200 on TimeLine and Mobius &mdash; and tap tempo waiting on CC&nbsp;93 almost everywhere you look. 21 pedals. All of them read.",
  "now": [
   ("BigSky", "12 reverb machines, 148 controls. Room to Nonlinear, and everything that lives in between."),
-  ("BigSky MX", "Two independent engines, each running all 12 machines. 24 combinations, 454 controls. The largest profile in the app."),
+  ("BigSky MX", "Two independent engines, each running all 12 machines. 24 combinations, 454 controls."),
   ("blueSky V2", "Plate, Room, Spring. 3 machines, 28 controls. Three good answers to the same question."),
   ("Brig", "3 machines, 24 controls. The 3205, the 3005, and the Multi. It knows which one you meant."),
   ("Cloudburst", "1 machine: Ambient Reverb. 14 controls. The simplicity is the point."),
@@ -56,13 +56,13 @@ BRANDS = [
   ("D1 MkII", "6 machines, 76 controls. Everything the D1 said, plus Grain. The number grew accordingly."),
   ("M1", "6 machines, 18 modes, 242 controls. Chorus, Phaser, Tremolo, Vibrato, Rotary, Filter &mdash; three readings of each."),
   ("M1 MkII", "The same 6 machines, modes renamed, 249 controls. 7 more than the original. The difference is in the details."),
-  ("Meraki", "Stereo Analog Delay. 1 machine, 19 controls. It does one thing and the profile says so."),
-  ("Qi Etherealizer", "1 machine, 10 controls, 127 preset slots. Unusual arithmetic for an unusual pedal."),
+  ("Meraki", "3 machines, 3 modes, 40 controls, 1 preset slot. Stereo analog delay with more to say than the enclosure implies."),
+  ("Qi Etherealizer", "1 machine, 24 controls, 127 preset slots. Unusual arithmetic for an unusual pedal."),
   ("R1", "6 reverb machines &mdash; Spring, Hall, Plate, BFR, RFRCT, Air &mdash; and 59 controls. The original map."),
-  ("R1 MkII", "The same 6 machines, 82 controls. The pedal kept its rooms; the profile grew to match what the MkII added."),
+  ("R1 MkII", "The same 6 machines, 81 controls. The pedal kept its rooms; the profile grew to match what the MkII added."),
  ],
  "soon": [],
- "cost": "10 manuals. The M1 family alone runs to nearly 250 controls across 6 machines and 18 modes &mdash; the kind of profile that takes a while to get right. The ACS1 doubled between versions. The R1 gained 23 controls without changing its machine list. Every range confirmed, one at a time.",
+ "cost": "10 manuals. The M1 family alone runs to nearly 250 controls across 6 machines and 18 modes &mdash; the kind of profile that takes a while to get right. The ACS1 doubled between versions. The R1 gained 22 controls without changing its machine list. Every range confirmed, one at a time.",
 },
 {
  "slug": "meris", "brand": "Meris",
@@ -99,6 +99,40 @@ BRANDS = [
  ],
  "soon": ["HX One", "M13", "M5", "M9"],
  "cost": "One manual. It was a long one. 30 delay modes and 16 reverb modes in a single pedal means 236 controls to confirm, one at a time. The HX One, M13, M5 and M9 are built and waiting. The DL4 took as long as it took. So will they.",
+},
+{
+ "slug": "chase-bliss", "brand": "Chase Bliss",
+ "blurb": "3 Chase Bliss pedals in PedalEditor, each profile built from the manufacturer's manual, with 23 more on deck.",
+ "lede": "Chase Bliss runs a consistent house style. Most boxes hold 122 preset slots and take MIDI clock or tap tempo &mdash; though Generation Loss MKII takes neither, which the profile notes plainly. 3 pedals audited. 23 more built and waiting.",
+ "now": [
+  ("Mood MkII", "2 machines &mdash; Wet Channel and Micro&#8209;Looper, 3 modes each &mdash; 6 modes total, 64 controls, 122 preset slots. Takes MIDI clock or tap."),
+  ("Habit", "1 machine, 16 controls, 122 preset slots. Takes MIDI clock or tap. Its 6 modifiers run as a two&#8209;CC matrix &mdash; one named choice writes two CCs at once &mdash; so the profile carries a mechanism no other pedal in the library needed."),
+  ("Generation Loss MKII", "2 machines &mdash; MKII with 13 modes, Classic with 1 &mdash; 14 modes total, 143 controls, 122 preset slots. Takes no MIDI clock and no tap tempo at all. The profile says so rather than pretending otherwise."),
+ ],
+ "soon": ["Bliss Factory", "Blooper", "Brothers", "Brothers AM", "Clean", "Condor", "CXM 1978", "Dark World", "Generation Loss", "Gravitas", "Lossy", "Lost + Found", "MOOD", "Onward", "Preamp MKII", "Reverse Mode C", "Spectre", "Thermae", "Tonal Recall", "Warped Vinyl HiFi", "Warped Vinyl MkII", "Wombtone MkI", "Wombtone MkII"],
+ "cost": "3 done. 23 built and waiting. Chase Bliss publishes thorough MIDI specs, and the audits still turn up things worth knowing &mdash; Generation Loss MKII has 143 controls and no clock input at all; Habit&rsquo;s modifier matrix meant extending the profile model before it could be expressed correctly. Every control confirmed against the manual before it ships.",
+},
+{
+ "slug": "eventide", "brand": "Eventide",
+ "blurb": "3 Eventide pedals in PedalEditor, each profile built from the manufacturer's manual, with 4 more on deck.",
+ "lede": "Eventide&rsquo;s MIDI dialect is thorough on parameters and silent on algorithm switching &mdash; none of the three can change algorithms over MIDI at all. The profiles surface that honestly: the app prints the front&#8209;panel gesture instead of offering a control that does nothing. All three take MIDI clock. None have tap tempo. 3 pedals audited. 4 more built and waiting.",
+ "now": [
+  ("H9 Harmonizer", "5 machines &mdash; Space, PitchFactor, TimeFactor, ModFactor, New for H9 &mdash; 52 modes, 520 controls, 99 preset slots. The largest profile in the app. Changing algorithm means the PRESETS button on the pedal, and the app says so on the screen."),
+  ("Space", "12 machines, 12 modes, 132 controls, 100 preset slots. Hall through Shimmer. Algorithm switching is press&#8209;then&#8209;turn on the Encoder; the profile prints the gesture."),
+  ("TimeFactor", "10 machines, 10 modes, 110 controls, 100 preset slots. DigitalDelay through Looper. Algorithm switching is the Encoder alone; the profile prints the gesture."),
+ ],
+ "soon": ["Knife Drop", "Rose", "TriceraChorus", "UltraTap"],
+ "cost": "3 done. 4 built and waiting. The H9 is the largest profile in the app &mdash; 520 controls across 52 modes takes a while to get right. Space and TimeFactor are smaller but carry the same accounting: where the pedal cannot do something over MIDI, the profile says what to press instead. That part doesn&rsquo;t change regardless of how long the manual is.",
+},
+{
+ "slug": "hologram", "brand": "Hologram",
+ "blurb": "The Hologram Microcosm in PedalEditor, with 2 more Hologram profiles built and waiting on audit.",
+ "lede": "The Microcosm covers a lot of ground for a pedal with 4 machines &mdash; 205 controls, 60 preset slots, and MIDI clock or tap tempo either way. 1 pedal audited. 2 more built and waiting.",
+ "now": [
+  ("Microcosm", "4 machines &mdash; Micro Loop, Granules, Glitch, Multidelay &mdash; 11 modes total, 205 controls, 60 preset slots. Takes MIDI clock or tap."),
+ ],
+ "soon": ["Chroma Console", "Dream Sequence"],
+ "cost": "1 done. 2 built and waiting. The Microcosm runs to 205 controls across 4 machines and 11 modes &mdash; a bigger number than the front panel suggests. Chroma Console and Dream Sequence follow the same path: manual first, every parameter confirmed, one at a time.",
 },
 ]
 

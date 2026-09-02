@@ -4,7 +4,7 @@
 
 ## Apps
 
-- [PedalEditor](https://meaningfulsound.net/PedalEditor/): A wireless editor for MIDI guitar pedals. From an iPhone, iPad or Mac it recalls presets and edits parameters over Bluetooth LE MIDI or Wi-Fi (RTP-MIDI), using Program Change and Control Change; USB is supported too. It works with pedals from any brand, including the ones the manufacturer never made an editor for. Every supported pedal has a profile built from the manufacturer's manual: 41 available now, from Strymon, Walrus Audio, Meris, UAFX and Line 6, with 201 more built and awaiting audit. The complete list of both is published. Presets live in one cross-brand library and follow songs, song sections and setlists. [App Store](https://apps.apple.com/us/app/pedaleditor/id6761016084).
+- [PedalEditor](https://meaningfulsound.net/PedalEditor/): A wireless editor for MIDI guitar pedals. From an iPhone, iPad or Mac it recalls presets and edits parameters over Bluetooth LE MIDI or Wi-Fi (RTP-MIDI), using Program Change and Control Change; USB is supported too. It works with pedals from any brand, including the ones the manufacturer never made an editor for. Every supported pedal has a profile built from the manufacturer's manual: 48 available now, from Strymon, Walrus Audio, Meris, UAFX, Line 6, Chase Bliss, Eventide and Hologram, with 194 more built and awaiting audit. The complete list of both is published. Presets live in one cross-brand library and follow songs, song sections and setlists. [App Store](https://apps.apple.com/us/app/pedaleditor/id6761016084).
 - [Fretboard Origin](https://meaningfulsound.net/FretboardOrigin/): A fretboard companion for every stringed instrument you play — 34 instruments (guitar, bass, mandolin, banjo, ukulele, oud, sitar, koto, charango, and more), thousands of chord voicings across 43 qualities, 14 scale types in every key, 13 arpeggio types, built-in YIN strobe tuner, and a tanpura drone for practice. Native iPhone, iPad. [App Store](https://apps.apple.com/us/app/fretboard-origin/id6764200037).
 - [SongForm](https://meaningfulsound.net/SongForm/): A songwriter's workspace for sections, lyrics, layers, and co-writes. Multi-take recording, key/scale theory, fragment-based collaboration, portable `.songform` document. Native iPhone, iPad, and Mac. Coming soon.
 
@@ -24,6 +24,9 @@
 - [Speaks Fluent Meris](https://meaningfulsound.net/PedalEditor/meris/): LVX available; 7 more on deck.
 - [Speaks Fluent UAFX](https://meaningfulsound.net/PedalEditor/uafx/): 7 amp modelers available; 7 more on deck.
 - [Speaks Fluent Line 6](https://meaningfulsound.net/PedalEditor/line-6/): DL4 MkII available; 4 more on deck.
+- [Speaks Fluent Chase Bliss](https://meaningfulsound.net/PedalEditor/chase-bliss/): Mood MkII, Habit and Generation Loss MKII available; 23 more on deck.
+- [Speaks Fluent Eventide](https://meaningfulsound.net/PedalEditor/eventide/): H9 Harmonizer, Space and TimeFactor available; 4 more on deck.
+- [Speaks Fluent Hologram](https://meaningfulsound.net/PedalEditor/hologram/): Microcosm available; 2 more on deck.
 - [Reference](https://meaningfulsound.net/PedalEditor/reference/): Fact sheet — what the app sends (Program Change, Bank Select, CC, MIDI Clock), how it connects, the four tabs, every supported pedal by name, and answers to common questions.
 - [PedalEditor privacy policy](https://meaningfulsound.net/PedalEditor/privacy/): Privacy policy covering all Meaningful Sound apps.
 - [Full content for AI ingestion](https://meaningfulsound.net/llms-full.txt): Complete markdown content of the marketing pages.

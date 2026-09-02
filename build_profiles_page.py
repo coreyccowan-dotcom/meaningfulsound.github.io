@@ -26,6 +26,10 @@ AVAILABLE_IDS = {
     "uafx-dream-65", "uafx-lion-68", "uafx-ruby-63", "uafx-woodrow-55",
     "uafx-knuckles-92", "uafx-anti-1992", "uafx-enigmatic-82",
     "line6-dl4-mkii", "meris-lvx", "custom-midi",
+    "chasebliss-mood-mkii", "chasebliss-habit",
+    "chasebliss-generation-loss-mkii",
+    "eventide-h9", "eventide-space", "eventide-timefactor",
+    "hologram-microcosm",
 }
 
 
@@ -92,7 +96,7 @@ TEMPLATE = """<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Every Profile &mdash; PedalEditor | Meaningful Sound</title>
-<meta name="description" content="The complete PedalEditor profile reference: {n_avail} pedal profiles available now, from Strymon, Walrus Audio, Meris, UAFX and Line 6, plus {n_deck} more built and awaiting audit.">
+<meta name="description" content="The complete PedalEditor profile reference: {n_avail} pedal profiles available now, from Strymon, Walrus Audio, Meris, UAFX, Line 6, Chase Bliss, Eventide and Hologram, plus {n_deck} more built and awaiting audit.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <meta name="theme-color" content="#e8dfc8">
 <link rel="canonical" href="https://meaningfulsound.net/PedalEditor/profiles/">
