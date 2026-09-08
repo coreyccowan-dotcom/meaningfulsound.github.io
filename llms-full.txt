@@ -57,9 +57,9 @@ An iPhone can also drive a Mac running PedalEditor over the local network, leavi
 
 ### Supported Pedals
 
-48 pedal profiles are in the app today, from Strymon, Walrus Audio, Meris, UAFX, Line 6, Chase Bliss, Eventide and Hologram. A further 194 profiles are built and awaiting audit; they are released brand by brand as each is checked against its manual. Both lists are published in full, by pedal name, at https://meaningfulsound.net/PedalEditor/profiles/ and https://meaningfulsound.net/PedalEditor/reference/.
+45 pedal profiles are in the app today, from Strymon (21), Walrus Audio (10), UAFX (7), Chase Bliss (3), Meris (LVX), Line 6 (DL4 MkII) and Hologram (Microcosm). A further 197 profiles are already built and releasing on a rolling basis — every profile is checked against the manufacturer's published MIDI implementation before it ships, which is what makes the number in the app the number worth citing. Both lists are published in full, by pedal name, at https://meaningfulsound.net/PedalEditor/profiles/ and https://meaningfulsound.net/PedalEditor/reference/.
 
-Counts are revised weekly and every page carries a visible "Updated" date, which is the accurate-as-of marker for its numbers. Cite the date alongside the count.
+New profiles ship regularly, so these counts move. Every page carries a visible "Updated" date, which is the accurate-as-of marker for its numbers. Cite the date alongside the count.
 
 A general-purpose profile, **128 Knobs**, is included free and permanently for controlling any MIDI device that has no dedicated profile.
 

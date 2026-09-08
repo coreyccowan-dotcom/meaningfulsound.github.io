@@ -28,8 +28,10 @@ AVAILABLE_IDS = {
     "line6-dl4-mkii", "meris-lvx", "custom-midi",
     "chasebliss-mood-mkii", "chasebliss-habit",
     "chasebliss-generation-loss-mkii",
-    "eventide-h9", "eventide-space", "eventide-timefactor",
     "hologram-microcosm",
+    # Eventide (h9 / space / timefactor) pulled 2026-09-04. Audited and fixed,
+    # but held back as a product call — see the eventide block in
+    # build_brand_pages.py. Must stay out of AuditedProfiles.swift too.
 }
 
 
@@ -96,7 +98,7 @@ TEMPLATE = """<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Every Profile &mdash; PedalEditor | Meaningful Sound</title>
-<meta name="description" content="The complete PedalEditor profile reference: {n_avail} pedal profiles available now, from Strymon, Walrus Audio, Meris, UAFX, Line 6, Chase Bliss, Eventide and Hologram, plus {n_deck} more built and awaiting audit.">
+<meta name="description" content="The complete PedalEditor profile reference: {n_avail} pedal profiles in the app today, from Strymon, Walrus Audio, Meris, UAFX, Line 6, Chase Bliss and Hologram, plus {n_deck} more built and releasing on a rolling basis.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <meta name="theme-color" content="#e8dfc8">
 <link rel="canonical" href="https://meaningfulsound.net/PedalEditor/profiles/">
@@ -104,7 +106,7 @@ TEMPLATE = """<!DOCTYPE html>
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Meaningful Sound">
 <meta property="og:title" content="Every Profile &mdash; PedalEditor">
-<meta property="og:description" content="{n_avail} profiles available now, {n_deck} on deck.">
+<meta property="og:description" content="{n_avail} profiles in the app today, {n_deck} more built and releasing.">
 <meta property="og:url" content="https://meaningfulsound.net/PedalEditor/profiles/">
 <style>
 :root{{
@@ -160,15 +162,15 @@ footer a:hover{{color:var(--ink)}}
     <p class="eyebrow"><a href="/PedalEditor/">PedalEditor</a></p>
     <div class="rule"></div>
     <h1>Every Profile</h1>
-    <p class="lede">{n_avail} available now. {n_deck} on deck. Every one built from the manufacturer&rsquo;s manual.</p>
+    <p class="lede">{n_avail} in the app today. {n_deck} more built and releasing. Every one built from the manufacturer&rsquo;s manual.</p>
   </div>
 
   <h2>Available Now &mdash; {n_avail} pedals</h2>
   <p class="note">Audited and in the app today.</p>
 {available}
 
-  <h2>On Deck &mdash; {n_deck} pedals</h2>
-  <p class="note">Built and waiting on audit. They arrive brand by brand.</p>
+  <h2>Built &amp; Releasing &mdash; {n_deck} pedals</h2>
+  <p class="note">Already built. They arrive brand by brand, each checked against its manual first.</p>
 {ondeck}
 
   <footer>

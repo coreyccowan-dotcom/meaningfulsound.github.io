@@ -250,8 +250,8 @@ footer a:hover{{color:var(--ink)}}
 {avail_rows}
   </table>
 
-  <h2>Supported pedals &mdash; built, awaiting audit</h2>
-  <p>{n_deck} further profiles are written and are released brand by brand as each is checked against its manual.</p>
+  <h2>Supported pedals &mdash; built, releasing on a rolling basis</h2>
+  <p>{n_deck} further profiles are already built. Each is checked against the manufacturer's published MIDI implementation before it ships, and they release brand by brand as that check completes.</p>
   <table>
     <tr><th>Brand</th><th>N</th><th>Models</th></tr>
 {deck_rows}
@@ -263,7 +263,7 @@ footer a:hover{{color:var(--ink)}}
   <h2>Facts</h2>
   <ul>
     <li><strong>Platforms:</strong> iPhone and iPad on iOS/iPadOS 17, Mac on macOS 14 Sonoma. All native; no web wrapper.</li>
-    <li><strong>Library:</strong> {n_avail} profiles in the app now; {n_deck} more built and awaiting audit. Both listed above in full.</li>
+    <li><strong>Library:</strong> {n_avail} profiles in the app now; {n_deck} more built and releasing. Both listed above in full.</li>
     <li><strong>Privacy:</strong> no account, no analytics, no advertising, no third-party SDKs, no server of ours.</li>
     <li><strong>Files:</strong> full library backup, per-pedal library export, and a plain-text MIDI log export.</li>
     <li><strong>Free forever:</strong> the 128 Knobs general-purpose MIDI profile.</li>

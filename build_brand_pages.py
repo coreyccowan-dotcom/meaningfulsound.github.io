@@ -21,7 +21,7 @@ BRANDS = [
  "lede": "Strymon keeps a steady dialect. 300 preset slots on nearly every box &mdash; 200 on TimeLine and Mobius &mdash; and tap tempo waiting on CC&nbsp;93 almost everywhere you look. 21 pedals. All of them read.",
  "now": [
   ("BigSky", "12 reverb machines, 148 controls. Room to Nonlinear, and everything that lives in between."),
-  ("BigSky MX", "Two independent engines, each running all 12 machines. 24 combinations, 454 controls."),
+  ("BigSky MX", "Two independent engines, each running all 12 machines. 24 combinations, 362 controls."),
   ("blueSky V2", "Plate, Room, Spring. 3 machines, 28 controls. Three good answers to the same question."),
   ("Brig", "3 machines, 24 controls. The 3205, the 3005, and the Multi. It knows which one you meant."),
   ("Cloudburst", "1 machine: Ambient Reverb. 14 controls. The simplicity is the point."),
@@ -66,18 +66,18 @@ BRANDS = [
 },
 {
  "slug": "meris", "brand": "Meris",
- "blurb": "The Meris LVX in PedalEditor, with seven more Meris profiles built and waiting on audit.",
- "lede": "Meris runs two dialects, depending on which era you&rsquo;re holding. The older boxes give you 16 preset slots. The LVX holds 99 and takes MIDI clock. One pedal audited so far. 7 more built and waiting their turn.",
+ "blurb": "The Meris LVX in PedalEditor, with seven more Meris profiles built and releasing.",
+ "lede": "Meris runs two dialects, depending on which era you&rsquo;re holding. The older boxes give you 16 preset slots. The LVX holds 99 and takes MIDI clock. 1 available now. 7 more built and releasing.",
  "now": [
   ("LVX", "7 machines, 38 modes, 266 controls. Preamp, Delay, Dynamic, Pitch, Filter, Modulation, and a Looper &mdash; each with its own set of modes."),
  ],
  "soon": ["Enzo", "Enzo X", "Hedra", "Mercury7", "Mercury X", "Ottobit Jr.", "Polymoon"],
- "cost": "1 done. 7 built and sitting in the queue. The LVX took the longest because 266 controls across seven machines earns that. The others will follow the same way &mdash; manual first, then every parameter confirmed. That part doesn&rsquo;t get faster by rushing it.",
+ "cost": "1 done. 7 more built and releasing. The LVX took the longest because 266 controls across seven machines earns that. The others will follow the same way &mdash; manual first, then every parameter confirmed. That part doesn&rsquo;t get faster by rushing it.",
 },
 {
  "slug": "uafx", "brand": "UAFX",
- "blurb": "Seven UAFX amp modelers in PedalEditor, each profile built from the manufacturer's manual, with seven more on deck.",
- "lede": "UAFX speaks a consistent dialect. Every amp modeler holds 128 preset slots. None of them take MIDI clock &mdash; these are amps, and tempo isn&rsquo;t part of the conversation. 7 available now. 7 more on deck.",
+ "blurb": "Seven UAFX amp modelers in PedalEditor, each profile built from the manufacturer's manual, with seven more built and releasing.",
+ "lede": "UAFX speaks a consistent dialect. Every amp modeler holds 128 preset slots. None of them take MIDI clock &mdash; these are amps, and tempo isn&rsquo;t part of the conversation. 7 available now. 7 more built and releasing.",
  "now": [
   ("Dream &rsquo;65", "1 voice, 19 controls. Small and self&#8209;contained. The whole pedal in one profile."),
   ("Lion &rsquo;68", "3 channels &mdash; Super Bass, Super Lead, Brown &mdash; and 65 controls. Each voice mapped on its own."),
@@ -92,47 +92,43 @@ BRANDS = [
 },
 {
  "slug": "line-6", "brand": "Line 6",
- "blurb": "The Line 6 DL4 MkII in PedalEditor, all 46 modes mapped, with four more Line 6 profiles on deck.",
- "lede": "Line 6 doesn&rsquo;t ask for a simple dialect. The DL4 MkII carries 128 preset slots, takes MIDI clock, and holds more modes than most brands have pedals. 1 available now. 4 more built and waiting.",
+ "blurb": "The Line 6 DL4 MkII in PedalEditor, all 46 modes mapped, with four more Line 6 profiles built and releasing.",
+ "lede": "Line 6 doesn&rsquo;t ask for a simple dialect. The DL4 MkII carries 128 preset slots, takes MIDI clock, and holds more modes than most brands have pedals. 1 available now. 4 more built and releasing.",
  "now": [
-  ("DL4 MkII", "2 machines &mdash; 30 delays and 16 reverbs &mdash; 46 modes, 236 controls. Vintage Digital through to Glitch. Room through to Reverb Off."),
+  ("DL4 MkII", "2 machines &mdash; 30 delays and 16 reverbs &mdash; 46 modes, 241 controls. Vintage Digital through to Glitch. Room through to Reverb Off."),
  ],
  "soon": ["HX One", "M13", "M5", "M9"],
- "cost": "One manual. It was a long one. 30 delay modes and 16 reverb modes in a single pedal means 236 controls to confirm, one at a time. The HX One, M13, M5 and M9 are built and waiting. The DL4 took as long as it took. So will they.",
+ "cost": "One manual. It was a long one. 30 delay modes and 16 reverb modes in a single pedal means 241 controls to confirm, one at a time. The HX One, M13, M5 and M9 are built and releasing. The DL4 took as long as it took. So will they.",
 },
 {
  "slug": "chase-bliss", "brand": "Chase Bliss",
- "blurb": "3 Chase Bliss pedals in PedalEditor, each profile built from the manufacturer's manual, with 23 more on deck.",
- "lede": "Chase Bliss runs a consistent house style. Most boxes hold 122 preset slots and take MIDI clock or tap tempo &mdash; though Generation Loss MKII takes neither, which the profile notes plainly. 3 pedals audited. 23 more built and waiting.",
+ "blurb": "3 Chase Bliss pedals in PedalEditor, each profile built from the manufacturer's manual, with 23 more built and releasing.",
+ "lede": "Chase Bliss runs a consistent house style. Most boxes hold 122 preset slots and take MIDI clock or tap tempo &mdash; though Generation Loss MKII takes neither, which the profile notes plainly. 3 available now. 23 more built and releasing.",
  "now": [
   ("Mood MkII", "2 machines &mdash; Wet Channel and Micro&#8209;Looper, 3 modes each &mdash; 6 modes total, 64 controls, 122 preset slots. Takes MIDI clock or tap."),
   ("Habit", "1 machine, 16 controls, 122 preset slots. Takes MIDI clock or tap. Its 6 modifiers run as a two&#8209;CC matrix &mdash; one named choice writes two CCs at once &mdash; so the profile carries a mechanism no other pedal in the library needed."),
   ("Generation Loss MKII", "2 machines &mdash; MKII with 13 modes, Classic with 1 &mdash; 14 modes total, 143 controls, 122 preset slots. Takes no MIDI clock and no tap tempo at all. The profile says so rather than pretending otherwise."),
  ],
  "soon": ["Bliss Factory", "Blooper", "Brothers", "Brothers AM", "Clean", "Condor", "CXM 1978", "Dark World", "Generation Loss", "Gravitas", "Lossy", "Lost + Found", "MOOD", "Onward", "Preamp MKII", "Reverse Mode C", "Spectre", "Thermae", "Tonal Recall", "Warped Vinyl HiFi", "Warped Vinyl MkII", "Wombtone MkI", "Wombtone MkII"],
- "cost": "3 done. 23 built and waiting. Chase Bliss publishes thorough MIDI specs, and the audits still turn up things worth knowing &mdash; Generation Loss MKII has 143 controls and no clock input at all; Habit&rsquo;s modifier matrix meant extending the profile model before it could be expressed correctly. Every control confirmed against the manual before it ships.",
+ "cost": "3 available now. 23 more built and releasing. Chase Bliss publishes thorough MIDI specs, and the audits still turn up things worth knowing &mdash; Generation Loss MKII has 143 controls and no clock input at all; Habit&rsquo;s modifier matrix meant extending the profile model before it could be expressed correctly. Every control confirmed against the manual before it ships.",
 },
 {
  "slug": "eventide", "brand": "Eventide",
- "blurb": "3 Eventide pedals in PedalEditor, each profile built from the manufacturer's manual, with 4 more on deck.",
- "lede": "Eventide&rsquo;s MIDI dialect is thorough on parameters and silent on algorithm switching &mdash; none of the three can change algorithms over MIDI at all. The profiles surface that honestly: the app prints the front&#8209;panel gesture instead of offering a control that does nothing. All three take MIDI clock. None have tap tempo. 3 pedals audited. 4 more built and waiting.",
- "now": [
-  ("H9 Harmonizer", "5 machines &mdash; Space, PitchFactor, TimeFactor, ModFactor, New for H9 &mdash; 52 modes, 520 controls, 99 preset slots. The largest profile in the app. Changing algorithm means the PRESETS button on the pedal, and the app says so on the screen."),
-  ("Space", "12 machines, 12 modes, 132 controls, 100 preset slots. Hall through Shimmer. Algorithm switching is press&#8209;then&#8209;turn on the Encoder; the profile prints the gesture."),
-  ("TimeFactor", "10 machines, 10 modes, 110 controls, 100 preset slots. DigitalDelay through Looper. Algorithm switching is the Encoder alone; the profile prints the gesture."),
- ],
- "soon": ["Knife Drop", "Rose", "TriceraChorus", "UltraTap"],
- "cost": "3 done. 4 built and waiting. The H9 is the largest profile in the app &mdash; 520 controls across 52 modes takes a while to get right. Space and TimeFactor are smaller but carry the same accounting: where the pedal cannot do something over MIDI, the profile says what to press instead. That part doesn&rsquo;t change regardless of how long the manual is.",
+ "blurb": "7 Eventide profiles built for PedalEditor and held back from release while the brand's MIDI implementation is worked through.",
+ "lede": "Eventide is the one brand we have pulled back. The pedals are superb and their MIDI is not: nothing in the line can change algorithm over MIDI by any message, and on Space and TimeFactor every control knob arrives unassigned &mdash; you have to patch all 10 by hand in the pedal&rsquo;s System Mode before an app can reach any of them. Profiles exist for 7 Eventide pedals. None are listed as available, because &ldquo;works after you configure the pedal for 20 minutes&rdquo; is not what available should mean.",
+ "now": [],
+ "soon": ["H9 Harmonizer", "Knife Drop", "Rose", "Space", "TimeFactor", "TriceraChorus", "UltraTap"],
+ "cost": "0 available. 7 built, none released yet. The work is done &mdash; the H9 profile alone runs to 520 controls across 52 modes. What is not done is an honest answer to the setup problem. Every other brand here works the moment you connect it, and until Eventide can say the same, listing these as available would be selling a manual&rsquo;s worth of homework as a feature.",
 },
 {
  "slug": "hologram", "brand": "Hologram",
- "blurb": "The Hologram Microcosm in PedalEditor, with 2 more Hologram profiles built and waiting on audit.",
- "lede": "The Microcosm covers a lot of ground for a pedal with 4 machines &mdash; 205 controls, 60 preset slots, and MIDI clock or tap tempo either way. 1 pedal audited. 2 more built and waiting.",
+ "blurb": "The Hologram Microcosm in PedalEditor, with 2 more Hologram profiles built and releasing.",
+ "lede": "The Microcosm covers a lot of ground for a pedal with 4 machines &mdash; 205 controls, 60 preset slots, and MIDI clock or tap tempo either way. 1 available now. 2 more built and releasing.",
  "now": [
   ("Microcosm", "4 machines &mdash; Micro Loop, Granules, Glitch, Multidelay &mdash; 11 modes total, 205 controls, 60 preset slots. Takes MIDI clock or tap."),
  ],
  "soon": ["Chroma Console", "Dream Sequence"],
- "cost": "1 done. 2 built and waiting. The Microcosm runs to 205 controls across 4 machines and 11 modes &mdash; a bigger number than the front panel suggests. Chroma Console and Dream Sequence follow the same path: manual first, every parameter confirmed, one at a time.",
+ "cost": "1 available now. 2 more built and releasing. The Microcosm runs to 205 controls across 4 machines and 11 modes &mdash; a bigger number than the front panel suggests. Chroma Console and Dream Sequence follow the same path: manual first, every parameter confirmed, one at a time.",
 },
 ]
 
@@ -234,8 +230,6 @@ footer a:hover{{color:var(--ink)}}
     </div>
   </div>
 
-  <h2>Available Now &mdash; {n_now}</h2>
-  <p class="note">In the app today. Every one built to spec.</p>
 {now}
 {soon}
   <h2>What fluency cost</h2>
@@ -247,7 +241,7 @@ footer a:hover{{color:var(--ink)}}
   <div class="facts">
     <p>Available on iPhone, iPad and Mac. Connects over Bluetooth LE MIDI, Wi&#8209;Fi (RTP&#8209;MIDI) and USB. Bluetooth pairing happens inside the app on iPhone and iPad; on Mac you pair in Audio MIDI Setup.</p>
     <p>No account. No analytics. No third&#8209;party SDKs. iCloud sync across your devices at no extra cost, with a local fallback if iCloud isn&rsquo;t available. Presets, songs and full backups export as files.</p>
-    <p class="price">Every profile is built from the manufacturer&rsquo;s manual and audited before it ships. <a href="../profiles/">The full list is here</a> &mdash; what&rsquo;s in the app today, and what&rsquo;s on deck.</p>
+    <p class="price">Every profile is built from the manufacturer&rsquo;s manual and audited before it ships. <a href="../profiles/">The full list is here</a> &mdash; what&rsquo;s in the app today, and what&rsquo;s built and releasing.</p>
   </div>
 
   <footer>
@@ -268,23 +262,30 @@ footer a:hover{{color:var(--ink)}}
 def main():
     updated = datetime.date.today().strftime("%-d %B %Y")
     for b in BRANDS:
-        now = "\n".join(
-            f'  <div class="pedal">\n    <h3>{name}</h3>\n    <p>{line}</p>\n  </div>'
-            for name, line in b["now"]
-        )
+        now = ""
+        if b["now"]:
+            n_now = f'{len(b["now"])} pedal' + ("" if len(b["now"]) == 1 else "s")
+            cards = "\n".join(
+                f'  <div class="pedal">\n    <h3>{name}</h3>\n    <p>{line}</p>\n  </div>'
+                for name, line in b["now"]
+            )
+            now = (
+                f'  <h2>Available Now &mdash; {n_now}</h2>\n'
+                '  <p class="note">In the app today. Every one built to spec.</p>\n'
+                f'{cards}'
+            )
         soon = ""
         if b["soon"]:
             names = " &middot; ".join(b["soon"])
             soon = (
                 f'\n  <h2>Coming Soon &mdash; {len(b["soon"])} pedals</h2>\n'
-                '  <p class="note">Built and waiting on audit.</p>\n'
+                '  <p class="note">Already built. Each is checked against its manual before it ships.</p>\n'
                 f'  <div class="soonlist">{names}</div>\n'
             )
-        n_now = f'{len(b["now"])} pedal' + ("" if len(b["now"]) == 1 else "s")
         page = PAGE.format(
             brand=b["brand"], slug=b["slug"], blurb=html.escape(b["blurb"], quote=True),
             lede=b["lede"], now=now, soon=soon, cost=b["cost"],
-            n_now=n_now, updated=updated,
+            updated=updated,
         )
         d = os.path.join(OUT, b["slug"])
         os.makedirs(d, exist_ok=True)
