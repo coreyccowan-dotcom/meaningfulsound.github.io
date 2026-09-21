@@ -90,15 +90,26 @@ h2::before,h2::after{content:"";flex:1;height:1px;background:var(--line)}
 .panel p{margin:0;font-size:.95em;color:var(--ink-soft);text-align:left}
 
 .brand{display:block;background:var(--cream);border:1px solid var(--line);border-radius:4px;
-  padding:22px;margin-bottom:10px;text-decoration:none;
-  transition:border-color .15s ease,transform .15s ease}
-.brand:hover{border-color:var(--terracotta);transform:translateY(-1px)}
-.brand .name{display:block;font-family:var(--serif);font-size:1.44em;font-weight:700;letter-spacing:-.2px}
+  padding:22px;margin-bottom:10px;
+  transition:border-color .15s ease}
+.brand:hover{border-color:var(--terracotta)}
+.brand-name{display:block;text-decoration:none;color:inherit}
+.brand-name .name{display:block;font-family:var(--serif);font-size:1.44em;font-weight:700;letter-spacing:-.2px;transition:color .15s ease}
+.brand-name:hover .name{color:var(--terracotta)}
 .brand .list{display:block;margin:10px auto 0;max-width:34em;font-size:.94em;
   color:var(--ink-soft);line-height:1.6}
+.brand .list a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line);transition:color .15s ease,border-color .15s ease}
+.brand .list a:hover{color:var(--terracotta);border-bottom-color:var(--terracotta)}
 .brand .soon{display:block;margin:12px auto 0;max-width:34em;font-size:.9em;color:var(--muted)}
 .brand .soon .label{display:block;font-size:.74em;font-weight:700;text-transform:uppercase;
   letter-spacing:2px;color:var(--terracotta);margin-bottom:4px}
+
+.pipeline-row{background:var(--cream);border:1px solid var(--line);border-radius:4px;
+  padding:16px 22px;margin-bottom:8px;text-align:left}
+.pipeline-brand{display:block;font-family:var(--serif);font-size:1.14em;font-weight:700;
+  letter-spacing:-.2px;color:var(--ink);margin-bottom:6px}
+.pipeline-list{display:block;font-size:.92em;color:var(--ink-soft);line-height:1.6}
+.note{font-size:.9em;color:var(--muted);margin:-14px auto 22px;max-width:32em}
 
 .facts p{color:var(--ink-soft);max-width:34em;margin-left:auto;margin-right:auto}
 .facts .price{border-top:1px solid var(--line);padding-top:22px;margin-top:26px;color:var(--ink)}
@@ -155,44 +166,249 @@ footer a:hover{color:var(--ink)}
     </div>
   </div>
 
-  <h2>Brands it speaks fluently</h2>
-  <a class="brand" href="strymon/">
-    <span class="name">Strymon</span>
-    <span class="list">BigSky &middot; BigSky MX &middot; blueSky V2 &middot; Brig &middot; Cloudburst &middot; Compadre &middot; Deco &middot; DIG &middot; EC&#8209;1 &middot; El Capistan V2 &middot; Flint &middot; Iridium &middot; Lex V2 &middot; Mobius &middot; NightSky &middot; Riverside &middot; Sunset &middot; TimeLine &middot; UltraViolet &middot; Volante &middot; Zelzah</span>
-  </a>
-  <a class="brand" href="walrus-audio/">
-    <span class="name">Walrus Audio</span>
-    <span class="list">ACS1 &middot; ACS1 MkII &middot; D1 &middot; D1 MkII &middot; M1 &middot; M1 MkII &middot; Meraki &middot; Qi Etherealizer &middot; R1 &middot; R1 MkII</span>
-  </a>
-  <a class="brand" href="meris/">
-    <span class="name">Meris</span>
-    <span class="list">LVX</span>
+  <h2>Speaks Fluent</h2>
+  <div class="brand">
+    <a class="brand-name" href="strymon/"><span class="name">Strymon</span></a>
+    <span class="list"><a href="strymon/bigsky/">BigSky</a> &middot; <a href="strymon/bigsky-mx/">BigSky MX</a> &middot; <a href="strymon/bluesky-v2/">blueSky V2</a> &middot; <a href="strymon/brig/">Brig</a> &middot; <a href="strymon/cloudburst/">Cloudburst</a> &middot; <a href="strymon/compadre/">Compadre</a> &middot; <a href="strymon/deco-v2/">Deco</a> &middot; <a href="strymon/dig-v2/">DIG</a> &middot; <a href="strymon/ec1/">EC&#8209;1</a> &middot; <a href="strymon/elcapistan-v2/">El Capistan V2</a> &middot; <a href="strymon/flint-v2/">Flint</a> &middot; <a href="strymon/iridium/">Iridium</a> &middot; <a href="strymon/lex-v2/">Lex V2</a> &middot; <a href="strymon/mobius/">Mobius</a> &middot; <a href="strymon/nightsky/">NightSky</a> &middot; <a href="strymon/riverside/">Riverside</a> &middot; <a href="strymon/sunset/">Sunset</a> &middot; <a href="strymon/timeline/">TimeLine</a> &middot; <a href="strymon/ultraviolet/">UltraViolet</a> &middot; <a href="strymon/volante/">Volante</a> &middot; <a href="strymon/zelzah/">Zelzah</a></span>
+  </div>
+  <div class="brand">
+    <a class="brand-name" href="walrus-audio/"><span class="name">Walrus Audio</span></a>
+    <span class="list"><a href="walrus-audio/acs1-mk1/">ACS1</a> &middot; <a href="walrus-audio/acs1-mk2/">ACS1 MkII</a> &middot; <a href="walrus-audio/d1/">D1</a> &middot; <a href="walrus-audio/d1-mkii/">D1 MkII</a> &middot; <a href="walrus-audio/m1/">M1</a> &middot; <a href="walrus-audio/m1-mkii/">M1 MkII</a> &middot; <a href="walrus-audio/meraki/">Meraki</a> &middot; <a href="walrus-audio/qi/">Qi Etherealizer</a> &middot; <a href="walrus-audio/r1/">R1</a> &middot; <a href="walrus-audio/r1-mkii/">R1 MkII</a></span>
+  </div>
+  <div class="brand">
+    <a class="brand-name" href="meris/"><span class="name">Meris</span></a>
+    <span class="list"><a href="meris/lvx/">LVX</a></span>
     <span class="soon"><span class="label">Coming Soon</span>Enzo &middot; Enzo X &middot; Hedra &middot; Mercury7 &middot; Mercury X &middot; Ottobit Jr. &middot; Polymoon</span>
-  </a>
-  <a class="brand" href="uafx/">
-    <span class="name">UAFX</span>
-    <span class="list">Dream &rsquo;65 &middot; Lion &rsquo;68 &middot; Ruby &rsquo;63 &middot; Woodrow &rsquo;55 &middot; Knuckles &rsquo;92 &middot; ANTI 1992 &middot; Enigmatic &rsquo;82</span>
+  </div>
+  <div class="brand">
+    <a class="brand-name" href="uafx/"><span class="name">UAFX</span></a>
+    <span class="list"><a href="uafx/dream-65/">Dream &rsquo;65</a> &middot; <a href="uafx/lion-68/">Lion &rsquo;68</a> &middot; <a href="uafx/ruby-63/">Ruby &rsquo;63</a> &middot; <a href="uafx/woodrow-55/">Woodrow &rsquo;55</a> &middot; <a href="uafx/knuckles-92/">Knuckles &rsquo;92</a> &middot; <a href="uafx/anti-1992/">ANTI 1992</a> &middot; <a href="uafx/enigmatic-82/">Enigmatic &rsquo;82</a></span>
     <span class="soon"><span class="label">Coming Soon</span>Astra &middot; Del&#8209;Verb &middot; Galaxy &rsquo;74 &middot; Golden Reverberator &middot; Max &middot; OX Stomp &middot; Starlight</span>
-  </a>
-  <a class="brand" href="line-6/">
-    <span class="name">Line 6</span>
-    <span class="list">DL4 MkII</span>
+  </div>
+  <div class="brand">
+    <a class="brand-name" href="line-6/"><span class="name">Line 6</span></a>
+    <span class="list"><a href="line-6/dl4-mkii/">DL4 MkII</a></span>
     <span class="soon"><span class="label">Coming Soon</span>HX One &middot; M13 &middot; M5 &middot; M9</span>
-  </a>
-  <a class="brand" href="chase-bliss/">
-    <span class="name">Chase Bliss</span>
-    <span class="list">Mood MkII &middot; Habit &middot; Generation Loss MKII</span>
+  </div>
+  <div class="brand">
+    <a class="brand-name" href="chase-bliss/"><span class="name">Chase Bliss</span></a>
+    <span class="list"><a href="chase-bliss/mood-mkii/">Mood MkII</a> &middot; <a href="chase-bliss/habit/">Habit</a> &middot; <a href="chase-bliss/generation-loss-mkii/">Generation Loss MKII</a></span>
     <span class="soon"><span class="label">Coming Soon</span>Bliss Factory &middot; Blooper &middot; Brothers &middot; Brothers AM &middot; Clean &middot; Condor &middot; CXM 1978 &middot; Dark World &middot; Generation Loss &middot; Gravitas &middot; Lossy &middot; Lost + Found &middot; MOOD &middot; Onward &middot; Preamp MKII &middot; Reverse Mode C &middot; Spectre &middot; Thermae &middot; Tonal Recall &middot; Warped Vinyl HiFi &middot; Warped Vinyl MkII &middot; Wombtone MkI &middot; Wombtone MkII</span>
-  </a>
-  <a class="brand" href="eventide/">
-    <span class="name">Eventide</span>
+  </div>
+  <div class="brand">
+    <a class="brand-name" href="eventide/"><span class="name">Eventide</span></a>
     <span class="soon"><span class="label">Coming Soon</span>H9 Harmonizer &middot; Knife Drop &middot; Rose &middot; Space &middot; TimeFactor &middot; TriceraChorus &middot; UltraTap</span>
-  </a>
-  <a class="brand" href="hologram/">
-    <span class="name">Hologram</span>
-    <span class="list">Microcosm</span>
+  </div>
+  <div class="brand">
+    <a class="brand-name" href="hologram/"><span class="name">Hologram</span></a>
+    <span class="list"><a href="hologram/microcosm/">Microcosm</a></span>
     <span class="soon"><span class="label">Coming Soon</span>Chroma Console &middot; Dream Sequence</span>
-  </a>
+  </div>
+
+  <h2>More Coming Soon</h2>
+  <p class="note">Every profile in the pipeline, by brand and pedal.</p>
+  <div class="pipeline">
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Alesis</span>
+      <span class="pipeline-list">QS6</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Alexander Pedals</span>
+      <span class="pipeline-list">Colour Theory &middot; Defender Neo &middot; F.13 Neo &middot; Fever Pitch &middot; Marshmallow &middot; Now We Are Ghosts &middot; Oblivion &middot; Quadrant Neo &middot; Radical Delay DX &middot; Rewind &middot; Sky 5000 &middot; Space Force &middot; Space Race Neo &middot; Super Neo&#8209;Matic &middot; Super Radical Delay &middot; Superball &middot; Syntax Error 2 &middot; Syntax Error XP &middot; Wavelength</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Beetronics FX</span>
+      <span class="pipeline-list">Seabee</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Bondi Effects</span>
+      <span class="pipeline-list">Art Van Delay</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Boss</span>
+      <span class="pipeline-list">DD&#8209;200 &middot; DD&#8209;500 &middot; EQ&#8209;200 &middot; IR&#8209;200 &middot; RE&#8209;202</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Chase Bliss</span>
+      <span class="pipeline-list">Bliss Factory &middot; Blooper &middot; Brothers &middot; Brothers AM &middot; Clean &middot; Condor &middot; CXM 1978 &middot; Dark World &middot; Generation Loss &middot; Gravitas &middot; Lossy &middot; Lost + Found &middot; MOOD &middot; Onward &middot; Preamp MKII &middot; Reverse Mode C &middot; Spectre &middot; Thermae &middot; Tonal Recall &middot; Warped Vinyl HiFi &middot; Warped Vinyl MkII &middot; Wombtone MkI &middot; Wombtone MkII</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Colortone Pedals</span>
+      <span class="pipeline-list">VibroVerb &middot; ZeroSum</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Cornerstone Music Gear</span>
+      <span class="pipeline-list">Nucleo</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">DigiTech</span>
+      <span class="pipeline-list">Bass Whammy &middot; Whammy &middot; Whammy DT</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Electronic Audio Experiments</span>
+      <span class="pipeline-list">Prismatic Wall &middot; Sending V2</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Electro&#8209;Harmonix</span>
+      <span class="pipeline-list">45000 &middot; 1440 Stereo Looper &middot; 8&#8209;Step Program &middot; 95000 &middot; HOG2 &middot; Mod Rex &middot; POG3</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Empress Effects</span>
+      <span class="pipeline-list">Echosystem &middot; Phaser &middot; Reverb &middot; Tremolo2 &middot; ZOIA</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Eventide</span>
+      <span class="pipeline-list">H9 Harmonizer &middot; Knife Drop &middot; Rose &middot; Space &middot; TimeFactor &middot; TriceraChorus &middot; UltraTap</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Flower Pedals</span>
+      <span class="pipeline-list">Dahlia &middot; Hosta &middot; Sunflower</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Free The Tone</span>
+      <span class="pipeline-list">AS&#8209;1R Ambi Space &middot; FF&#8209;1Y Future Factory &middot; FT&#8209;2Y Flight Time &middot; PA&#8209;1QA (Acoustic) &middot; PA&#8209;1QB (Bass) &middot; PA&#8209;1QG (Guitar) &middot; TA&#8209;1H Tri Avatar</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Gamechanger Audio</span>
+      <span class="pipeline-list">Bigsby Pedal &middot; Motor Pedal</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">GFI System</span>
+      <span class="pipeline-list">Duophony &middot; Enieqma &middot; Solis Ventus &middot; Specular Tempus &middot; Synesthesia</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Hologram</span>
+      <span class="pipeline-list">Chroma Console &middot; Dream Sequence</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Jackson Audio</span>
+      <span class="pipeline-list">ASABI &middot; Bloom V2 &middot; Broken Arrow &middot; Golden Boy &middot; New Wave</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">JET Pedals</span>
+      <span class="pipeline-list">Eternity Delay</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Keeley Electronics</span>
+      <span class="pipeline-list">Nocturne</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Kernom</span>
+      <span class="pipeline-list">Elipse &middot; Moho &middot; Ridge</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Kinotone Audio</span>
+      <span class="pipeline-list">Ghosts &middot; Ribbons &middot; Sparks</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Line 6</span>
+      <span class="pipeline-list">HX One &middot; M13 Stompbox Modeler &middot; M5 Stompbox Modeler &middot; M9 Stompbox Modeler</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Meris</span>
+      <span class="pipeline-list">Enzo &middot; Enzo X &middot; Hedra &middot; Mercury7 &middot; Mercury X &middot; Ottobit Jr. &middot; Polymoon</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Old Blood Noise Endeavors</span>
+      <span class="pipeline-list">Bathing &middot; Black Fountain &middot; Dark Star &middot; Dark Star Stereo &middot; Parting &middot; Signal Blender Stereo &middot; Sunlight</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">OTO Machines</span>
+      <span class="pipeline-list">BAM &middot; BIM &middot; BISCUIT &middot; BOUM</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Panda Audio</span>
+      <span class="pipeline-list">Future Impact 4</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Pigtronix</span>
+      <span class="pipeline-list">Echolution 2 &middot; Echolution 3 &middot; Infinity Looper</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Poly Effects</span>
+      <span class="pipeline-list">Ample &middot; Beebo &middot; Flat V &middot; Trails &middot; Verbs</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Quilter</span>
+      <span class="pipeline-list">Illumine &middot; Neuron</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Red Panda</span>
+      <span class="pipeline-list">Bitmap 2 &middot; Particle V2 &middot; Radius &middot; Raster 2 &middot; Tensor</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Roger Linn Design</span>
+      <span class="pipeline-list">AdrenaLinn III</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Roland</span>
+      <span class="pipeline-list">JV&#8209;1080</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Seymour Duncan</span>
+      <span class="pipeline-list">Andromeda</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Sheeran Looper</span>
+      <span class="pipeline-list">Looper +</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Singular Sound</span>
+      <span class="pipeline-list">Aeros Loop Studio</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Source Audio</span>
+      <span class="pipeline-list">Aftershock Bass Distortion &middot; Artifakt Lo&#8209;Fi Elements &middot; Atlas &middot; C4 Synth &middot; Collider Delay+Reverb &middot; Encounter Delay+Reverb &middot; EQ2 &middot; Gemini Chorus &middot; Kingmaker Fuzz &middot; L.A. Lady Overdrive &middot; Lunar Phaser &middot; Mercury Flanger &middot; Nemesis ADT &middot; Pathways Reverb &amp; Tremolo &middot; Spectrum Intelligent Filter &middot; True Spring Reverb &middot; Ultrawave &middot; Ventris Dual Reverb &middot; Vertigo Tremolo</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Stone Deaf FX</span>
+      <span class="pipeline-list">Syncopy &middot; Tremotron</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Suhr</span>
+      <span class="pipeline-list">Discovery Delay</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Swindler Effects</span>
+      <span class="pipeline-list">Red Mountain V2 &middot; The Gulf V2</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Tasty Chips Electronics</span>
+      <span class="pipeline-list">GR&#8209;1</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">TC Electronic</span>
+      <span class="pipeline-list">Ditto X4 Looper &middot; Flashback 2 X4 Delay &middot; Hall of Fame 2 X4 Reverb</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Two Notes</span>
+      <span class="pipeline-list">Torpedo Captor X</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">UAFX</span>
+      <span class="pipeline-list">Astra &middot; Del&#8209;Verb &middot; Galaxy &rsquo;74 &middot; Golden Reverberator &middot; Max &middot; OX Stomp &middot; Starlight</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Vongon</span>
+      <span class="pipeline-list">Paragraphs II &middot; Polyphrase &middot; Replay &middot; Rosetones &middot; Solarfaze</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Wampler</span>
+      <span class="pipeline-list">Catacombs &middot; Metaverse &middot; Terraform</span>
+    </div>
+    <div class="pipeline-row">
+      <span class="pipeline-brand">Yamaha</span>
+      <span class="pipeline-list">DX7</span>
+    </div>
+  </div>
+
+  <h2>Everything else</h2>
+  <div class="facts">
+    <p>Every other MIDI device that answers to a Control Change &mdash; a reverb from a builder in Guangzhou, a rack unit long discontinued, a synth with a CC chart printed in the back of its manual, a modular row that speaks MIDI, a stage light rig on a CC bridge &mdash; gets a screen too.</p>
+    <p>Draw the shape. A knob. A fader. A selector with three labeled positions. A momentary that fires once. Point each control at a CC number. Name it. Save it.</p>
+    <p>Then it&rsquo;s a device in your rig. It files into songs. It follows the setlist. It changes on a section tap with everything else on the board. Same behavior as the rest of the collection, which keeps growing steadily as more profiles arrive.</p>
+    <p>128 Knobs ships pre&#8209;drawn, every CC in numerical order, for a quick check against a new device.</p>
+  </div>
 
   <h2>Facts</h2>
   <div class="facts">
@@ -206,7 +422,7 @@ footer a:hover{color:var(--ink)}
     <a href="reference/">Reference</a>
     <a href="privacy/">Privacy</a>
     <a href="https://instagram.com/pedaleditor">Instagram</a>
-    <span class="updated">Updated 8 September 2026</span>
+    <span class="updated">Updated 21 September 2026</span>
   </footer>
 
 </div>

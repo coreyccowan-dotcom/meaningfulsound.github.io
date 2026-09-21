@@ -34,6 +34,33 @@ AVAILABLE_IDS = {
     # build_brand_pages.py. Must stay out of AuditedProfiles.swift too.
 }
 
+# pid prefix → brand directory under /PedalEditor/. Mirror of build_pedal_pages.py.
+BRAND_DIRS = {
+    "strymon-":    "strymon",
+    "walrus-":     "walrus-audio",
+    "meris-":      "meris",
+    "uafx-":       "uafx",
+    "line6-":      "line-6",
+    "chasebliss-": "chase-bliss",
+    "hologram-":   "hologram",
+    "eventide-":   "eventide",
+}
+
+
+def pedal_href(pid):
+    """Return the ../{brand}/{slug}/ URL for a pid, or None if no per-pedal page."""
+    for prefix, brand_dir in BRAND_DIRS.items():
+        if pid.startswith(prefix):
+            slug = pid[len(prefix):]
+            page = os.path.join(
+                os.path.dirname(os.path.abspath(__file__)),
+                "PedalEditor", brand_dir, slug, "index.html",
+            )
+            if os.path.exists(page):
+                return f"../{brand_dir}/{slug}/"
+            return None
+    return None
+
 
 def is_available(pid):
     return pid.startswith(AVAILABLE_PREFIXES) or pid in AVAILABLE_IDS
@@ -52,18 +79,23 @@ def load():
             continue
         mfr = (d.get("manufacturer") or "Other").strip()
         model = (d.get("modelName") or d.get("name") or pid).strip()
-        (avail if is_available(pid) else deck)[mfr].append(model)
+        (avail if is_available(pid) else deck)[mfr].append((model, pid))
     return avail, deck
 
 
-def section(groups):
+def section(groups, link=False):
     out = []
     for mfr in sorted(groups, key=lambda m: m.lower()):
-        models = sorted(groups[mfr], key=lambda s: s.lower())
-        names = " &middot; ".join(html.escape(m) for m in models)
+        entries = sorted(groups[mfr], key=lambda t: t[0].lower())
+        parts = []
+        for model, pid in entries:
+            name = html.escape(model)
+            href = pedal_href(pid) if link else None
+            parts.append(f'<a href="{href}">{name}</a>' if href else name)
+        names = " &middot; ".join(parts)
         out.append(
             '    <div class="brandblock">\n'
-            f'      <h3>{html.escape(mfr)} <span class="n">{len(models)}</span></h3>\n'
+            f'      <h3>{html.escape(mfr)} <span class="n">{len(entries)}</span></h3>\n'
             f'      <p>{names}</p>\n'
             "    </div>"
         )
@@ -82,7 +114,7 @@ def main():
         n_total=n_avail + n_deck,
         n_avail_brands=len(avail),
         n_deck_brands=len(deck),
-        available=section(avail),
+        available=section(avail, link=True),
         ondeck=section(deck),
         updated=updated,
     )
@@ -141,6 +173,8 @@ h2::before,h2::after{{content:"";flex:1;height:1px;background:var(--line)}}
 .brandblock h3 .n{{font-family:var(--sans);font-size:.6em;font-weight:700;color:var(--muted);
   letter-spacing:1.5px;vertical-align:middle;margin-left:6px}}
 .brandblock p{{margin:0;font-size:.93em;color:var(--ink-soft);line-height:1.6}}
+.brandblock p a{{text-decoration:none;color:var(--ink);border-bottom:1px solid var(--line);transition:color .15s ease,border-color .15s ease}}
+.brandblock p a:hover{{color:var(--terracotta);border-color:var(--terracotta)}}
 footer{{margin-top:76px;border-top:1px solid var(--line);padding:24px 0 64px;font-size:.78em;
   color:var(--muted);display:flex;gap:20px;flex-wrap:wrap;align-items:center;
   justify-content:center;text-transform:uppercase;letter-spacing:2px}}

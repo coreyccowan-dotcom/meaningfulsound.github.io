@@ -25,7 +25,7 @@ OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)),
 
 # Single source of truth for what has shipped. Promote a pedal in
 # build_profiles_page.py only; this page follows automatically.
-from build_profiles_page import AVAILABLE_IDS, AVAILABLE_PREFIXES  # noqa: E402
+from build_profiles_page import AVAILABLE_IDS, AVAILABLE_PREFIXES, pedal_href  # noqa: E402
 
 TABS = [
     ("Editor",
@@ -106,18 +106,25 @@ def load():
             continue
         mfr = (d.get("manufacturer") or "Other").strip()
         model = (d.get("name") or pid).strip()
-        (avail if is_available(pid) else deck)[mfr].append(model)
+        (avail if is_available(pid) else deck)[mfr].append((model, pid))
     return avail, deck
 
 
-def brand_rows(groups):
+def brand_rows(groups, link=False):
     rows = []
     for mfr in sorted(groups, key=lambda m: m.lower()):
-        models = sorted(groups[mfr], key=lambda s: s.lower())
-        names = ", ".join(html.escape(m) for m in models)
+        entries = sorted(groups[mfr], key=lambda t: t[0].lower())
+        parts = []
+        for model, pid in entries:
+            name = html.escape(model)
+            # pedal_href returns "../{brand}/{slug}/" — reference/ is one level
+            # below /PedalEditor/, same as profiles/, so the relative path holds.
+            href = pedal_href(pid) if link else None
+            parts.append(f'<a href="{href}">{name}</a>' if href else name)
+        names = ", ".join(parts)
         rows.append(
             f"    <tr><td>{html.escape(mfr)}</td>"
-            f"<td class=n>{len(models)}</td><td>{names}</td></tr>"
+            f"<td class=n>{len(entries)}</td><td>{names}</td></tr>"
         )
     return "\n".join(rows)
 
@@ -147,7 +154,7 @@ def build():
 
     return PAGE.format(
         lede=LEDE, tabs=tabs, faq=faq, faq_ld=faq_ld,
-        avail_rows=brand_rows(avail), deck_rows=brand_rows(deck),
+        avail_rows=brand_rows(avail, link=True), deck_rows=brand_rows(deck),
         n_avail=n_avail, n_deck=n_deck, total=n_avail + n_deck,
         n_brands=len(set(avail) | set(deck)), updated=updated,
     )
