@@ -83,7 +83,7 @@ footer .social svg{width:18px;height:18px;display:block}
     <p class="eyebrow"><a href="../../">PedalEditor</a><span class="sep">&middot;</span><a href="../">Guides</a></p>
     <div class="rule"></div>
     <h1>Live</h1>
-    <p class="lede">In production.</p>
+    <p class="lede">Walking a setlist section by section &mdash; deploying songs to the rig in sequence.</p>
     <div class="links">
       <a class="pill filled" href="https://apps.apple.com/us/app/pedaleditor/id6761016084">App Store</a>
       <a class="pill" href="../">All Guides</a>
@@ -94,79 +94,31 @@ footer .social svg{width:18px;height:18px;display:block}
 
   <div class="body">
 
-    <div class="working-note">Working map. Every item below is a real tap target &mdash; content strategy still to be decided.</div>
-
     <h2>Live Hub</h2>
     <ul>
-      <li><strong>Rig header</strong> &mdash; read-only rig name</li>
-      <li><strong>Rig pedal chip row</strong> &mdash; per-pedal chip; tap toggles bypass (sends PC, haptic); LED lit / dimmed</li>
-      <li><strong>Scene Pads</strong> button (debug only, dev-flagged) &rarr; Performance Pad view</li>
-      <li><strong>Setlists section</strong> &mdash; setlist card grid; tap &rarr; Performance view</li>
-      <li>Empty state &mdash; points to Songs tab</li>
+      <li>Rig name</li>
+      <li>Pedal chip</li>
+      <li>Setlist card</li>
     </ul>
 
-    <h2>Performance view (setlist run)</h2>
+    <h2>Performance view</h2>
     <ul>
-      <li><strong>Close (&times;)</strong> &mdash; back to hub</li>
-      <li><strong>Progress bar</strong> &mdash; song / section, read-only</li>
-      <li><strong>Header</strong> &mdash; song picker button &rarr; song picker sheet</li>
-      <li><strong>Pedal chip row</strong> &mdash; re-engage re-sends the section preset for that pedal</li>
-      <li><strong>Section / song hero</strong> &mdash; large label, read-only</li>
-      <li><strong>Preset rows</strong> &mdash; up to 5; status icon, pedal, name, PC, error text (dims to 0.4 when pedal bypassed)</li>
-      <li><strong>Song pads strip</strong> &mdash; pad per song, jumps to first section</li>
-      <li><strong>Section pads strip</strong> &mdash; pad per section (multi-section songs)</li>
-      <li><strong>Transport</strong> &mdash; PREV / NEXT</li>
-      <li><strong>Retry</strong> &mdash; &ldquo;Re-deploy section&rdquo; when a preset failed</li>
-      <li><strong>Swipe</strong> &mdash; left = NEXT, right = PREV</li>
+      <li>Close</li>
+      <li>Progress bar</li>
+      <li>Song picker</li>
+      <li>Pedal chip</li>
+      <li>Section / song hero</li>
+      <li>Preset row</li>
+      <li>Song pad</li>
+      <li>Section pad</li>
+      <li>Prev</li>
+      <li>Next</li>
+      <li>Re-deploy section</li>
     </ul>
 
-    <h2>Performance Pad view (scene pads)</h2>
+    <h3>Song picker</h3>
     <ul>
-      <li>Top toolbar &mdash; <strong>Scenes</strong> &middot; Edit/Live picker &middot; Close (&times;)</li>
-      <li><strong>Scene name</strong> &mdash; read-only</li>
-      <li><strong>Tempo strip</strong> &mdash; BPM readout, Stop, Nudge &minus;/+ (long-press continuous), TAP TEMPO, clock status banner</li>
-      <li><strong>Pad grid</strong> &mdash; 2 / 3 / 4 columns per scene
-        <ul>
-          <li><strong>Live</strong> mode: tap fires all MIDI actions; empty pad tap &rarr; config</li>
-          <li><strong>Edit</strong> mode: tap opens config (pencil badge); empty pad tap &rarr; config; Add button</li>
-        </ul>
-      </li>
-      <li><strong>MIDI Status indicator</strong> (bottom) &rarr; MIDI Destination Picker</li>
-    </ul>
-
-    <h2>Scene Manager sheet</h2>
-    <ul>
-      <li>Done &middot; Rescan &middot; <strong>+</strong> (Create Scene &mdash; name, column picker 2/3/4)</li>
-      <li>Scene row tap &mdash; select, close; checkmark on active</li>
-      <li>Swipe / context menu &mdash; Delete (confirm), Rename</li>
-    </ul>
-
-    <h2>Pad config sheet</h2>
-    <ul>
-      <li>Pad name field &middot; color grid (12 preset colors)</li>
-      <li>Enabled toggle</li>
-      <li>Actions list &mdash; tap &rarr; Action Detail; swipe delete; drag reorder</li>
-      <li><strong>Add Pedal Action</strong> &rarr; Pad Preset Picker</li>
-      <li>Test Fire</li>
-    </ul>
-
-    <h3>Pad Action Detail</h3>
-    <ul>
-      <li>Display: preset name, pedal id</li>
-      <li>Edit: MIDI channel stepper, PC stepper, Bank MSB/LSB fields</li>
-    </ul>
-
-    <h3>Pad Preset Picker</h3>
-    <ul>
-      <li>Segmented Preset / Section</li>
-      <li><strong>Preset mode</strong> &mdash; search, pedal chips, bank chips, preset rows</li>
-      <li><strong>Section mode</strong> &mdash; songs &rarr; sections rows</li>
-    </ul>
-
-    <h2>Not yet decided</h2>
-    <ul>
-      <li>Whether <strong>Scene Pads</strong> (still dev-flagged) belongs in the launch guide at all</li>
-      <li>Where the &ldquo;pedal on / off is one binary state (LED metaphor)&rdquo; note lives &mdash; here, in Editor, or in Reference</li>
+      <li>Song row</li>
     </ul>
 
   </div>

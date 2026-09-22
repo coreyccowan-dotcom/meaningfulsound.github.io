@@ -83,7 +83,7 @@ footer .social svg{width:18px;height:18px;display:block}
     <p class="eyebrow"><a href="../../">PedalEditor</a><span class="sep">&middot;</span><a href="../">Guides</a></p>
     <div class="rule"></div>
     <h1>Editor</h1>
-    <p class="lede">In production.</p>
+    <p class="lede">The knobs, the sidebar, the preset list &mdash; and every sub-sheet reachable from them.</p>
     <div class="links">
       <a class="pill filled" href="https://apps.apple.com/us/app/pedaleditor/id6761016084">App Store</a>
       <a class="pill" href="../">All Guides</a>
@@ -94,95 +94,145 @@ footer .social svg{width:18px;height:18px;display:block}
 
   <div class="body">
 
-    <div class="working-note">Working map. Every item below is a real tap target &mdash; content strategy still to be decided.</div>
-
-    <h2>The pane</h2>
+    <h2>Editor pane</h2>
     <ul>
-      <li><strong>Category cards</strong> (row 1) &mdash; pick effect family</li>
-      <li><strong>Algorithm cards</strong> (row 2) &mdash; pick machine</li>
-      <li><strong>Parameter controls</strong> &mdash; knobs, toggles, selectors, buttons, dip banks</li>
-      <li><strong>Physical Switch panel</strong> (when the profile has one)</li>
-      <li><strong>Global Parameters</strong> / <strong>App Globals</strong> sections</li>
-      <li><strong>Frozen overlay</strong> (unowned profile) &mdash; Start Trial, Connect this Profile, Get Lifetime</li>
+      <li>Effect cards</li>
+      <li>Machine cards</li>
+      <li>Knobs</li>
+      <li>Toggles</li>
+      <li>Selectors</li>
+      <li>Buttons</li>
+      <li>Dip banks</li>
+      <li>Physical Switches</li>
+      <li>Global Parameters</li>
+      <li>App Globals</li>
+      <li>Pedal name (tap to bypass, swipe for previous / next)</li>
     </ul>
 
-    <h2>iPhone gestures on the pane</h2>
-    <ul>
-      <li><strong>Tap pedal name</strong> &mdash; toggle bypass</li>
-      <li><strong>Swipe pedal name L/R</strong> &mdash; previous / next pedal in rig</li>
-    </ul>
+    <h2>Sidebar &middot; Amp icon</h2>
 
-    <h2>Sidebar (iPad/Mac) &middot; Amp popover (iPhone)</h2>
-
-    <h3>MIDI</h3>
+    <h3>Connect</h3>
     <ul>
-      <li><strong>Connection banner</strong> &rarr; MIDI Destination Picker</li>
+      <li>Connection banner</li>
     </ul>
 
     <h3>Pedal</h3>
     <ul>
-      <li><strong>Pedal card</strong> &rarr; pedal picker (grouped by manufacturer, searchable)</li>
-      <li><strong>Ch</strong> pill &mdash; MIDI channel 1&ndash;16</li>
-      <li><strong>MIDI Ref</strong> pill &rarr; per-profile MIDI reference (when present)</li>
+      <li>Pedal</li>
+      <li>Channel</li>
+      <li>MIDI Reference</li>
     </ul>
 
-    <h3>Rig / Project / Collection</h3>
+    <h3>Rig &middot; Project &middot; Collection</h3>
     <ul>
-      <li><strong>Rig card</strong> &rarr; Rig manager sheet</li>
-      <li><strong>Project card</strong> &rarr; Project manager sheet</li>
-      <li><strong>Collection pill</strong> &rarr; bank picker (with Create&hellip; and Manage&hellip;)</li>
+      <li>Rig</li>
+      <li>Project</li>
+      <li>Collection</li>
     </ul>
 
-    <h3>Action bar (iPad/Mac, when a preset is selected)</h3>
+    <h3>Action bar</h3>
     <ul>
-      <li><strong>Save</strong> &mdash; writes to app (may raise Overwrite alert)</li>
-      <li><strong>Save on Pedal</strong> &mdash; either confirm alert or manual-save instructions</li>
-      <li><strong>More (&hellip;)</strong> popover &mdash; Read from Pedal &middot; Discard Capture &middot; History &middot; Undo &middot; Redo &middot; Edit Profile</li>
+      <li>Save</li>
+      <li>Save on Pedal</li>
+      <li>More</li>
     </ul>
 
-    <h3>Admin footer</h3>
+    <h3>More menu</h3>
     <ul>
-      <li><strong>Profiles</strong> &middot; <strong>Monitor</strong> &middot; <strong>Connect to Mac</strong> (iOS) &middot; <strong>Settings</strong></li>
+      <li>Read from Pedal</li>
+      <li>Discard Capture</li>
+      <li>History</li>
+      <li>Undo</li>
+      <li>Redo</li>
     </ul>
 
-    <h2>iPhone toolbar (top nav)</h2>
+    <h3>Footer</h3>
     <ul>
-      <li><strong>Amp icon</strong> (leading) &rarr; controls popover (see sidebar above)</li>
-      <li><strong>Preset name</strong> (centre) &rarr; preset picker sheet</li>
-      <li><strong>Save Options</strong> popover (trailing) &mdash; Save to App &middot; Save to Hardware &middot; Read from Pedal &middot; History &middot; Undo &middot; Redo &middot; Edit Profile</li>
+      <li>Profiles</li>
+      <li>Monitor</li>
+      <li>Connect to Mac</li>
+      <li>Settings</li>
+    </ul>
+
+    <h2>iPhone top bar</h2>
+    <ul>
+      <li>Amp icon</li>
+      <li>Preset name</li>
+      <li>Save Options</li>
+    </ul>
+
+    <h3>Save Options</h3>
+    <ul>
+      <li>Save to App</li>
+      <li>Save to Hardware</li>
+      <li>Read from Pedal</li>
+      <li>History</li>
+      <li>Undo</li>
+      <li>Redo</li>
     </ul>
 
     <h2>Preset list</h2>
     <ul>
-      <li><strong>New Preset (+)</strong> &rarr; Preset Template Picker</li>
-      <li><strong>More (&hellip;)</strong> &mdash; Edit &middot; Organize (Group Manager) &middot; Filter</li>
-      <li><strong>Search</strong> field</li>
-      <li><strong>Preset row</strong> &mdash; tap to load</li>
-      <li><strong>Swipes</strong> &mdash; left favorite, right mark empty</li>
-      <li><strong>Row context menu</strong> &mdash; Favorite &middot; Rename &middot; Duplicate &middot; New from Template &middot; Start Group Selection &middot; Delete</li>
-      <li><strong>Group header context menu</strong> &mdash; Edit Group &middot; Color &middot; Delete Group</li>
+      <li>New Preset</li>
+      <li>More</li>
+      <li>Search</li>
+      <li>Preset row</li>
     </ul>
 
-    <h2>Sheets reached from Editor</h2>
+    <h3>Preset row menu</h3>
     <ul>
-      <li><strong>MIDI Destination Picker</strong> &mdash; connect / rescan / pair BLE / disconnect</li>
-      <li><strong>Rig</strong> &mdash; create, edit, per-pedal channels; nested Add Pedal picker</li>
-      <li><strong>Project Manager</strong> &mdash; create, rename, activate</li>
-      <li><strong>Profiles</strong> &mdash; activate, MIDI settings, Reset, Create Your Own</li>
-      <li><strong>MIDI Reference</strong> &mdash; searchable CC catalogue</li>
-      <li><strong>MIDI Monitor</strong> &mdash; Pause &middot; Export &middot; Clear</li>
-      <li><strong>Hardware Capture</strong> &mdash; capture all presets from the pedal</li>
-      <li><strong>Settings</strong> &mdash; Lifetime, Restore, Backup &amp; Restore, links, onboarding, haptics, DEV</li>
-      <li><strong>Bank picker</strong> &mdash; Create Collection, Manage Collections</li>
-      <li><strong>History</strong> &mdash; per-change revert, Clear</li>
-      <li><strong>Preset Template Picker</strong> &mdash; new preset from seed</li>
-      <li><strong>Preset Group Manager</strong> &mdash; Create Group, Edit Group, Delete, reorder</li>
+      <li>Favorite</li>
+      <li>Rename</li>
+      <li>Duplicate</li>
+      <li>New from Template</li>
+      <li>Start Group Selection</li>
+      <li>Delete</li>
     </ul>
 
-    <h2>Not yet decided</h2>
+    <h3>Group header menu</h3>
     <ul>
-      <li><strong>Edit Profile</strong> chain (More &rarr; Edit Profile) is currently live but marked retired in project notes &mdash; document, hide, or remove?</li>
-      <li>Where <strong>Save to App vs. Save on Pedal</strong> deserves its own short explainer (currently spans two entry points)</li>
+      <li>Edit Group</li>
+      <li>Color</li>
+      <li>Delete Group</li>
+    </ul>
+
+    <h2>Sheets</h2>
+    <ul>
+      <li>MIDI Destinations</li>
+      <li>Rig</li>
+      <li>Project Manager</li>
+      <li>Profiles</li>
+      <li>MIDI Reference</li>
+      <li>MIDI Monitor</li>
+      <li>Hardware Capture</li>
+      <li>Settings</li>
+      <li>History</li>
+      <li>Preset Template Picker</li>
+      <li>Preset Group Manager</li>
+      <li>Bank Picker</li>
+      <li>Create Collection</li>
+      <li>Manage Collections</li>
+    </ul>
+
+    <h2>Settings</h2>
+    <ul>
+      <li>Connect All Profiles &mdash; Lifetime</li>
+      <li>Restore Purchases</li>
+      <li>Backup &amp; Restore</li>
+      <li>meaningfulsound.net</li>
+      <li>Report an Issue</li>
+      <li>Request a Feature</li>
+      <li>Share a Profile</li>
+      <li>Show Onboarding Guide</li>
+      <li>Haptic Feedback</li>
+    </ul>
+
+    <h2>Paywalls</h2>
+    <ul>
+      <li>Start 14-Day Free Trial</li>
+      <li>Connect this Profile</li>
+      <li>Unlock Create Your Own</li>
+      <li>Get Lifetime</li>
     </ul>
 
   </div>

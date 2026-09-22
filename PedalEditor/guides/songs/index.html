@@ -83,7 +83,7 @@ footer .social svg{width:18px;height:18px;display:block}
     <p class="eyebrow"><a href="../../">PedalEditor</a><span class="sep">&middot;</span><a href="../">Guides</a></p>
     <div class="rule"></div>
     <h1>Songs &amp; Setlists</h1>
-    <p class="lede">In production.</p>
+    <p class="lede">The whole board held in one place, in the order you play it.</p>
     <div class="links">
       <a class="pill filled" href="https://apps.apple.com/us/app/pedaleditor/id6761016084">App Store</a>
       <a class="pill" href="../">All Guides</a>
@@ -94,57 +94,76 @@ footer .social svg{width:18px;height:18px;display:block}
 
   <div class="body">
 
-    <div class="working-note">Working map. Every item below is a real tap target &mdash; content strategy still to be decided.</div>
-
-    <h2>Tab header</h2>
+    <h2>Segmented switch</h2>
     <ul>
-      <li><strong>Segmented control</strong> &mdash; Songs / Setlists (haptic selection)</li>
+      <li>Songs</li>
+      <li>Setlists</li>
     </ul>
 
     <h2>Songs list</h2>
     <ul>
-      <li><strong>+</strong> in header &rarr; New Song sheet</li>
-      <li><strong>Search</strong> (when list non-empty)</li>
-      <li>Empty state &mdash; Create Song button</li>
-      <li><strong>Song card</strong> &mdash; tap opens Song Editor; long-press &rarr; Rename / Delete</li>
+      <li>New Song</li>
+      <li>Search</li>
+      <li>Song card</li>
+      <li>Rename</li>
+      <li>Delete</li>
     </ul>
 
     <h2>Song Editor</h2>
     <ul>
-      <li>Nav bar &mdash; <strong>Details</strong> (info icon) &middot; <strong>Save</strong> (when changed) &middot; <strong>Dev Export</strong> (debug only)</li>
-      <li><strong>Section headers</strong> &mdash; tap select; context menu &rarr; Rename / Delete Section</li>
-      <li><strong>Preset rows</strong> &mdash; content: order #, name, pedal / PC / channel; context menu &rarr; Rename / Delete; swipe Delete; drag to reorder</li>
-      <li>Action bar &mdash; <strong>Add Preset</strong> &rarr; picker sheet; <strong>Section</strong> &rarr; Add Section sheet</li>
+      <li>Details</li>
+      <li>Save</li>
+      <li>Section header</li>
+      <li>Rename Section</li>
+      <li>Delete Section</li>
+      <li>Preset row</li>
+      <li>Rename Preset</li>
+      <li>Delete Preset</li>
+      <li>Add Preset</li>
+      <li>Section</li>
     </ul>
 
-    <h3>Sheets inside Song Editor</h3>
+    <h3>Song Details</h3>
     <ul>
-      <li><strong>Song Details</strong> &mdash; Name / Key / Tempo / Notes (Done, does not auto-save)</li>
-      <li><strong>Preset Picker</strong> &mdash; per-pedal list of saved presets</li>
-      <li><strong>Add Section</strong> &mdash; quick-pick chips (Verse, Chorus, Bridge&hellip;), custom name, Copy Presets From&hellip;</li>
-      <li><strong>Rename Section / Preset</strong> alerts</li>
+      <li>Name</li>
+      <li>Key</li>
+      <li>Tempo</li>
+      <li>Notes</li>
+    </ul>
+
+    <h3>Add Section</h3>
+    <ul>
+      <li>Verse &middot; Chorus &middot; Bridge &middot; Intro &middot; Outro &middot; &hellip;</li>
+      <li>Custom name</li>
+      <li>Copy Presets From</li>
+    </ul>
+
+    <h3>Preset Picker</h3>
+    <ul>
+      <li>Per-pedal preset row</li>
     </ul>
 
     <h2>Setlists list</h2>
     <ul>
-      <li><strong>+</strong> in header &rarr; New Setlist sheet</li>
-      <li><strong>Search</strong> (when list non-empty)</li>
-      <li>Empty state &mdash; Create Setlist button</li>
-      <li><strong>Setlist card</strong> &mdash; tap opens Setlist Editor; long-press &rarr; Rename / Delete</li>
+      <li>New Setlist</li>
+      <li>Search</li>
+      <li>Setlist card</li>
+      <li>Rename</li>
+      <li>Delete</li>
     </ul>
 
     <h2>Setlist Editor</h2>
     <ul>
-      <li>Nav bar &mdash; searchable (&ldquo;Search songs&rdquo;) &middot; <strong>Edit</strong> (iOS) &middot; <strong>+</strong> Add Song</li>
-      <li><strong>Song row</strong> &mdash; content: order #, name, preset count, key, tempo; context menu &rarr; Remove from Setlist; swipe Remove; drag to reorder</li>
-      <li>Live-tab reminder banner (read-only)</li>
-      <li><strong>Add Song</strong> sheet &mdash; per-song row Add (auto-close when all added)</li>
+      <li>Search songs</li>
+      <li>Edit</li>
+      <li>Add Song</li>
+      <li>Song row</li>
+      <li>Remove from Setlist</li>
     </ul>
 
-    <h2>Not yet decided</h2>
+    <h3>Add Song</h3>
     <ul>
-      <li>Whether Songs and Setlists deserve two separate guide pages or stay as one</li>
-      <li>Whether the empty-state copy (&ldquo;Create songs in the Songs tab first&rdquo;) is worth calling out as a distinct flow</li>
+      <li>Song row</li>
     </ul>
 
   </div>
