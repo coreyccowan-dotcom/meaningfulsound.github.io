@@ -14,7 +14,7 @@
 - **Platforms:** iOS, iPadOS, macOS — all native, no Electron, no web wrappers
 - **Privacy posture:** No accounts. No analytics. No advertising. No third-party SDKs. iCloud sync uses the user's personal account; Meaningful Sound has no access to user content.
 - **Distribution:** Apple App Store only
-- **Contact:** Instagram [@pedaleditor](https://instagram.com/pedaleditor)
+- **Contact:** Instagram [@pedaleditor](https://instagram.com/pedaleditor), TikTok [@pedaleditor](https://tiktok.com/@pedaleditor), YouTube [@meaningfulsound](https://youtube.com/@meaningfulsound)
 
 ## PedalEditor Detail
 

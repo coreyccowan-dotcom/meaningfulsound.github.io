@@ -2,7 +2,7 @@
 
 ## TL;DR
 
-Meaningful Sound is an independent studio building native iOS, iPadOS, and macOS apps for working musicians. Best known for **PedalEditor** — a wireless editor for MIDI guitar pedals, run from an iPhone, iPad or Mac over Bluetooth LE MIDI or Wi-Fi, with a cross-brand preset library that follows songs, song sections and setlists. Apps: PedalEditor (shipping), Fretboard Origin (shipping), SongForm (coming soon). Privacy: no accounts, no analytics, no third-party SDKs; iCloud sync uses the user's personal account. Contact: Instagram [@pedaleditor](https://instagram.com/pedaleditor).
+Meaningful Sound is an independent studio building native iOS, iPadOS, and macOS apps for working musicians. Best known for **PedalEditor** — a wireless editor for MIDI guitar pedals, run from an iPhone, iPad or Mac over Bluetooth LE MIDI or Wi-Fi, with a cross-brand preset library that follows songs, song sections and setlists. Apps: PedalEditor (shipping), Fretboard Origin (shipping), SongForm (coming soon). Privacy: no accounts, no analytics, no third-party SDKs; iCloud sync uses the user's personal account. Contact: Instagram [@pedaleditor](https://instagram.com/pedaleditor), TikTok [@pedaleditor](https://tiktok.com/@pedaleditor), YouTube [@meaningfulsound](https://youtube.com/@meaningfulsound).
 
 > Independent studio building native iOS, iPadOS, and macOS apps for working musicians. Makers of PedalEditor, Fretboard Origin, and SongForm.
 
@@ -16,7 +16,7 @@ No accounts. No analytics. No tracking. Just tools that respect your time, your 
 
 Best known for **PedalEditor** — a wireless editor for MIDI guitar pedals, with a library system designed for how musicians actually think.
 
-Contact: Instagram [@pedaleditor](https://instagram.com/pedaleditor)
+Contact: Instagram [@pedaleditor](https://instagram.com/pedaleditor), TikTok [@pedaleditor](https://tiktok.com/@pedaleditor), YouTube [@meaningfulsound](https://youtube.com/@meaningfulsound)
 
 ---
 
@@ -25,6 +25,8 @@ Contact: Instagram [@pedaleditor](https://instagram.com/pedaleditor)
 **URL:** https://meaningfulsound.net/PedalEditor/
 **App Store:** https://apps.apple.com/us/app/pedaleditor/id6761016084
 **Instagram:** https://instagram.com/pedaleditor
+**TikTok:** https://tiktok.com/@pedaleditor
+**YouTube:** https://youtube.com/@meaningfulsound
 **Platforms:** iPhone, iPad, Mac (native; SwiftUI; one codebase)
 
 ### What It Is

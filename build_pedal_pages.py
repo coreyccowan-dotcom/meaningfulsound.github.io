@@ -213,17 +213,30 @@ h2{{font-family:var(--sans);font-weight:700;text-transform:uppercase;font-size:.
   color:var(--gold);margin:62px 0 22px;display:flex;align-items:center;gap:16px}}
 h2::before,h2::after{{content:"";flex:1;height:1px;background:var(--line)}}
 
-.shots{{--shot-h:440px;display:flex;gap:18px;justify-content:center;align-items:flex-end;flex-wrap:wrap;
+.shots{{--shot-h:440px;--mat:#b8975a;--mat-line:#93763f;--mat-ink:#4a3a1e;
+  display:flex;gap:18px;justify-content:center;align-items:flex-end;flex-wrap:wrap;
   width:min(96vw,960px);margin-left:calc((100% - min(96vw,960px)) / 2)}}
-.shot{{background:var(--cream);border:1px solid var(--line);border-radius:4px;padding:14px;
+.shot{{background:var(--mat);border:1px solid var(--mat-line);border-radius:4px;padding:14px;
   display:flex;flex-direction:column;align-items:center;gap:10px}}
-.shot .frame{{height:var(--shot-h);background:var(--sand-deep);border:1px solid var(--line);border-radius:6px;
+.shot .frame{{height:var(--shot-h);background:var(--cream);border:1px solid var(--mat-line);border-radius:6px;
   color:var(--muted);font-size:.78em;font-weight:600;text-transform:uppercase;letter-spacing:2px;
   display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}}
 .shot .frame img{{height:100%;width:auto;display:block}}
 .shot.iphone .frame{{width:calc(var(--shot-h) * 9 / 19.5)}}
 .shot.ipad .frame{{width:calc(var(--shot-h) * 4 / 3)}}
-.shot .caption{{font-size:.72em;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--muted)}}
+.shot .caption{{font-size:.72em;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--mat-ink)}}
+.shot a.zoom{{display:block;cursor:zoom-in;height:100%}}
+.shot a.zoom:focus-visible{{outline:2px solid var(--terracotta);outline-offset:2px}}
+
+/* Lightbox */
+.lb{{position:fixed;inset:0;background:rgba(30,20,12,.88);display:none;
+  align-items:center;justify-content:center;z-index:9999;padding:24px;cursor:zoom-out}}
+.lb.open{{display:flex}}
+.lb img{{max-width:100%;max-height:100%;width:auto;height:auto;border-radius:4px;
+  box-shadow:0 20px 60px rgba(0,0,0,.5);object-fit:contain}}
+.lb-close{{position:fixed;top:16px;right:20px;background:none;border:0;color:var(--cream);
+  font-size:2em;line-height:1;cursor:pointer;padding:6px 12px;font-family:var(--sans)}}
+.lb-close:focus-visible{{outline:2px solid var(--terracotta);outline-offset:2px}}
 
 .machines{{background:var(--cream);border:1px solid var(--line);border-radius:4px;padding:24px 26px;text-align:left}}
 .machines h3{{font-family:var(--serif);font-size:1.24em;margin:0 0 14px;font-weight:700;letter-spacing:-.2px;text-align:center}}
@@ -244,6 +257,8 @@ footer{{margin-top:80px;border-top:1px solid var(--line);padding:24px 0 64px;fon
   justify-content:center;text-transform:uppercase;letter-spacing:2px}}
 footer a{{text-decoration:none}}
 footer a:hover{{color:var(--ink)}}
+footer .social{{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px}}
+footer .social svg{{width:18px;height:18px;display:block}}
 .updated{{width:100%}}
 
 @media(max-width:720px){{
@@ -308,11 +323,35 @@ footer a:hover{{color:var(--ink)}}
     <a href="../">{brand_short}</a>
     <a href="../../reference/">Reference</a>
     <a href="../../privacy/">Privacy</a>
-    <a href="https://instagram.com/pedaleditor">Instagram</a>
+    <a class="social" href="https://instagram.com/pedaleditor" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="1.75"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.75"/><circle cx="17.5" cy="6.5" r="1.15" fill="currentColor"/></svg></a>
+    <a class="social" href="https://tiktok.com/@pedaleditor" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19.5 8.6a6.4 6.4 0 0 1-3.8-1.2v7.4a5.4 5.4 0 1 1-5.4-5.4v3a2.4 2.4 0 1 0 2.4 2.4V2.5h2.9a4.3 4.3 0 0 0 3.9 4z" fill="currentColor"/></svg></a>
+    <a class="social" href="https://youtube.com/@meaningfulsound" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.6 3.6 12 3.6 12 3.6s-7.6 0-9.4.5A3 3 0 0 0 .5 6.2C0 8 0 12 0 12s0 4 .5 5.8a3 3 0 0 0 2.1 2.1c1.8.5 9.4.5 9.4.5s7.6 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.8.5-5.8.5-5.8s0-4-.5-5.8zM9.6 15.6V8.4L15.8 12z" fill="currentColor"/></svg></a>
     <span class="updated">Updated {today}</span>
   </footer>
 
 </div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Screenshot preview" hidden>
+  <button class="lb-close" type="button" aria-label="Close preview">&times;</button>
+  <img id="lb-img" alt="">
+</div>
+<script>
+(function(){{
+  var lb=document.getElementById('lb'),img=document.getElementById('lb-img');
+  document.querySelectorAll('.shot a.zoom').forEach(function(a){{
+    a.addEventListener('click',function(e){{
+      e.preventDefault();
+      img.src=a.getAttribute('href');
+      img.alt=a.querySelector('img').alt;
+      lb.hidden=false;lb.classList.add('open');
+      document.body.style.overflow='hidden';
+    }});
+  }});
+  function close(){{lb.classList.remove('open');lb.hidden=true;img.src='';document.body.style.overflow=''}}
+  lb.addEventListener('click',close);
+  document.addEventListener('keydown',function(e){{if(e.key==='Escape')close()}});
+}})();
+</script>
 </body>
 </html>
 """
@@ -398,12 +437,16 @@ def render_page(pid, profile, brand_slug, brand_name, display_name, desc):
     # Screenshots
     iphone = find_shot(pedal_slug, "iphone")
     ipad = find_shot(pedal_slug, "ipad")
+    iphone_alt = f"{brand_name} {strip_html(display_name)} on iPhone in PedalEditor"
+    ipad_alt = f"{brand_name} {strip_html(display_name)} on iPad in PedalEditor"
     iphone_frame = (
-        f'<img src="{iphone}" alt="{brand_name} {strip_html(display_name)} on iPhone in PedalEditor">'
+        f'<a class="zoom" href="{iphone}" aria-label="Open full-size iPhone screenshot">'
+        f'<img src="{iphone}" alt="{iphone_alt}"></a>'
         if iphone else "iPhone screenshot<br>coming soon"
     )
     ipad_frame = (
-        f'<img src="{ipad}" alt="{brand_name} {strip_html(display_name)} on iPad in PedalEditor">'
+        f'<a class="zoom" href="{ipad}" aria-label="Open full-size iPad screenshot">'
+        f'<img src="{ipad}" alt="{ipad_alt}"></a>'
         if ipad else "iPad screenshot<br>coming soon"
     )
 
