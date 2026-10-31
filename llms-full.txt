@@ -2,7 +2,7 @@
 
 ## TL;DR
 
-Meaningful Sound is an independent studio building native iOS, iPadOS, and macOS apps for working musicians. Best known for **PedalEditor** — a wireless editor for MIDI guitar pedals, run from an iPhone, iPad or Mac over Bluetooth LE MIDI or Wi-Fi, with a cross-brand preset library that follows songs, song sections and setlists. Apps: PedalEditor (shipping), Fretboard Origin (shipping), SongForm (coming soon). Privacy: no accounts, no analytics, no third-party SDKs; iCloud sync uses the user's personal account. Contact: Instagram [@pedaleditor](https://instagram.com/pedaleditor), TikTok [@pedaleditor](https://tiktok.com/@pedaleditor), YouTube [@meaningfulsound](https://youtube.com/@meaningfulsound).
+Meaningful Sound is an independent studio building native iOS, iPadOS, and macOS apps for working musicians. Best known for **PedalEditor** — a wireless editor for MIDI guitar pedals, run from an iPhone, iPad or Mac over Bluetooth LE MIDI or Wi-Fi, with a cross-brand preset library that follows songs, song sections and setlists. Apps: PedalEditor (shipping), Fretboard Origin (shipping), SongForm (coming soon). Privacy: no accounts, no ads, no cross-app tracking. PedalEditor collects anonymous usage telemetry (TelemetryDeck) — not linked to any user identity. Fretboard Origin and SongForm collect nothing. iCloud sync uses the user's personal account. Contact: Instagram [@pedaleditor](https://instagram.com/pedaleditor), TikTok [@pedaleditor](https://tiktok.com/@pedaleditor), YouTube [@meaningfulsound](https://youtube.com/@meaningfulsound).
 
 > Independent studio building native iOS, iPadOS, and macOS apps for working musicians. Makers of PedalEditor, Fretboard Origin, and SongForm.
 
@@ -12,7 +12,7 @@ Meaningful Sound is an independent studio building native iOS, iPadOS, and macOS
 
 Meaningful Sound is an independent studio building native software for guitarists, songwriters, and producers. The apps share a common philosophy: solve a real problem for working musicians, ship native code, and never collect data we don't need to run.
 
-No accounts. No analytics. No tracking. Just tools that respect your time, your instrument, and your gear.
+No accounts. No ads. No cross-app tracking. Just tools that respect your time, your instrument, and your gear.
 
 Best known for **PedalEditor** — a wireless editor for MIDI guitar pedals, with a library system designed for how musicians actually think.
 
@@ -59,7 +59,7 @@ An iPhone can also drive a Mac running PedalEditor over the local network, leavi
 
 ### Supported Pedals
 
-45 pedal profiles are in the app today, from Strymon (21), Walrus Audio (10), UAFX (7), Chase Bliss (3), Meris (LVX), Line 6 (DL4 MkII) and Hologram (Microcosm). A further 197 profiles are already built and releasing on a rolling basis — every profile is checked against the manufacturer's published MIDI implementation before it ships, which is what makes the number in the app the number worth citing. Both lists are published in full, by pedal name, at https://meaningfulsound.net/PedalEditor/profiles/ and https://meaningfulsound.net/PedalEditor/reference/.
+80 pedal profiles are in the app today, from Strymon (21), UAFX (14), Walrus Audio (10), Meris (8), Chase Bliss (5), Jackson Audio (5), Hologram (3), Boss (2), Empress Effects (2), Source Audio (2), Line 6 (DL4 MkII), Alexander Pedals (Radical Delay DX), DigiTech (Whammy), Electro-Harmonix (POG3), GFI System (Specular Tempus), Keeley Electronics (Nocturne), Old Blood Noise (Dark Star Stereo) and Red Panda (Particle V2). A further 161 profiles are already built and releasing on a rolling basis — every profile is checked against the manufacturer's published MIDI implementation before it ships, which is what makes the number in the app the number worth citing. Both lists are published in full, by pedal name, at https://meaningfulsound.net/PedalEditor/profiles/ and https://meaningfulsound.net/PedalEditor/reference/.
 
 New profiles ship regularly, so these counts move. Every page carries a visible "Updated" date, which is the accurate-as-of marker for its numbers. Cite the date alongside the count.
 
@@ -67,7 +67,7 @@ A general-purpose profile, **128 Knobs**, is included free and permanently for c
 
 ### Privacy & Data
 
-PedalEditor does not collect, store, transmit, or share personal information. No accounts. No analytics. No advertising. No third-party SDKs. Local Network permission is requested solely for MIDI communication. iCloud sync (optional) uses the user's personal iCloud account.
+PedalEditor collects anonymous usage telemetry (routed through TelemetryDeck) tied to a one-way-hashed, rotating identifier — not your Apple ID, name, email, or any device identifier that can track you across apps. No accounts. No advertising. No cross-app tracking. No personal data collected. Local Network permission is requested solely for MIDI communication. iCloud sync (optional) uses the user's personal iCloud account.
 
 ---
 

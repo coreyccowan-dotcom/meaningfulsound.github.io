@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://meaningfulsound.net/</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -20,67 +20,133 @@
   </url>
   <url>
     <loc>https://meaningfulsound.net/PedalEditor/</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://meaningfulsound.net/PedalEditor/strymon/</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://meaningfulsound.net/PedalEditor/walrus-audio/</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://meaningfulsound.net/PedalEditor/meris/</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://meaningfulsound.net/PedalEditor/uafx/</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://meaningfulsound.net/PedalEditor/line-6/</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://meaningfulsound.net/PedalEditor/chase-bliss/</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://meaningfulsound.net/PedalEditor/eventide/</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://meaningfulsound.net/PedalEditor/hologram/</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://meaningfulsound.net/PedalEditor/alexander/</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://meaningfulsound.net/PedalEditor/boss/</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://meaningfulsound.net/PedalEditor/digitech/</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://meaningfulsound.net/PedalEditor/ehx/</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://meaningfulsound.net/PedalEditor/empress/</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://meaningfulsound.net/PedalEditor/gfi/</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://meaningfulsound.net/PedalEditor/jackson-audio/</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://meaningfulsound.net/PedalEditor/keeley/</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://meaningfulsound.net/PedalEditor/old-blood-noise/</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://meaningfulsound.net/PedalEditor/red-panda/</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://meaningfulsound.net/PedalEditor/source-audio/</loc>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://meaningfulsound.net/PedalEditor/profiles/</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://meaningfulsound.net/PedalEditor/reference/</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -122,6 +188,13 @@
   <url><loc>https://meaningfulsound.net/PedalEditor/walrus-audio/r1/</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://meaningfulsound.net/PedalEditor/walrus-audio/r1-mkii/</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://meaningfulsound.net/PedalEditor/meris/lvx/</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/meris/enzo/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/meris/enzo-x/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/meris/hedra/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/meris/mercury7/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/meris/mercury-x/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/meris/ottobit-jr/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/meris/polymoon/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://meaningfulsound.net/PedalEditor/uafx/dream-65/</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://meaningfulsound.net/PedalEditor/uafx/lion-68/</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://meaningfulsound.net/PedalEditor/uafx/ruby-63/</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -129,9 +202,38 @@
   <url><loc>https://meaningfulsound.net/PedalEditor/uafx/knuckles-92/</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://meaningfulsound.net/PedalEditor/uafx/anti-1992/</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://meaningfulsound.net/PedalEditor/uafx/enigmatic-82/</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/uafx/astra/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/uafx/del-verb/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/uafx/galaxy-74/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/uafx/golden-reverberator/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/uafx/max/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/uafx/ox-stomp/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/uafx/starlight/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://meaningfulsound.net/PedalEditor/line-6/dl4-mkii/</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://meaningfulsound.net/PedalEditor/chase-bliss/mood-mkii/</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://meaningfulsound.net/PedalEditor/chase-bliss/habit/</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://meaningfulsound.net/PedalEditor/chase-bliss/generation-loss-mkii/</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/chase-bliss/blooper/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/chase-bliss/dark-world/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://meaningfulsound.net/PedalEditor/hologram/microcosm/</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/hologram/chroma-console/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/hologram/dreamsequence/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/alexander/radical-delay-dx/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/boss/dd500/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/boss/re202/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/digitech/whammy/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/ehx/pog3/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/empress/echosystem/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/empress/reverb/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/gfi/specular-tempus/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/jackson-audio/asabi/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/jackson-audio/bloom-v2/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/jackson-audio/broken-arrow/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/jackson-audio/golden-boy/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/jackson-audio/new-wave/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/keeley/nocturne/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/old-blood-noise/dark-star-stereo/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/red-panda/particle-v2/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/source-audio/nemesis/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://meaningfulsound.net/PedalEditor/source-audio/ventris/</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

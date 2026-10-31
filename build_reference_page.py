@@ -75,8 +75,9 @@ FAQ = [
      "profile gives you general-purpose CC control."),
     ("Does it need an internet connection?",
      "No. Sync between your own devices uses your personal iCloud account when it "
-     "is available. There is no account to create, no analytics, and no server "
-     "belonging to us in the path."),
+     "is available. There is no account to create, no advertising, and no cross-app "
+     "tracking. The app sends anonymous usage telemetry (via TelemetryDeck) that "
+     "is not linked to any user identity."),
 ]
 
 LEDE = (
@@ -273,7 +274,7 @@ footer .social svg{{width:18px;height:18px;display:block}}
   <ul>
     <li><strong>Platforms:</strong> iPhone and iPad on iOS/iPadOS 17, Mac on macOS 14 Sonoma. All native; no web wrapper.</li>
     <li><strong>Library:</strong> {n_avail} profiles in the app now; {n_deck} more built and releasing. Both listed above in full.</li>
-    <li><strong>Privacy:</strong> no account, no analytics, no advertising, no third-party SDKs, no server of ours.</li>
+    <li><strong>Privacy:</strong> no account, no advertising, no cross-app tracking, no server of ours. Anonymous usage telemetry (via TelemetryDeck) &mdash; not linked to any user identity.</li>
     <li><strong>Files:</strong> full library backup, per-pedal library export, and a plain-text MIDI log export.</li>
     <li><strong>Free forever:</strong> the 128 Knobs general-purpose MIDI profile.</li>
     <li><a href="https://apps.apple.com/us/app/pedaleditor/id6761016084">App Store</a> &middot; <a href="../profiles/">Every profile</a> &middot; <a href="../privacy/">Privacy policy</a></li>

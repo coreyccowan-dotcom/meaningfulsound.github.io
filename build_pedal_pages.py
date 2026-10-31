@@ -40,14 +40,25 @@ import build_brand_pages as bbp
 
 # JSON id prefix → (site brand slug, human brand name)
 BRAND_MAP = {
-    "strymon-":    ("strymon",      "Strymon"),
-    "walrus-":     ("walrus-audio", "Walrus Audio"),
-    "meris-":      ("meris",        "Meris"),
-    "uafx-":       ("uafx",         "UAFX"),
-    "line6-":      ("line-6",       "Line 6"),
-    "chasebliss-": ("chase-bliss",  "Chase Bliss"),
-    "hologram-":   ("hologram",     "Hologram"),
-    "eventide-":   ("eventide",     "Eventide"),  # excluded via AVAILABLE
+    "strymon-":       ("strymon",         "Strymon"),
+    "walrus-":        ("walrus-audio",    "Walrus Audio"),
+    "meris-":         ("meris",           "Meris"),
+    "uafx-":          ("uafx",            "UAFX"),
+    "line6-":         ("line-6",          "Line 6"),
+    "chasebliss-":    ("chase-bliss",     "Chase Bliss"),
+    "hologram-":      ("hologram",        "Hologram"),
+    "eventide-":      ("eventide",        "Eventide"),  # excluded via AVAILABLE
+    "alexander-":     ("alexander",       "Alexander Pedals"),
+    "boss-":          ("boss",            "Boss"),
+    "digitech-":      ("digitech",        "DigiTech"),
+    "ehx-":           ("ehx",             "Electro-Harmonix"),
+    "empress-":       ("empress",         "Empress Effects"),
+    "gfi-":           ("gfi",             "GFI System"),
+    "jacksonaudio-":  ("jackson-audio",   "Jackson Audio"),
+    "keeley-":        ("keeley",          "Keeley Electronics"),
+    "oldbloodnoise-": ("old-blood-noise", "Old Blood Noise"),
+    "redpanda-":      ("red-panda",       "Red Panda"),
+    "sourceaudio-":   ("source-audio",    "Source Audio"),
 }
 
 SKIP_IDS = {"custom-midi"}  # not a pedal, no per-pedal page

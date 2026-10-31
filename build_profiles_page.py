@@ -21,14 +21,40 @@ PROFILE_DIR = os.path.expanduser(
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)),
                    "PedalEditor", "profiles", "index.html")
 
-AVAILABLE_PREFIXES = ("strymon-", "walrus-")
+AVAILABLE_PREFIXES = (
+    "strymon-",       # 21/21 complete
+    "walrus-",        # 10/10 complete
+    "uafx-",          # 14/14 complete (7 amps pre-SOP + 7 effects Batches 2-3)
+    "meris-",         # 8/8 complete (LVX pre-SOP + 7 Batches 1-2-4)
+    "jacksonaudio-",  # 5/5 complete (Batch 4 brand-open-and-close)
+    "hologram-",      # 3/3 complete (Microcosm + Chroma Console + DreamSequence)
+)
 AVAILABLE_IDS = {
-    "uafx-dream-65", "uafx-lion-68", "uafx-ruby-63", "uafx-woodrow-55",
-    "uafx-knuckles-92", "uafx-anti-1992", "uafx-enigmatic-82",
-    "line6-dl4-mkii", "meris-lvx", "custom-midi",
+    "line6-dl4-mkii", "custom-midi",
+    # Chase Bliss (5/26 — stays as exact ids, large unaudited pool)
     "chasebliss-mood-mkii", "chasebliss-habit",
     "chasebliss-generation-loss-mkii",
-    "hologram-microcosm",
+    "chasebliss-blooper", "chasebliss-dark-world",
+    # Boss (2/5)
+    "boss-dd500", "boss-re202",
+    # Empress (2/5)
+    "empress-echosystem", "empress-reverb",
+    # Source Audio (2/19)
+    "sourceaudio-nemesis", "sourceaudio-ventris",
+    # EHX (1/6)
+    "ehx-pog3",
+    # Keeley (1/1 — exact id, defensive against future adds)
+    "keeley-nocturne",
+    # Alexander (1/19)
+    "alexander-radical-delay-dx",
+    # Old Blood Noise (1/7)
+    "oldbloodnoise-dark-star-stereo",
+    # Red Panda (1/5)
+    "redpanda-particle-v2",
+    # Digitech (1/3)
+    "digitech-whammy",
+    # GFI (1/5)
+    "gfi-specular-tempus",
     # Eventide (h9 / space / timefactor) pulled 2026-09-04. Audited and fixed,
     # but held back as a product call — see the eventide block in
     # build_brand_pages.py. Must stay out of AuditedProfiles.swift too.
@@ -36,14 +62,25 @@ AVAILABLE_IDS = {
 
 # pid prefix → brand directory under /PedalEditor/. Mirror of build_pedal_pages.py.
 BRAND_DIRS = {
-    "strymon-":    "strymon",
-    "walrus-":     "walrus-audio",
-    "meris-":      "meris",
-    "uafx-":       "uafx",
-    "line6-":      "line-6",
-    "chasebliss-": "chase-bliss",
-    "hologram-":   "hologram",
-    "eventide-":   "eventide",
+    "strymon-":          "strymon",
+    "walrus-":           "walrus-audio",
+    "meris-":            "meris",
+    "uafx-":             "uafx",
+    "line6-":            "line-6",
+    "chasebliss-":       "chase-bliss",
+    "hologram-":         "hologram",
+    "eventide-":         "eventide",
+    "alexander-":        "alexander",
+    "boss-":             "boss",
+    "digitech-":         "digitech",
+    "ehx-":              "ehx",
+    "empress-":          "empress",
+    "gfi-":              "gfi",
+    "jacksonaudio-":     "jackson-audio",
+    "keeley-":           "keeley",
+    "oldbloodnoise-":    "old-blood-noise",
+    "redpanda-":         "red-panda",
+    "sourceaudio-":      "source-audio",
 }
 
 
@@ -130,7 +167,7 @@ TEMPLATE = """<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Every Profile &mdash; PedalEditor | Meaningful Sound</title>
-<meta name="description" content="The complete PedalEditor profile reference: {n_avail} pedal profiles in the app today, from Strymon, Walrus Audio, Meris, UAFX, Line 6, Chase Bliss and Hologram, plus {n_deck} more built and releasing on a rolling basis.">
+<meta name="description" content="The complete PedalEditor profile reference: {n_avail} pedal profiles in the app today, from Strymon, Walrus Audio, Meris, UAFX, Line 6, Chase Bliss, Hologram, Jackson Audio, Alexander Pedals, Boss, DigiTech, Electro-Harmonix, Empress Effects, GFI System, Keeley Electronics, Old Blood Noise, Red Panda and Source Audio, plus {n_deck} more built and releasing on a rolling basis.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <meta name="theme-color" content="#e8dfc8">
 <link rel="canonical" href="https://meaningfulsound.net/PedalEditor/profiles/">
