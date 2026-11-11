@@ -55,6 +55,8 @@ AVAILABLE_IDS = {
     "digitech-whammy",
     # GFI (1/5)
     "gfi-specular-tempus",
+    # Valeton (1/1 — exact id, brand opened by GP-5 2026-11-08)
+    "valeton-gp-5",
     # Eventide (h9 / space / timefactor) pulled 2026-09-04. Audited and fixed,
     # but held back as a product call — see the eventide block in
     # build_brand_pages.py. Must stay out of AuditedProfiles.swift too.
@@ -81,6 +83,7 @@ BRAND_DIRS = {
     "oldbloodnoise-":    "old-blood-noise",
     "redpanda-":         "red-panda",
     "sourceaudio-":      "source-audio",
+    "valeton-":          "valeton",
 }
 
 
@@ -167,7 +170,7 @@ TEMPLATE = """<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Every Profile &mdash; PedalEditor | Meaningful Sound</title>
-<meta name="description" content="The complete PedalEditor profile reference: {n_avail} pedal profiles in the app today, from Strymon, Walrus Audio, Meris, UAFX, Line 6, Chase Bliss, Hologram, Jackson Audio, Alexander Pedals, Boss, DigiTech, Electro-Harmonix, Empress Effects, GFI System, Keeley Electronics, Old Blood Noise, Red Panda and Source Audio, plus {n_deck} more built and releasing on a rolling basis.">
+<meta name="description" content="The complete PedalEditor profile reference: {n_avail} pedal profiles in the app today, from Strymon, Walrus Audio, Meris, UAFX, Line 6, Chase Bliss, Hologram, Jackson Audio, Alexander Pedals, Boss, DigiTech, Electro-Harmonix, Empress Effects, GFI System, Keeley Electronics, Old Blood Noise, Red Panda, Source Audio and Valeton, plus {n_deck} more built and releasing on a rolling basis.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <meta name="theme-color" content="#e8dfc8">
 <link rel="canonical" href="https://meaningfulsound.net/PedalEditor/profiles/">

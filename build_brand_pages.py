@@ -256,6 +256,16 @@ BRANDS = [
  "cost": "1 manual. Firmware 2.2.0+ is the source for the Particle V2&rsquo;s mode list and CC table. The PARAM knob remaps per mode &mdash; each destination has its own dedicated CC, and the profile maps all 8 destinations in their respective modes rather than collapsing them into aliases. 61 controls confirmed against the published map.",
 },
 {
+ "slug": "valeton", "brand": "Valeton",
+ "blurb": "The Valeton GP-5 in PedalEditor, built from the manufacturer's manual.",
+ "lede": "The GP-5 is a mini multi&#8209;FX with 10 fixed effect blocks &mdash; Noise Reduction, Pre&#8209;Effects, Distortion, N&rarr;S Neural Snaptones, Amplifier, Cabinet/IR, EQ, Modulation, Delay, Reverb &mdash; 100 patch slots (50 factory, 50 user) and a single footswitch. Patch recall is CC 0, not Program Change. The pedal has no front&#8209;panel edit mode, so PedalEditor is where you edit the presets: 130 algorithms across the 10 blocks, 404 controls, every one of them live on the pedal as you turn it. Writing a patch to a slot goes through Valeton's companion app, which is the only app the pedal lets write to storage. 1 available now.",
+ "now": [
+  ("GP-5", "gp-5", "10 fixed blocks &mdash; NR, PRE, DST, N&rarr;S, AMP, CAB, EQ, MOD, DLY, RVB &mdash; 130 algorithms, 404 controls, 100 patch slots. Patch recall on CC 0; the pedal has no front&#8209;panel param&#8209;edit mode."),
+ ],
+ "soon": [],
+ "cost": "1 manual, a community SysEx reference, and the time to prove both ends match. The GP-5's published MIDI table covers patch recall on CC 0 and the ten block&#8209;level engage CCs. Everything else &mdash; 32 amps, 40 cabinets, 11 modulation modes, 10 delays, 10 reverbs, every knob inside each &mdash; is reached through the proprietary SysEx surface the pedal's companion app uses. Over USB&#8209;C PedalEditor drives all of it. Over Bluetooth a substitution layer swaps CC and PC into the same frames; four CCs (tuner, patch volume, CTL, bank&#8209;step) have no catalog frame yet and drop. First Valeton in the library.",
+},
+{
  "slug": "source-audio", "brand": "Source Audio",
  "blurb": "2 Source Audio pedals in PedalEditor, each profile built from the manufacturer's manual.",
  "lede": "Source Audio publishes detailed MIDI maps but the structures behind them are not simple. The Nemesis has 24 addressable delay engines on a single CC; the engine load resets other parameter defaults, so engine&#8209;select arrives first in every deploy. The Ventris runs two independent 56&#8209;bit reverb processors simultaneously, each holding 14 engines, with a 4&#8209;state routing selector between them. 2 available now.",

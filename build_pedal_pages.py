@@ -59,6 +59,7 @@ BRAND_MAP = {
     "oldbloodnoise-": ("old-blood-noise", "Old Blood Noise"),
     "redpanda-":      ("red-panda",       "Red Panda"),
     "sourceaudio-":   ("source-audio",    "Source Audio"),
+    "valeton-":       ("valeton",         "Valeton"),
 }
 
 SKIP_IDS = {"custom-midi"}  # not a pedal, no per-pedal page
