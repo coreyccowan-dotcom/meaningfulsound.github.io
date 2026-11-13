@@ -79,6 +79,12 @@ h1{font-family:var(--serif);font-size:3.3em;line-height:1.04;letter-spacing:-1px
 .pill.filled:hover{background:#a8452e;border-color:#a8452e}
 .links{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:8px;justify-content:center}
 
+.video-row{display:flex;gap:12px;align-items:center;justify-content:center;margin:28px 0 8px;flex-wrap:wrap}
+.video{height:190px;background:#000;border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.video--landscape{aspect-ratio:16/9}
+.video--portrait{aspect-ratio:9/16}
+.video iframe{display:block;width:100%;height:100%;border:0}
+
 h2{font-family:var(--sans);font-weight:700;text-transform:uppercase;font-size:.72em;letter-spacing:3px;
   color:var(--gold);margin:66px 0 26px;display:flex;align-items:center;gap:16px}
 h2::before,h2::after{content:"";flex:1;height:1px;background:var(--line)}
@@ -127,6 +133,9 @@ footer .social svg{width:18px;height:18px;display:block}
   h1{font-size:2.4em}
   .panels{grid-template-columns:1fr}
   .title-card{padding-top:36px}
+  .video-row{flex-direction:column}
+  .video{height:auto;width:100%;max-width:420px}
+  .video--portrait{max-width:220px}
 }
 </style>
 </head>
@@ -147,6 +156,18 @@ footer .social svg{width:18px;height:18px;display:block}
       <a class="pill filled" href="https://apps.apple.com/us/app/pedaleditor/id6761016084">App Store</a>
       <a class="pill" href="https://www.youtube.com/watch?v=zGPxKb1NNv0">Overview</a>
       <a class="pill" href="https://instagram.com/pedaleditor">Instagram</a>
+    </div>
+  </div>
+
+  <div class="video-row">
+    <div class="video video--landscape">
+      <iframe src="https://www.youtube.com/embed/UY593cB_DAQ" title="PedalEditor: Brain for Brainless Pedals" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="video video--landscape">
+      <iframe src="https://www.youtube.com/embed/zGPxKb1NNv0" title="PedalEditor: Walrus Audio ACS1-M1 & Strymon Demo" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="video video--portrait">
+      <iframe src="https://www.youtube.com/embed/hOdA4do_Tk4" title="Classical Guitar Life: Wireless Control Of MIDI - PedalEditor" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
 
